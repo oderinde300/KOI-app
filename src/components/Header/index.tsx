@@ -6,16 +6,16 @@ const Header = () => {
   return (
     <div className="flex bg-black py-2 w-full px-24 z-40 fixed justify-between items-center">
       <div className="flex text-white w-2/5">
-        <Image
-          src="/logo_KOI color+white (H) 1.png"
-          alt="Koi Logo"
-          className="dark:invert"
-          width={200}
-          height={68}
-          priority
-        />
+        <div className="flex w-32 h-12 md:w-48 md:h-16 relative">
+          <Image
+            src="/logo_KOI color+white (H) 1.png"
+            alt="Koi Logo"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
       </div>
-      <div className="flex w-3/5">
+      <div className="hidden md:flex w-3/5">
         <ul className="flex w-full justify-between">
           <li className="text-white/80">
             <Link href="#">INTRO</Link>
