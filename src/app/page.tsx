@@ -10,9 +10,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen relative text-white flex-col items-center justify-between md:px-24 bg-black">
-      <div className="flex"></div>
-      <Header />
+    <main className="flex min-h-screen relative text-white flex-col items-center justify-between md:px-12 lg:px-24 bg-black overflow-x-hidden">
+      {/* <div className="flex"></div> */}
+      {/* <Header /> */}
       <div className="flex flex-col w-full items-center pt-24 md:pt-56 gap-12 pointer-events-none">
         <div className="flex relative w-[20rem] h-[12rem] md:w-[56.25rem] md:h-[16.875rem]">
           <Image
@@ -63,75 +63,76 @@ export default function Home() {
       </div>
 
       {/* Miss Koi */}
-      <div className="flex flex-col">
-        <div className="flex flex-col mt-32 md:mt-48 h-[40vh] md:h-[80vh] justify-center items-start relative  w-full after:content-[''] after:absolute after:w-full after:h-72 after:bottom-0 after:bg-gradient-to-t after:from-black after:to-transparent">
-          <Image
-            src="/space img 1.png"
-            alt="Space"
-            layout="fill" // Make the image fill the parent container
-            objectFit="cover" // Ensure the image covers the container without distortion
-            className=""
-          />
+      <div className="flex flex-col mt-32 md:mt-48 min-h-[40vh] md:min-h-[80vh] justify-center items-start relative  w-full after:content-[''] after:absolute after:w-full after:h-72 after:bottom-0 after:bg-gradient-to-t after:from-black after:to-transparent">
+        <Image
+          src="/space img 1.png"
+          alt="Space"
+          layout="fill" // Make the image fill the parent container
+          objectFit="cover" // Ensure the image covers the container without distortion
+          className=""
+        />
 
-          <div className="flex w-full items-center flex-col relative z-10 p-4">
-            <h1 className="text-white  md:ml-56 text-3xl w-1/2 md:text-5xl font-bold md:w-64 text-center">
-              MEET MISS KOI
-            </h1>
-            <div className="flex w-full md:gap-24">
-              <div className="flex flex-col w-full gap-3 md:gap-8 md:-mt-12">
-                <div className="flex relative w-full justify-start md:justify-center">
-                  <Image
-                    src="/meteorite2 1.png"
-                    alt="meteor"
-                    height={173}
-                    width={170}
-                    className="md:scale-100 scale-[0.6]"
-                  />
-                </div>
-                <div className="flex w-full justify-start md:justify-end">
-                  <h2 className="text-2xl md:text-4xl text-center w-1/2 text-white">
-                    BLOCKCHAIN VIRTUAL IP
-                  </h2>
-                </div>
-                <div className="flex w-full justify-start md:justify-end md:ml-48">
-                  <div className="flex bg-black text-sm md:text-base md:font-normal font-light text-white p-4 rounded-lg border w-[70%] md:w-80 border-white ">
-                    <p>
-                      I am Ms. KOI your virtual mentor from the blockchain
-                      world. KOI stands for KO Inflation, dedicated to actively
-                      fighting the silent threat of inflation.
-                    </p>
-                  </div>
+        <div className="flex w-full items-center flex-col relative z-10 p-4">
+          <h1 className="text-white  md:ml-56 text-3xl w-1/2 md:text-5xl font-bold md:w-64 text-center">
+            MEET MISS KOI
+          </h1>
+          <div className="flex w-full md:gap-24">
+            <div className="flex flex-col w-full gap-3">
+              <div className="flex relative w-full md:-ml-8 justify-start md:justify-center">
+                <Image
+                  src="/meteorite2 1.png"
+                  alt="meteor"
+                  height={173}
+                  width={170}
+                  className="md:scale-100 scale-[0.6]"
+                />
+              </div>
+              <div className="flex w-full justify-start md:-ml-48 md:justify-end">
+                <h2 className="text-2xl md:text-4xl text-center w-1/3 text-white">
+                  BLOCKCHAIN VIRTUAL IP
+                </h2>
+              </div>
+              <div className="flex w-full justify-start md:justify-end">
+                <div className="flex bg-black text-sm md:text-base md:font-normal font-light text-white p-4 rounded-lg border w-[70%] md:w-80 border-white ">
+                  <p>
+                    I am Ms. KOI your virtual mentor from the blockchain world.
+                    KOI stands for KO Inflation, dedicated to actively fighting
+                    the silent threat of inflation.
+                  </p>
                 </div>
               </div>
-              <div className="flex absolute  md:relative w-full ml-24 z-19">
+            </div>
+            <div className="flex absolute top-[50%] -translate-y-[30%] right-0 md:relative md:right-auto md: md:top-auto">
+              <div className="flex relative min-w-[300px]">
                 <Image
                   src="/MsKOI Space_00000 1.png"
                   alt="space"
+                  layout="responsive"
                   height={568}
                   width={477}
-                  className=" scale-75 md:scale-100 "
+                  className=""
                 />
               </div>
             </div>
           </div>
         </div>
-        <div className="flex z-10 flex-col px-4 md:px-48 mt-24 md:mt-0 gap-6">
-          <h2 className="font-bold text-2xl md:text-4xl w-full text-left ">
-            OUR GOALS
-          </h2>
-          <div className="flex flex-col md:flex-row gap-6 md:gap-24">
-            <div className="flex relative justify-center items-center p-3 before:content-[''] md:bg-black before:h-full before:absolute before:w-1 before:bg-custom-gradient before:left-0">
-              Empower users to generate personal value and reach a wider
-              audience.
-            </div>
-            <div className="flex relative justify-center items-center p-3 before:content-[''] md:bg-black before:h-full before:absolute before:w-1 before:bg-custom-gradient before:left-0">
-              Connect users to KOI’s marketplace for income generation through
-              sharing creations.
-            </div>
-            <div className="flex relative justify-center items-center p-3 before:content-[''] md:bg-black before:h-full before:absolute before:w-1 before:bg-custom-gradient before:left-0">
-              Promote participation in projects that create blockchain assets
-              and address inflation.
-            </div>
+      </div>
+
+      <div className="flex z-10 flex-col px-4 md:px-24 lg:px-48 mt-24 md:mt-0 gap-6">
+        <h2 className="font-bold text-2xl md:text-4xl w-full text-left ">
+          OUR GOALS
+        </h2>
+        <div className="flex flex-col md:flex-row gap-6 md:gap-24">
+          <div className="flex relative justify-center items-center p-3 before:content-[''] md:bg-black before:h-full before:absolute before:w-1 before:bg-custom-gradient before:left-0">
+            Empower users to generate personal value and reach a wider audience.
+          </div>
+          <div className="flex relative justify-center items-center p-3 before:content-[''] md:bg-black before:h-full before:absolute before:w-1 before:bg-custom-gradient before:left-0">
+            Connect users to KOI’s marketplace for income generation through
+            sharing creations.
+          </div>
+          <div className="flex relative justify-center items-center p-3 before:content-[''] md:bg-black before:h-full before:absolute before:w-1 before:bg-custom-gradient before:left-0">
+            Promote participation in projects that create blockchain assets and
+            address inflation.
           </div>
         </div>
       </div>
@@ -217,7 +218,7 @@ export default function Home() {
       </div>
 
       {/* Koi Solutions */}
-      <div className="flex relative mt-12 md:mt-48 flex-col w-full">
+      <div className="flex relative flex-col w-full">
         <div className="hidden md:flex absolute top-[15%] -right-[60%]">
           <Blob />
         </div>
@@ -248,7 +249,7 @@ export default function Home() {
                 </p>
               </div>
               <ul className="list-disc pl-4">
-                <li>Experience Life's Balance and Challenges</li>
+                <li>Experience Lifes Balance and Challenges</li>
                 <li>
                   Your Educational Tool for Self-Management and Financial
                   Planning
@@ -351,12 +352,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="flex w-full relative">
-        <div className="hidden md:flex absolute -top-[80%] -right-[60%]">
+        {/* <div className="hidden md:flex absolute bottom-0 -right-[60%]">
           <Blob />
-        </div>
-        <Footer />
+        </div> */}
       </div>
     </main>
   );
