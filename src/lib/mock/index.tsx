@@ -185,3 +185,21 @@ export const partners: string[] = [
   "/partners/ton 1.png",
   "/partners/zetta 1.png",
 ];
+
+export const slides: string[] = [
+  "/slides/Web3SOC-01 3.png",
+  "/slides/Web3SOC-02 2.png",
+  "/slides/Web3SOC-03 1.png",
+  "/slides/Web3SOC-04 2.png",
+  "/slides/Web3SOC-05 2.png",
+  "/slides/Web3SOC-06 2.png",
+  "/slides/Web3SOC-07 2.png",
+  "/slides/Web3SOC-08 2.png",
+  "/slides/Web3SOC-09 2.png",
+  "/slides/Web3SOC-10 2.png",
+  "/slides/Web3SOC-11 2.png",
+  "/slides/Web3SOC-12 2.png",
+  "/slides/Web3SOC-13 2.png",
+  "/slides/Web3SOC-14 2.png",
+  "/slides/Web3SOC-15 1.png",
+];

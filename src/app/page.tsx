@@ -165,8 +165,8 @@ export default function Home() {
           <h1 className="text-white text-2xl md:text-3xl mt-20 md:mt-0 font-bold w-full text-left md:text-center">
             WELCOME TO KOI MOBILIZE
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2  gap-4">
-            <div className="grid grid-cols-2 gap-2">
+          <div className="grid md:w-[80%] grid-cols-1 md:grid-cols-3  gap-4">
+            <div className="grid col-span-2 grid-cols-2 gap-2">
               <div className="flex flex-col w-full gap-4 h-full">
                 <div className="flex w-full h-full relative">
                   <Image
@@ -185,7 +185,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="flex w-full h-[17rem] relative">
+              <div className="flex w-full h-[17rem] md:h-full relative">
                 <Image
                   src="/product-04 1.png"
                   alt="Space"
@@ -194,7 +194,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="flex w-80 h-full py-8 md:px-8 gap-7 flex-col">
+            <div className="flex col-span-1 w-80 md:w-full h-full py-8 md:px-8 gap-7 flex-col">
               <div className="flex flex-col gap-4">
                 <h3 className="text-xl font-bold">Transitioning to Web 3.0</h3>
                 <p className="">

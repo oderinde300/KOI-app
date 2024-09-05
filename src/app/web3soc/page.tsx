@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "../../components/ui/button";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import Slider from "../../components/Slider";
 
 const Web3SOC = () => {
   return (
@@ -67,17 +69,8 @@ const Web3SOC = () => {
           </div>
         </div>
       </div>
-      <div className="flex w-full justify-center pt-24 items-center">
-        <div className="flex relative">
-          <Image
-            src="/MacBook Pro.png"
-            alt="Space"
-            layout="responsive" // Make the image fill the parent container
-            width={900}
-            height={516}
-            className=""
-          />
-        </div>
+      <div className="flex w-full px-6 py-12 md:px-0 justify-center pt-24 items-center">
+        <Slider />
       </div>
     </div>
   );
