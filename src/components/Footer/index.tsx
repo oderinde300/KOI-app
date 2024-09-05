@@ -3,7 +3,6 @@ import {
   FacebookIcon,
   Instagram,
   InstagramIcon,
-  Link,
   Linkedin,
   Twitch,
   Twitter,
@@ -12,6 +11,7 @@ import {
 import Image from "next/image";
 import React from "react";
 import Blob from "../Blob";
+import Link from "next/link";
 
 const Footer = () => {
   return (

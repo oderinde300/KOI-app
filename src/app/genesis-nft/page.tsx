@@ -9,10 +9,10 @@ const GenesisNFT = () => {
         <div className="flex justify-center items-center gap-12  px-6 md:px-48 flex-col-reverse md:flex-row z-10">
           <div className="flex relative flex-col md:w-2/3 gap-12">
             <div className="flex flex-col gap-4">
-              <h2 className="font-extrabold text-2xl md:text-4xl md:w-1/2 ">
+              <h2 className="font-molde-bold-italic text-2xl md:text-4xl md:w-1/2 ">
                 INVEST SMART EARN BIG
               </h2>
-              <p className="text-xl md:text-2xl bg-clip-text text-transparent bg-button-gradient">
+              <p className="text-xl font-molde w-fit md:text-2xl text-gradient">
                 KOI GENESIS NFT
               </p>
             </div>
@@ -33,9 +33,8 @@ const GenesisNFT = () => {
             <Image
               src="/KOI Genesis 1(1).png"
               alt="Monokoily"
-              layout="fill" // Make the image fill the parent container
-              objectFit="cover" // Ensure the image covers the container without distortion
-              className=""
+              fill={true}
+              className="object-cover"
             />
           </div>
         </div>
@@ -44,12 +43,11 @@ const GenesisNFT = () => {
         <Image
           src="/image 85.png"
           alt="Space"
-          layout="fill" // Make the image fill the parent container
-          objectFit="cover" // Ensure the image covers the container without distortion
-          className=""
+          fill={true}
+          className="object-cover"
         />
         <div className="flex z-20 flex-col min-h-screen py-24 items-center gap-6 px-6 md:px-24">
-          <h2 className="font-bold md:text-3xl bg-clip-text text-transparent bg-button-gradient">
+          <h2 className="font-bold md:text-3xl text-gradient">
             What is the KOI NFT Project?
           </h2>
           <div className="flex flex-col md:flex-row gap-6">
@@ -129,7 +127,7 @@ const GenesisNFT = () => {
         </div>
         <div className="flex z-20 flex-col min-h-screen justify-center md:py-24 items-center gap-6 px-6 md:px-24 ">
           <div className="flex flex-col gap-6 md:w-3/5 justify-center items-center">
-            <h2 className="font-bold md:w-3/5 text-center md:text-3xl bg-clip-text text-transparent bg-button-gradient">
+            <h2 className="font-bold md:w-3/5 text-center md:text-3xl text-gradient">
               What Does the Genesis NFT Collection Offer?
             </h2>
             <p className="text-center">
@@ -186,7 +184,7 @@ const GenesisNFT = () => {
         </div>
         <div className="flex w-full z-20 justify-center px-6 pt-24 h-screen items-center">
           <div className="flex flex-col border p-8 max-w-lg bg-[#010024] gap-5 border-white/60 rounded-tr-[5rem] rounded-bl-[5rem]">
-            <h2 className="font-bold md:text-3xl bg-clip-text text-transparent bg-button-gradient">
+            <h2 className="font-bold md:text-3xl text-gradient">
               Join the KOI NFT Revolution
             </h2>
             <div className="flex flex-col gap-2 h-full">

@@ -171,3 +171,17 @@ Wallet.)`,
     answer: `KOI claims to assist everyone in transitioning from Web2.0 to the Web3.0 stage. KOI enables everyone to enter Web3SOC stress-free. Those familiar with Web3.0 can directly use Phantom wallet to enter, while those unfamiliar can use commonly used social platforms. They can still participate in “Watch-to-Earn” to earn KOI tokens based on Red Heart Energy. When needed, they can follow the tutorials provided by KOI to easily apply for Phantom wallet and directly transfer KOI tokens into their wallet. `,
   },
 ];
+
+export const partners: string[] = [
+  "/partners/atecl 1.png",
+  "/partners/creative 1.png",
+  "/partners/gtouch 1.png",
+  "/partners/magic eden 1.png",
+  "/partners/phantom 1.png",
+  "/partners/ryan 1.png",
+  "/partners/sky venture 1.png",
+  "/partners/solana 1.png",
+  "/partners/telegram 1.png",
+  "/partners/ton 1.png",
+  "/partners/zetta 1.png",
+];

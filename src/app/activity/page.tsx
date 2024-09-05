@@ -11,9 +11,8 @@ const ActivityBoard = () => {
         <Image
           src="/image 83.png"
           alt="Space"
-          layout="fill" // Make the image fill the parent container
-          objectFit="cover" // Ensure the image covers the container without distortion
-          className=""
+          fill={true}
+          className="object-cover"
         />
 
         <h2 className="font-bold text-3xl z-10">ACTIVITY BOARD</h2>

@@ -9,17 +9,16 @@ const Web3SOC = () => {
         <Image
           src="/touch screen 1.png"
           alt="Space"
-          layout="fill" // Make the image fill the parent container
-          objectFit="cover" // Ensure the image covers the container without distortion
-          className=""
+          fill={true}
+          className="object-cover"
         />
         <div className="flex justify-center items-center gap-12  px-6 flex-col md:flex-row z-10">
           <div className="flex relative flex-col md:w-2/3 gap-12">
             <div className="flex flex-col gap-4">
-              <h2 className="font-extrabold text-2xl md:text-4xl md:w-1/2 ">
+              <h2 className="font-molde-bold-italic text-2xl md:text-4xl md:w-1/2 ">
                 POWERFUL WEB3M SOCIAL PLATFORM
               </h2>
-              <p className="text-xl md:text-2xl bg-clip-text text-transparent bg-button-gradient">
+              <p className="text-xl font-molde md:text-2xl text-gradient w-fit">
                 WEB3SOC
               </p>
             </div>
@@ -36,7 +35,7 @@ const Web3SOC = () => {
         </div>
       </div>
       <div className="flex flex-col items-center gap-6 px-6 md:px-24">
-        <h2 className="font-bold md:text-3xl bg-clip-text text-transparent bg-button-gradient">
+        <h2 className="font-bold md:text-3xl text-gradient">
           Bridging Web 3.0 Social Gap
         </h2>
         <div className="flex flex-col md:flex-row gap-6">
@@ -69,7 +68,7 @@ const Web3SOC = () => {
         </div>
       </div>
       <div className="flex w-full justify-center pt-24 items-center">
-        <div className="flex\ relative">
+        <div className="flex relative">
           <Image
             src="/MacBook Pro.png"
             alt="Space"

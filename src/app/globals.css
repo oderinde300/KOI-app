@@ -83,3 +83,31 @@
     @apply h-fit;
   }
 }
+
+.text-gradient {
+  color: black; /* Fallback color */
+  background: linear-gradient(
+    92.66deg,
+    #a759ff 6.66%,
+    #f05615 21.75%,
+    #ffa515 39.84%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@font-face {
+  font-family: "molde-bold-italic";
+  src: url("../../public/fonts/Fontspring-DEMO-molde-expanded-blackitalic.otf");
+}
+
+@font-face {
+  font-family: "molde";
+  src: url("../../public/fonts/Fontspring-DEMO-molde-expanded-regular.otf");
+}
+
+@font-face {
+  font-family: "molde-bold";
+  src: url("../../public/fonts/Fontspring-DEMO-molde-expanded-bold.otf");
+}

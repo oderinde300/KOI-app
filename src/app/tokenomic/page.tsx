@@ -9,17 +9,16 @@ const Tokenomic = () => {
         <Image
           src="/image 83.png"
           alt="Space"
-          layout="fill" // Make the image fill the parent container
-          objectFit="cover" // Ensure the image covers the container without distortion
-          className=""
+          fill={true}
+          className="object-cover"
         />
         <div className="flex justify-center items-center gap-12  px-6 md:px-48 flex-col-reverse md:flex-row z-10">
           <div className="flex relative flex-col md:w-2/3 gap-12">
             <div className="flex flex-col gap-4">
-              <h2 className="font-extrabold text-2xl md:text-4xl md:w-1/2 ">
+              <h2 className="font-molde-bold-italic text-2xl md:text-4xl md:w-1/2 ">
                 EXPERIENCE REVOLUTIONARY FINANCE
               </h2>
-              <p className="text-xl md:text-2xl bg-clip-text text-transparent bg-button-gradient">
+              <p className="text-xl font-molde md:text-2xl w-fit text-gradient">
                 TOKENOMIC ECOSYSTEM
               </p>
             </div>
@@ -33,9 +32,8 @@ const Tokenomic = () => {
             <Image
               src="/logo_KOI Token color + white 1.png"
               alt="Monokoily"
-              layout="fill" // Make the image fill the parent container
-              objectFit="cover" // Ensure the image covers the container without distortion
-              className=""
+              fill={true}
+              className="object-cover"
             />
           </div>
         </div>
@@ -50,9 +48,8 @@ const Tokenomic = () => {
             <Image
               src="/Group.png"
               alt="chart"
-              layout="fill" // Make the image fill the parent container
-              objectFit="cover" // Ensure the image covers the container without distortion
-              className=""
+              fill={true}
+              className="object-cover"
             />
           </div>
           <div className="flex flex-col gap-2 w-full h-full">

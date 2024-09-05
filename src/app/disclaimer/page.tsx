@@ -1,8 +1,4 @@
-import Image from "next/image";
 import React from "react";
-import { faq } from "../../lib/mock/index";
-
-import { Plus } from "lucide-react";
 
 const Disclaimer = () => {
   return (

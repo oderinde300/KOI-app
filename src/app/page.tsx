@@ -1,26 +1,45 @@
+"use client";
 import Blob from "@/components/Blob";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import TeamCard from "@/components/TeamCard";
 import { Button } from "@/components/ui/button";
 import { ITeam } from "@/interfaces";
-import { teamList } from "@/lib/mock";
+import { partners, teamList } from "@/lib/mock";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
+import { useInView } from "framer-motion";
 
 export default function Home() {
+  const ref = useRef(null);
+  const isInView = useInView(ref); // Detect when the element enters the viewport
+  const [className, setClassName] = useState("text-black"); // Default class
+
+  // Use the isInView hook to toggle classes
+  useEffect(() => {
+    if (isInView) {
+      setClassName("bg-custom-gradient-reverse"); // Add this class when in view
+    } else {
+      setClassName("bg-custom-gradient-reverse"); // Default class
+    }
+  }, [isInView]);
   return (
     <main className="flex min-h-screen relative text-white flex-col items-center justify-between md:px-12 lg:px-24 bg-black overflow-x-hidden">
       {/* <div className="flex"></div> */}
       {/* <Header /> */}
-      <div className="flex flex-col w-full items-center pt-24 md:pt-56 gap-12 pointer-events-none">
-        <div className="flex relative w-[20rem] h-[12rem] md:w-[56.25rem] md:h-[16.875rem]">
-          <Image
-            src="/Frame 26086436.png"
-            alt="Hero"
-            layout="fill" // Make the image fill the parent container
-            // objectFit="cover" // Ensure the image covers the container without distortion
-          />
+      <div className="flex flex-col w-full items-center justify-center pt-48 md:pt-56 gap-12 pointer-events-none">
+        <div className="flex flex-col justify-center gap-6 items-center relative md:w-2/3">
+          <h2 className="font-molde-bold-italic text-center text-4xl md:text-6xl">
+            BLOCKCHAIN REVOLUTION
+          </h2>
+          <h3 className="font-molde text-gradient text-center text-xl md:text-4xl">
+            REDEFINING INFLATION
+          </h3>
+          <p className="text-center md:w-2/3 font-light">
+            Pioneering a New Era of Profit Distribution in Social Networks for
+            Greater Transparency and Fairness
+          </p>
         </div>
         <Button className="text-white py-6">Explore More</Button>
       </div>
@@ -42,23 +61,18 @@ export default function Home() {
         <h2 className="font-bold text-xl md:text-2xl text-center text-white">
           OUR PARTNERS
         </h2>
-        <div className="hidden md:flex w-[70%] h-36 relative pointer-events-none">
-          <Image
-            src="/div.png"
-            alt="Partners"
-            layout="fill" // Make the image fill the parent container
-            objectFit="cover" // Ensure the image covers the container without distortion
-            className=""
-          />
-        </div>
-        <div className="flex md:hidden w-full h-36 relative pointer-events-none">
-          <Image
-            src="/Frame 1000003368.png"
-            alt="Partners"
-            layout="fill" // Make the image fill the parent container
-            objectFit="cover" // Ensure the image covers the container without distortion
-            className=""
-          />
+        <div className="flex w-[95%] md:w-[90%] flex-wrap relative">
+          {partners.map((url: string, index: number) => (
+            <div className="flex h-10 w-24 md:h-14 md:min-w-48  relative">
+              <Image
+                key={index}
+                src={url}
+                alt={`Partners ${index}`}
+                className="object-contain w-full h-full"
+                fill={true}
+              />
+            </div>
+          ))}
         </div>
       </div>
 
@@ -67,13 +81,12 @@ export default function Home() {
         <Image
           src="/space img 1.png"
           alt="Space"
-          layout="fill" // Make the image fill the parent container
-          objectFit="cover" // Ensure the image covers the container without distortion
-          className=""
+          fill={true}
+          className="object-fit"
         />
 
         <div className="flex w-full items-center flex-col relative z-10 p-4">
-          <h1 className="text-white  md:ml-56 text-3xl w-1/2 md:text-5xl font-bold md:w-64 text-center">
+          <h1 className="text-white font-molde-bold md:ml-56 text-3xl md:text-5xl font-bold md:w-1/3 text-center">
             MEET MISS KOI
           </h1>
           <div className="flex w-full md:gap-24">
@@ -141,9 +154,8 @@ export default function Home() {
         <Image
           src="/pawel-czerwinski-ZkzobNDayXo-unsplash (1) 1.png"
           alt="Space"
-          layout="fill" // Make the image fill the parent container
-          objectFit="cover" // Ensure the image covers the container without distortion
-          className=""
+          fill={true}
+          className="object-fit"
         />
 
         {/* Welcome to koi mobilize */}
@@ -158,17 +170,16 @@ export default function Home() {
                   <Image
                     src="/product-02 1.png"
                     alt="Space"
-                    layout="fill"
-                    objectFit="cover"
-                    className=""
+                    fill={true}
+                    className="object-fit"
                   />
                 </div>
                 <div className="flex w-full h-full relative">
                   <Image
                     src="/product-03 1.png"
                     alt="Space"
-                    layout="fill"
-                    objectFit="cover"
+                    fill={true}
+                    className="object-fit"
                   />
                 </div>
               </div>
@@ -176,9 +187,8 @@ export default function Home() {
                 <Image
                   src="/product-04 1.png"
                   alt="Space"
-                  layout="fill"
-                  objectFit="cover"
-                  className=""
+                  fill={true}
+                  className="object-fit"
                 />
               </div>
             </div>
@@ -218,7 +228,7 @@ export default function Home() {
       </div>
 
       {/* Koi Solutions */}
-      <div className="flex relative flex-col w-full">
+      <div className="flex relative flex-col w-full pb-6 px-6 md:px-0">
         <div className="hidden md:flex absolute top-[15%] -right-[60%]">
           <Blob />
         </div>
@@ -226,25 +236,26 @@ export default function Home() {
           KOI SOLUTIONS
         </h1>
         <div className="flex md:flex-row flex-col w-full">
-          <div className="flex w-full items-center justify-center">
-            <div className="flex relative h-[7.5rem] w-[7-5rem] md:w-72 md:h-72">
+          <div className="flex w-full items-center justify-start md:justify-center">
+            <div className="flex relative h-[7.5rem] w-[7.5rem] md:w-72 md:h-72">
               <Image
-                src="/logo_Web3SOC black 1.png"
+                src="/logo_MONOKOILY color + white 1(1).png"
                 alt="Monokoily"
-                layout="fill" // Make the image fill the parent container
-                objectFit="cover" // Ensure the image covers the container without distortion
-                className=""
+                fill={true}
+                className="object-fit"
               />
             </div>
           </div>
-          <div className="flex bg-custom-gradient-reverse w-full h-1 md:h-screen md:w-2.5 rounded-full md:rounded-t-full"></div>
+          <div
+            className={`md:flex hidden transition-colors duration-100 ${className}  w-full h-1 md:h-screen md:w-2.5 rounded-full md:rounded-t-full`}
+          ></div>
           <div className="flex w-full items-center justify-center">
-            <div className="flex relative flex-col w-2/3 gap-12">
+            <div className="flex relative flex-col md:w-2/3 gap-12">
               <div className="flex flex-col">
-                <h2 className="font-extrabold text-2xl md:text-4xl ">
+                <h2 className="text-2xl md:text-4xl font-molde-bold-italic">
                   LIVE TO EARN
                 </h2>
-                <p className="text-xl md:text-2xl bg-clip-text text-transparent bg-button-gradient">
+                <p className="text-xl md:text-2xl text-gradient font-molde">
                   MONOKOILY
                 </p>
               </div>
@@ -260,27 +271,31 @@ export default function Home() {
               </Button>
             </div>
           </div>
+          <div
+            className={`flex md:hidden my-6 transition-colors duration-100 ${className}  w-full h-1 md:h-screen md:w-2.5 rounded-full md:rounded-t-full`}
+          ></div>
         </div>
         <div className="flex md:flex-row-reverse flex-col  w-full">
-          <div className="flex w-full items-center justify-center">
-            <div className="flex relative h-[7.5rem] w-[7-5rem] md:w-72 md:h-72">
+          <div className="flex w-full items-center justify-start md:justify-center">
+            <div className="flex relative h-[7.5rem] w-[7.5rem] md:w-72 md:h-72">
               <Image
-                src="/logo_Web3SOC black 3.png"
+                src="/logo_Web3SOC color + white 1(1).png"
                 alt="Web3soc"
-                layout="fill" // Make the image fill the parent container
-                objectFit="cover" // Ensure the image covers the container without distortion
-                className=""
+                fill={true}
+                className="object-fit"
               />
             </div>
           </div>
-          <div className="flex bg-custom-gradient-reverse w-full h-1 md:h-screen md:w-2.5 rounded-full md:rounded-none"></div>
+          <div
+            className={`hidden md:flex transition-colors duration-500 ${className}  w-full h-1 md:h-screen md:w-2.5 rounded-full md:rounded-none`}
+          ></div>
           <div className="flex w-full items-center justify-center">
-            <div className="flex relative flex-col w-2/3 gap-12">
+            <div className="flex relative flex-col md:w-2/3 gap-12">
               <div className="flex flex-col">
-                <h2 className="font-extrabold text-2xl md:text-4xl ">
+                <h2 className="text-2xl md:text-4xl font-molde-bold-italic ">
                   POWERFUL WEB3 SOCIAL PLATFORM
                 </h2>
-                <p className="text-xl md:text-2xl bg-clip-text text-transparent bg-button-gradient">
+                <p className="text-xl md:text-2xl text-gradient font-molde">
                   WEB3SOC
                 </p>
               </div>
@@ -293,27 +308,31 @@ export default function Home() {
               </Button>
             </div>
           </div>
+          <div
+            className={`md:hidden my-6 flex transition-colors duration-500 ${className}  w-full h-1 md:h-screen md:w-2.5 rounded-full md:rounded-none`}
+          ></div>
         </div>
         <div className="flex flex-col md:flex-row w-full">
-          <div className="flex w-full items-center justify-center">
-            <div className="flex relative w-72 h-[27.1875rem]">
+          <div className="flex w-full items-center justify-start md:justify-center">
+            <div className="flex relative w-[7.5rem] h-[10rem] md:w-72 md:h-[27.1875rem]">
               <Image
-                src="/KOI Genesis 1.png"
+                src="/KOI Genesis 1(1).png"
                 alt="Koi Genesis"
-                layout="fill" // Make the image fill the parent container
-                objectFit="cover" // Ensure the image covers the container without distortion
-                className=""
+                fill={true}
+                className="object-fit"
               />
             </div>
           </div>
-          <div className="flex bg-custom-gradient-reverse w-full h-1 md:h-screen md:w-2.5"></div>
+          <div
+            className={`hidden md:flex transition-colors duration-500 ${className}  w-full h-1 md:h-screen md:w-2.5 `}
+          ></div>
           <div className="flex w-full items-center justify-center">
-            <div className="flex relative flex-col w-2/3 gap-12">
+            <div className="flex relative flex-col md:w-2/3 gap-12">
               <div className="flex flex-col gap-2">
-                <h2 className="font-extrabold text-2xl md:text-4xl ">
+                <h2 className="text-2xl md:text-4xl font-molde-bold-italic ">
                   INVEST SMART EARN BIG
                 </h2>
-                <p className="text-xl md:text-2xl bg-clip-text text-transparent bg-button-gradient">
+                <p className="text-xl md:text-2xl text-gradient font-molde">
                   KOI GENESIS NFT
                 </p>
               </div>
@@ -322,27 +341,31 @@ export default function Home() {
               </Button>
             </div>
           </div>
+          <div
+            className={`md:hidden my-6 flex transition-colors duration-500 ${className}  w-full h-1 md:h-screen md:w-2.5 `}
+          ></div>
         </div>
         <div className="flex flex-col md:flex-row-reverse w-full">
-          <div className="flex w-full items-center justify-center">
-            <div className="flex relative h-[7.5rem] w-[7-5rem] md:w-72 md:h-72">
+          <div className="flex w-full items-center justify-start md:justify-center">
+            <div className="flex relative h-[7.5rem] w-[7.5rem] md:w-72 md:h-72">
               <Image
-                src="/logo_Web3SOC black 2.png"
+                src="/logo_KOI Token color + white 1.png"
                 alt="Koi Genesis"
-                layout="fill" // Make the image fill the parent container
-                objectFit="cover" // Ensure the image covers the container without distortion
-                className=""
+                fill={true}
+                className="object-fit"
               />
             </div>
           </div>
-          <div className="flex bg-custom-gradient-reverse w-full h-1 md:h-screen md:w-2.5 rounded-b-full"></div>
+          <div
+            className={`md:flex hidden transition-colors duration-500 ${className}  w-full h-1 md:h-screen md:w-2.5 rounded-b-full`}
+          ></div>
           <div className="flex w-full items-center justify-center">
-            <div className="flex relative flex-col w-2/3 gap-12">
+            <div className="flex relative flex-col md:w-2/3 gap-12">
               <div className="flex flex-col gap-2">
-                <h2 className="font-extrabold text-2xl md:text-4xl ">
+                <h2 className="text-2xl md:text-4xl font-molde-bold-italic ">
                   EXPERIENCE REVOLUTIONARY FINANCE
                 </h2>
-                <p className="text-xl md:text-2xl bg-clip-text text-transparent bg-button-gradient">
+                <p className="text-xl md:text-2xl text-gradient font-molde">
                   TOKENOMIC ECOSYSTEM
                 </p>
               </div>

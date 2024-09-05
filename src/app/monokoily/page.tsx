@@ -9,17 +9,16 @@ const Monokoily = () => {
         <Image
           src="/AdobeStock_828629381 1.png"
           alt="Space"
-          layout="fill" // Make the image fill the parent container
-          objectFit="cover" // Ensure the image covers the container without distortion
-          className=""
+          fill={true}
+          className="object-cover"
         />
         <div className="flex justify-center items-center gap-12 pt-24 px-6 flex-col-reverse md:flex-row z-10">
           <div className="flex relative flex-col md:w-1/2 gap-12">
             <div className="flex flex-col">
-              <h2 className="font-extrabold text-2xl md:text-4xl ">
+              <h2 className="font-molde-bold-italic text-2xl md:text-4xl ">
                 LIVE TO EARN
               </h2>
-              <p className="text-xl md:text-2xl bg-clip-text text-transparent bg-button-gradient">
+              <p className="text-xl w-fit font-molde md:text-2xl text-gradient">
                 MONOKOILY
               </p>
             </div>
@@ -45,9 +44,8 @@ const Monokoily = () => {
             <Image
               src="/monokioly phone 2.png"
               alt="Monokoily"
-              layout="fill" // Make the image fill the parent container
-              objectFit="cover" // Ensure the image covers the container without distortion
-              className=""
+              fill={true}
+              className="object-cover"
             />
           </div>
         </div>

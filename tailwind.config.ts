@@ -9,6 +9,11 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				molde: ["molde", "sans-serif"],
+				'molde-bold': ["molde-bold", "sans-serif"],
+				'molde-bold-italic': ["molde-bold-italic", "sans-serif"]
+			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',

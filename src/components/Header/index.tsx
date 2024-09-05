@@ -132,16 +132,32 @@ const Header = () => {
             </Link>
             {isOpen && (
               <div className="flex flex-col absolute top-[160%] w-full bg-black">
-                <Link href="/monokoily" className="py-2 w-full px-2">
+                <Link
+                  onClick={() => setOpen(false)}
+                  href="/monokoily"
+                  className="py-2 w-full px-2"
+                >
                   Monokoily
                 </Link>
-                <Link href="/web3soc" className="py-2 w-full px-2">
+                <Link
+                  onClick={() => setOpen(false)}
+                  href="/web3soc"
+                  className="py-2 w-full px-2"
+                >
                   Web3SOC
                 </Link>
-                <Link href="/genesis-nft" className="py-2 w-full px-2">
+                <Link
+                  onClick={() => setOpen(false)}
+                  href="/genesis-nft"
+                  className="py-2 w-full px-2"
+                >
                   Genesis NFT
                 </Link>
-                <Link href="/tokenomic" className="py-2 w-full px-2">
+                <Link
+                  onClick={() => setOpen(false)}
+                  href="/tokenomic"
+                  className="py-2 w-full px-2"
+                >
                   Tokenomic
                 </Link>
               </div>
