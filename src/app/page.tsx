@@ -63,9 +63,11 @@ export default function Home() {
         </h2>
         <div className="flex w-[95%] md:w-[90%] flex-wrap relative">
           {partners.map((url: string, index: number) => (
-            <div className="flex h-10 w-24 md:h-14 md:min-w-48  relative">
+            <div
+              key={index}
+              className="flex h-10 w-24 md:h-14 md:min-w-48  relative"
+            >
               <Image
-                key={index}
                 src={url}
                 alt={`Partners ${index}`}
                 className="object-contain w-full h-full"
