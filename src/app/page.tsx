@@ -256,7 +256,7 @@ export default function Home() {
                 </li>
               </ul>
               <Button variant={"outline"} className="py-5">
-                Learn More
+                <Link href="/monokoily">Learn more</Link>
               </Button>
             </div>
           </div>
@@ -289,7 +289,7 @@ export default function Home() {
                 the Solana Ecosystem.
               </p>
               <Button variant={"outline"} className="py-5">
-                Learn More
+                <Link href="/web3soc">Learn more</Link>
               </Button>
             </div>
           </div>
@@ -318,7 +318,7 @@ export default function Home() {
                 </p>
               </div>
               <Button variant={"outline"} className="py-5">
-                Learn More
+                <Link href="/genesis-nft">Learn more</Link>
               </Button>
             </div>
           </div>
@@ -347,7 +347,7 @@ export default function Home() {
                 </p>
               </div>
               <Button variant={"outline"} className="py-5">
-                Learn More
+                <Link href="/tokenomic">Learn more</Link>
               </Button>
             </div>
           </div>
