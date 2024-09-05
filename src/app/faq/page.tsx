@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import Accordion, { FAQ } from "../../components/Accordion";
+import Accordion from "../../components/Accordion";
+import type { FAQ } from "../../components/Accordion";
 import { faq } from "../../lib/mock/index";
 
 import { Plus } from "lucide-react";
