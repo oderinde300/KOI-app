@@ -3,6 +3,7 @@ import {
   FacebookIcon,
   Instagram,
   InstagramIcon,
+  Link,
   Linkedin,
   Twitch,
   Twitter,
@@ -20,14 +21,17 @@ const Footer = () => {
       </div> */}
       <div className="flex flex-col md:flex-row gap-6 md:gap-0 justify-between w-full border-b pb-20 px-8 border-b-white/10">
         <div className="flex w-full flex-col gap-6">
-          <Image
-            src="/logo_KOI color+white (H) 1.png"
-            alt="Koi Logo"
-            className="dark:invert"
-            width={200}
-            height={68}
-            priority
-          />
+          <Link href="/">
+            <Image
+              src="/logo_KOI color+white (H) 1.png"
+              alt="Koi Logo"
+              className="dark:invert"
+              width={200}
+              height={68}
+              priority
+            />
+          </Link>
+
           <div className="flex gap-2">
             <span className="bg-white/20 rounded-md p-2">
               <Instagram fontSize={"1rem"} />
@@ -53,19 +57,35 @@ const Footer = () => {
           <div className="flex flex-col gap-4">
             <h2 className="font-semibold text-lg">QUICK LINKS</h2>
             <ul className="flex flex-col gap-1 font-light">
-              <li>Link</li>
-              <li>Road Map</li>
-              <li>Activity</li>
-              <li>FAQs</li>
+              <li>
+                <Link href="/">Intro</Link>
+              </li>
+              <li>
+                <Link href="/road-map">Road Map</Link>
+              </li>
+              <li>
+                <Link href="/activity">Activity</Link>
+              </li>
+              <li>
+                <Link href="/faq">FAQs</Link>
+              </li>
             </ul>
           </div>
           <div className="flex flex-col gap-4">
             <h2 className="font-semibold text-lg">KOI SOLUTIONS</h2>
             <ul className="flex flex-col gap-1 font-light">
-              <li>Monokoily</li>
-              <li>Web3SOC</li>
-              <li>Genesis NFT</li>
-              <li>Tokenomic</li>
+              <li>
+                <Link href="/monokoily">Monokoily</Link>
+              </li>
+              <li>
+                <Link href="/web3soc">Web3SOC</Link>
+              </li>
+              <li>
+                <Link href="/genesis-nft">Genesis NFT</Link>
+              </li>
+              <li>
+                <Link href="/tokenomic">Tokenomic</Link>
+              </li>
             </ul>
           </div>
         </div>
