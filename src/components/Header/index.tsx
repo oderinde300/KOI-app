@@ -17,8 +17,8 @@ const Header = () => {
             <Image
               src="/logo_KOI color+white (H) 1.png"
               alt="Koi Logo"
-              layout="fill"
-              objectFit="cover"
+              fill={true}
+              className="object-fit"
             />
           </div>
         </Link>
@@ -35,8 +35,8 @@ const Header = () => {
                   <Image
                     src="/logo_KOI color+white (H) 1.png"
                     alt="Koi Logo"
-                    layout="fill"
-                    objectFit="cover"
+                    fill={true}
+                    className="object-fit"
                   />
                 </div>
               </Link>

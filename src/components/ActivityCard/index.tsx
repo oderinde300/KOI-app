@@ -6,13 +6,7 @@ const ActivityCard = () => {
   return (
     <div className="border rounded-sm border-white/30 bg-white/20">
       <div className="flex relative w-full h-48">
-        <Image
-          src="/A2 1.png"
-          alt="Space"
-          layout="fill" // Make the image fill the parent container
-          objectFit="cover" // Ensure the image covers the container without distortion
-          className=""
-        />
+        <Image src="/A2 1.png" alt="Space" fill={true} className="object-fit" />
       </div>
       <div className="flex flex-col gap-2 text-white/80 px-3">
         <div className="flex gap-2 items-center">

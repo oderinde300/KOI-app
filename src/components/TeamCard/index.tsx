@@ -14,9 +14,8 @@ const TeamCard = ({ data }: Props) => {
         <Image
           src={data.image_url}
           alt="Space"
-          layout="fill" // Make the image fill the parent container
-          objectFit="cover" // Ensure the image covers the container without distortion
-          className=""
+          fill={true}
+          className="object-fit"
         />
       </div>
       <div className="flex flex-col items-center">
