@@ -15,7 +15,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col w-full relative pt-36 text-white bg-black px-4 md:px-36 pb-6 over">
+    <div className="flex absolute bottom-0 z-10 flex-col w-full pt-36 text-white bg-black/5 px-4 md:px-36 pb-6 over">
       {/* <div className="hidden md:flex absolute -top-[30%] -right-[40%]">
         <Blob />
       </div> */}

@@ -4,11 +4,12 @@ import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
 import ActivityCard from "../../components/ActivityCard";
 import { ChevronsRight } from "lucide-react";
+import Blob from "@/components/Blob";
 
 const RoadMap = () => {
   return (
     <div className="min-h-screen relative bg-black text-white">
-      <div className="flex  justify-center pb-24 items-end text-white w-full h-[60vh] relative after:content-[''] after:absolute after:w-full after:h-[40rem] after:bottom-0 after:bg-gradient-to-t after:from-black after:to-transparent">
+      <div className="flex justify-center pb-24 items-end text-white w-full h-[60vh] relative after:content-[''] after:absolute after:w-full after:h-[40rem] after:bottom-0 after:bg-gradient-to-t after:from-black after:to-transparent">
         <Image
           src="/image 83.png"
           alt="Space"
@@ -19,7 +20,16 @@ const RoadMap = () => {
         <h2 className="font-bold text-3xl z-10">ROAD MAP</h2>
       </div>
 
-      <div className="flex flex-col w-full z-20 justify-start gap-24 px-6 md:px-48 pt-24 min-h-screen items-center">
+      <div className="flex flex-col w-full z-20 relative justify-start gap-24 px-6 md:px-48 pt-24 min-h-screen items-center">
+        <div className="hidden md:flex absolute z-10 top-[15%] -right-[30%]">
+          <Blob className="h-[40rem] w-[40rem] " />
+        </div>
+        <div className="hidden md:flex absolute z-10 top-[40%] -left-[30%]">
+          <Blob className="h-[40rem] w-[40rem] " />
+        </div>
+        <div className="hidden md:flex absolute z-10 bottom-[20%] -right-[30%]">
+          <Blob className="h-[40rem] w-[40rem] " />
+        </div>
         <div className="flex w-full  md:min-h-[80vh] md:justify-start ">
           <div className="flex  flex-col gap-6">
             <h2 className="font-bold w-fit text-3xl text-gradient">2022 OCT</h2>

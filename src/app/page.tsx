@@ -138,14 +138,14 @@ export default function Home() {
           OUR GOALS
         </h2>
         <div className="flex flex-col md:flex-row gap-6 md:gap-24">
-          <div className="flex relative justify-center items-center p-3 before:content-[''] md:bg-black before:h-full before:absolute before:w-1 before:bg-custom-gradient before:left-0">
+          <div className="flex relative justify-center items-center p-3 md:pl-6 before:content-[''] md:bg-black before:h-full before:absolute before:w-1 before:bg-custom-gradient before:left-0">
             Empower users to generate personal value and reach a wider audience.
           </div>
-          <div className="flex relative justify-center items-center p-3 before:content-[''] md:bg-black before:h-full before:absolute before:w-1 before:bg-custom-gradient before:left-0">
+          <div className="flex relative justify-center items-center p-3 md:pl-6 before:content-[''] md:bg-black before:h-full before:absolute before:w-1 before:bg-custom-gradient before:left-0">
             Connect users to KOI’s marketplace for income generation through
             sharing creations.
           </div>
-          <div className="flex relative justify-center items-center p-3 before:content-[''] md:bg-black before:h-full before:absolute before:w-1 before:bg-custom-gradient before:left-0">
+          <div className="flex relative justify-center items-center p-3 md:pl-6 before:content-[''] md:bg-black before:h-full before:absolute before:w-1 before:bg-custom-gradient before:left-0">
             Promote participation in projects that create blockchain assets and
             address inflation.
           </div>
@@ -157,7 +157,7 @@ export default function Home() {
           src="/pawel-czerwinski-ZkzobNDayXo-unsplash (1) 1.png"
           alt="Space"
           fill={true}
-          className="object-fit"
+          className="object-cover"
         />
 
         {/* Welcome to koi mobilize */}
@@ -231,8 +231,8 @@ export default function Home() {
 
       {/* Koi Solutions */}
       <div className="flex relative flex-col w-full pb-6 px-6 md:px-0">
-        <div className="hidden md:flex absolute top-[15%] -right-[60%]">
-          <Blob />
+        <div className="hidden md:flex absolute top-[20%] -right-[30%]">
+          <Blob className="h-[40rem] w-[40rem] " />
         </div>
         <h1 className="text-white text-3xl mb-24 font-bold w-full text-center">
           KOI SOLUTIONS
