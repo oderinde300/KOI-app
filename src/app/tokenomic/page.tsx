@@ -39,7 +39,7 @@ const Tokenomic = () => {
           </div>
           <div className="flex relative w-52 h-[25rem] md:w-[500px] md:h-[31.5rem]">
             <Image
-              src="/logo_KOI Token color + white 1.svg"
+              src="/logo_KOI Token color + white 1.png"
               alt="Monokoily"
               fill={true}
               className="object-cover"

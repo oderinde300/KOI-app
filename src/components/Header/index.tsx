@@ -15,7 +15,7 @@ const Header = () => {
         <Link href="/">
           <div className="flex w-32 h-12 md:w-56 md:h-20 relative">
             <Image
-              src="/logo_KOI color+white (H) 1.svg"
+              src="/logo_KOI color+white (H) 1.png"
               alt="Koi Logo"
               fill={true}
               className="object-cover"
@@ -33,7 +33,7 @@ const Header = () => {
               <Link href="/">
                 <div className="flex w-32 h-12 md:w-48 md:h-16 relative">
                   <Image
-                    src="/logo_KOI color+white (H) 1.svg"
+                    src="/logo_KOI color+white (H) 1.png"
                     alt="Koi Logo"
                     fill={true}
                     className="object-cover"

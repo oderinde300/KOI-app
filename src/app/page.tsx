@@ -10,6 +10,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { useInView } from "framer-motion";
+import ScrollAnimationWrapper from "@/components/ScrollAnimationWrapper";
 
 export default function Home() {
   const ref = useRef(null);
@@ -261,146 +262,154 @@ export default function Home() {
         <h1 className="text-white text-3xl mb-24 font-bold w-full text-center">
           KOI SOLUTIONS
         </h1>
-        <div className="flex md:flex-row flex-col w-full">
-          <div className="flex w-full items-center justify-start md:justify-center">
-            <div className="flex relative h-[7.5rem] w-[7.5rem] md:w-72 md:h-72">
-              <Image
-                src="/logo_MONOKOILY color + white 1.png"
-                alt="Monokoily"
-                fill={true}
-                className="object-cover"
-              />
-            </div>
-          </div>
-          <div
-            className={`md:flex hidden transition-colors duration-100 ${className}  w-full h-1 md:h-screen md:w-2.5 rounded-full md:rounded-t-full`}
-          ></div>
-          <div className="flex w-full items-center justify-center">
-            <div className="flex relative flex-col md:w-2/3 gap-12">
-              <div className="flex flex-col">
-                <h2 className="text-2xl md:text-4xl font-molde-bold-italic">
-                  LIVE TO EARN
-                </h2>
-                <p className="text-xl md:text-2xl text-gradient font-molde">
-                  MONOKOILY
-                </p>
+        <ScrollAnimationWrapper>
+          <div className="flex md:flex-row flex-col w-full">
+            <div className="flex w-full items-center justify-start md:justify-center">
+              <div className="flex relative h-[7.5rem] w-[7.5rem] md:w-72 md:h-72">
+                <Image
+                  src="/logo_MONOKOILY color + white 1.png"
+                  alt="Monokoily"
+                  fill={true}
+                  className="object-cover"
+                />
               </div>
-              <ul className="list-disc pl-4">
-                <li>Experience Lifes Balance and Challenges</li>
-                <li>
-                  Your Educational Tool for Self-Management and Financial
-                  Planning
-                </li>
-              </ul>
-              <Button variant={"outline"} className="py-5">
-                <Link href="/monokoily">Read more</Link>
-              </Button>
             </div>
-          </div>
-          <div
-            className={`flex md:hidden my-6 transition-colors duration-100 ${className}  w-full h-1 md:h-screen md:w-2.5 rounded-full md:rounded-t-full`}
-          ></div>
-        </div>
-        <div className="flex md:flex-row-reverse flex-col  w-full">
-          <div className="flex w-full items-center justify-start md:justify-center">
-            <div className="flex relative h-[7.5rem] w-[7.5rem] md:w-72 md:h-72">
-              <Image
-                src="/logo_Web3SOC color + white 1.png"
-                alt="Web3soc"
-                fill={true}
-                className="object-cover"
-              />
-            </div>
-          </div>
-          <div
-            className={`hidden md:flex transition-colors duration-500 ${className}  w-full h-1 md:h-screen md:w-2.5 rounded-full md:rounded-none`}
-          ></div>
-          <div className="flex w-full items-center justify-center">
-            <div className="flex relative flex-col md:w-2/3 gap-12">
-              <div className="flex flex-col">
-                <h2 className="text-2xl md:text-4xl font-molde-bold-italic ">
-                  POWERFUL WEB3 SOCIAL PLATFORM
-                </h2>
-                <p className="text-xl md:text-2xl text-gradient font-molde">
-                  WEB3SOC
-                </p>
+            <div
+              className={`md:flex hidden transition-colors duration-100 ${className}  w-full h-1 md:h-screen md:w-2.5 rounded-full md:rounded-t-full`}
+            ></div>
+            <div className="flex w-full items-center justify-center">
+              <div className="flex relative flex-col md:w-2/3 gap-12">
+                <div className="flex flex-col">
+                  <h2 className="text-2xl md:text-4xl font-molde-bold-italic">
+                    LIVE TO EARN
+                  </h2>
+                  <p className="text-xl md:text-2xl text-gradient font-molde">
+                    MONOKOILY
+                  </p>
+                </div>
+                <ul className="list-disc pl-4">
+                  <li>Experience Lifes Balance and Challenges</li>
+                  <li>
+                    Your Educational Tool for Self-Management and Financial
+                    Planning
+                  </li>
+                </ul>
+                <Button variant={"outline"} className="py-5">
+                  <Link href="/monokoily">Read more</Link>
+                </Button>
               </div>
-              <p className="">
-                Earn Social Income and Acquire More Blockchain Assets through
-                the Solana Ecosystem.
-              </p>
-              <Button variant={"outline"} className="py-5">
-                <Link href="/web3soc">Read more</Link>
-              </Button>
             </div>
+            <div
+              className={`flex md:hidden my-6 transition-colors duration-100 ${className}  w-full h-1 md:h-screen md:w-2.5 rounded-full md:rounded-t-full`}
+            ></div>
           </div>
-          <div
-            className={`md:hidden my-6 flex transition-colors duration-500 ${className}  w-full h-1 md:h-screen md:w-2.5 rounded-full md:rounded-none`}
-          ></div>
-        </div>
-        <div className="flex flex-col md:flex-row w-full">
-          <div className="flex w-full items-center justify-start md:justify-center">
-            <div className="flex relative w-[7.5rem] h-[10rem] md:w-72 md:h-[27.1875rem]">
-              <Image
-                src="/KOI Genesis 2.svg"
-                alt="Koi Genesis"
-                fill={true}
-                className="object-cover"
-              />
-            </div>
-          </div>
-          <div
-            className={`hidden md:flex transition-colors duration-500 ${className}  w-full h-1 md:h-screen md:w-2.5 `}
-          ></div>
-          <div className="flex w-full items-center justify-center">
-            <div className="flex relative flex-col md:w-2/3 gap-12">
-              <div className="flex flex-col gap-2">
-                <h2 className="text-2xl md:text-4xl font-molde-bold-italic ">
-                  INVEST SMART EARN BIG
-                </h2>
-                <p className="text-xl md:text-2xl text-gradient font-molde">
-                  KOI GENESIS NFT
-                </p>
+        </ScrollAnimationWrapper>
+        <ScrollAnimationWrapper>
+          <div className="flex md:flex-row-reverse flex-col  w-full">
+            <div className="flex w-full items-center justify-start md:justify-center">
+              <div className="flex relative h-[7.5rem] w-[7.5rem] md:w-72 md:h-72">
+                <Image
+                  src="/logo_Web3SOC color + white 1.png"
+                  alt="Web3soc"
+                  fill={true}
+                  className="object-cover"
+                />
               </div>
-              <Button variant={"outline"} className="py-5">
-                <Link href="/genesis-nft">Read more</Link>
-              </Button>
             </div>
-          </div>
-          <div
-            className={`md:hidden my-6 flex transition-colors duration-500 ${className} w-full h-1 md:h-screen md:w-2.5 `}
-          ></div>
-        </div>
-        <div className="flex flex-col md:flex-row-reverse w-full">
-          <div className="flex w-full items-center justify-start md:justify-center">
-            <div className="flex relative h-[7.5rem] w-[7.5rem] md:w-72 md:h-72">
-              <Image
-                src="/logo_KOI Token color + white 1.png"
-                alt="Koi Genesis"
-                fill={true}
-                className="object-cover"
-              />
-            </div>
-          </div>
-          <div
-            className={`md:flex hidden transition-colors duration-500 ${className}  w-full h-1 md:h-screen md:w-2.5 rounded-b-full`}
-          ></div>
-          <div className="flex w-full items-center justify-center">
-            <div className="flex relative flex-col md:w-2/3 gap-12">
-              <div className="flex flex-col gap-2">
-                <h2 className="text-2xl md:text-4xl font-molde-bold-italic ">
-                  EXPERIENCE REVOLUTIONARY FINANCE
-                </h2>
-                <p className="text-xl md:text-2xl text-gradient font-molde">
-                  TOKENOMIC ECOSYSTEM
+            <div
+              className={`hidden md:flex transition-colors duration-500 ${className}  w-full h-1 md:h-screen md:w-2.5 rounded-full md:rounded-none`}
+            ></div>
+            <div className="flex w-full items-center justify-center">
+              <div className="flex relative flex-col md:w-2/3 gap-12">
+                <div className="flex flex-col">
+                  <h2 className="text-2xl md:text-4xl font-molde-bold-italic ">
+                    POWERFUL WEB3 SOCIAL PLATFORM
+                  </h2>
+                  <p className="text-xl md:text-2xl text-gradient font-molde">
+                    WEB3SOC
+                  </p>
+                </div>
+                <p className="">
+                  Earn Social Income and Acquire More Blockchain Assets through
+                  the Solana Ecosystem.
                 </p>
+                <Button variant={"outline"} className="py-5">
+                  <Link href="/web3soc">Read more</Link>
+                </Button>
               </div>
-              <Button variant={"outline"} className="py-5">
-                <Link href="/tokenomic">Read more</Link>
-              </Button>
+            </div>
+            <div
+              className={`md:hidden my-6 flex transition-colors duration-500 ${className}  w-full h-1 md:h-screen md:w-2.5 rounded-full md:rounded-none`}
+            ></div>
+          </div>
+        </ScrollAnimationWrapper>
+        <ScrollAnimationWrapper>
+          <div className="flex flex-col md:flex-row w-full">
+            <div className="flex w-full items-center justify-start md:justify-center">
+              <div className="flex relative w-[7.5rem] h-[10rem] md:w-72 md:h-[27.1875rem]">
+                <Image
+                  src="/KOI Genesis 2.svg"
+                  alt="Koi Genesis"
+                  fill={true}
+                  className="object-cover"
+                />
+              </div>
+            </div>
+            <div
+              className={`hidden md:flex transition-colors duration-500 ${className}  w-full h-1 md:h-screen md:w-2.5 `}
+            ></div>
+            <div className="flex w-full items-center justify-center">
+              <div className="flex relative flex-col md:w-2/3 gap-12">
+                <div className="flex flex-col gap-2">
+                  <h2 className="text-2xl md:text-4xl font-molde-bold-italic ">
+                    INVEST SMART EARN BIG
+                  </h2>
+                  <p className="text-xl md:text-2xl text-gradient font-molde">
+                    KOI GENESIS NFT
+                  </p>
+                </div>
+                <Button variant={"outline"} className="py-5">
+                  <Link href="/genesis-nft">Read more</Link>
+                </Button>
+              </div>
+            </div>
+            <div
+              className={`md:hidden my-6 flex transition-colors duration-500 ${className} w-full h-1 md:h-screen md:w-2.5 `}
+            ></div>
+          </div>
+        </ScrollAnimationWrapper>
+        <ScrollAnimationWrapper>
+          <div className="flex flex-col md:flex-row-reverse w-full">
+            <div className="flex w-full items-center justify-start md:justify-center">
+              <div className="flex relative h-[7.5rem] w-[7.5rem] md:w-72 md:h-72">
+                <Image
+                  src="/logo_KOI Token color + white 1.png"
+                  alt="Koi Genesis"
+                  fill={true}
+                  className="object-cover"
+                />
+              </div>
+            </div>
+            <div
+              className={`md:flex hidden transition-colors duration-500 ${className}  w-full h-1 md:h-screen md:w-2.5 rounded-b-full`}
+            ></div>
+            <div className="flex w-full items-center justify-center">
+              <div className="flex relative flex-col md:w-2/3 gap-12">
+                <div className="flex flex-col gap-2">
+                  <h2 className="text-2xl md:text-4xl font-molde-bold-italic ">
+                    EXPERIENCE REVOLUTIONARY FINANCE
+                  </h2>
+                  <p className="text-xl md:text-2xl text-gradient font-molde">
+                    TOKENOMIC ECOSYSTEM
+                  </p>
+                </div>
+                <Button variant={"outline"} className="py-5">
+                  <Link href="/tokenomic">Read more</Link>
+                </Button>
+              </div>
             </div>
           </div>
-        </div>
+        </ScrollAnimationWrapper>
         {/* <div className="hidden md:flex absolute bottom-0 -right-[60%]">
           <Blob />
         </div> */}
