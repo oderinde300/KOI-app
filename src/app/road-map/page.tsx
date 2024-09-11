@@ -1,17 +1,21 @@
 import Image from "next/image";
 import React from "react";
-import { Button } from "../../components/ui/button";
-import { Input } from "../../components/ui/input";
-import ActivityCard from "../../components/ActivityCard";
 import { ChevronsRight } from "lucide-react";
 import Blob from "@/components/Blob";
+import Link from "next/link";
+import dynamic from "next/dynamic";
+
+// Import the component dynamically with server-side rendering disabled
+const RoadMapScroll = dynamic(() => import("@/components/RoadMapScroll"), {
+  ssr: false,
+});
 
 const RoadMap = () => {
   return (
     <div className="min-h-screen relative bg-black text-white">
-      <div className="flex justify-center pb-24 items-end text-white w-full h-[60vh] relative after:content-[''] after:absolute after:w-full after:h-[40rem] after:bottom-0 after:bg-gradient-to-t after:from-black after:to-transparent">
+      <div className="flex justify-center pb-24 items-end text-white w-full h-[65vh] relative after:content-[''] after:absolute after:w-full after:h-[25rem] after:bottom-0 after:bg-gradient-to-t after:from-black after:to-transparent">
         <Image
-          src="/image 83.png"
+          src="/image 83.svg"
           alt="Space"
           fill={true}
           className="object-cover"
@@ -20,7 +24,9 @@ const RoadMap = () => {
         <h2 className="font-bold text-3xl z-10">ROAD MAP</h2>
       </div>
 
-      <div className="flex flex-col w-full z-20 relative justify-start gap-24 px-6 md:px-48 pt-24 min-h-screen items-center">
+      <RoadMapScroll />
+
+      <div className="flex flex-col w-full z-20 relative justify-start gap-24 px-6 md:px-48 pt-24 md:pt-0 min-h-screen items-center">
         <div className="hidden md:flex absolute z-10 top-[15%] -right-[30%]">
           <Blob className="h-[40rem] w-[40rem] " />
         </div>
@@ -30,7 +36,10 @@ const RoadMap = () => {
         <div className="hidden md:flex absolute z-10 bottom-[20%] -right-[30%]">
           <Blob className="h-[40rem] w-[40rem] " />
         </div>
-        <div className="flex w-full  md:min-h-[80vh] md:justify-start ">
+        <div
+          id="2020-oct"
+          className="flex w-full md:min-h-[80vh] pt-24 md:justify-start "
+        >
           <div className="flex  flex-col gap-6">
             <h2 className="font-bold w-fit text-3xl text-gradient">2022 OCT</h2>
             <div className="flex flex-col gap-3">
@@ -46,6 +55,10 @@ const RoadMap = () => {
                 <div className="flex gap-4 items-center">
                   <ChevronsRight />
                   <p className="text-white/80">Marketing Department</p>
+                </div>
+                <div className="flex gap-4 items-center">
+                  <ChevronsRight />
+                  <p className="text-white/80">Creative Department</p>
                 </div>
                 <div className="flex gap-4 items-center">
                   <ChevronsRight />
@@ -74,7 +87,10 @@ const RoadMap = () => {
           </div>
         </div>
 
-        <div className="flex w-full md:min-h-[80vh] md:justify-end ">
+        <div
+          id="2022-dec"
+          className="flex w-full md:min-h-[80vh] pt-48 md:justify-end "
+        >
           <div className="flex flex-col gap-6">
             <h2 className="font-bold w-fit text-3xl text-gradient">2022 DEC</h2>
             <div className="flex flex-col gap-3">
@@ -132,7 +148,10 @@ const RoadMap = () => {
           </div>
         </div>
 
-        <div className="flex w-full md:min-h-[80vh] md:justify-start ">
+        <div
+          id="2023-q1"
+          className="flex w-full md:min-h-[80vh] pt-48 md:justify-start "
+        >
           <div className="flex flex-col gap-6">
             <h2 className="font-bold w-fit text-3xl text-gradient">2023 Q1</h2>
             <div className="flex flex-col gap-3">
@@ -223,7 +242,10 @@ const RoadMap = () => {
           </div>
         </div>
 
-        <div className="flex w-full md:min-h-[80vh] md:justify-end ">
+        <div
+          id="2023-q2"
+          className="flex w-full md:min-h-[80vh] pt-48 md:justify-end "
+        >
           <div className="flex flex-col gap-6">
             <h2 className="font-bold w-fit text-3xl text-gradient">2023 Q2</h2>
             <div className="flex flex-col gap-3">
@@ -307,7 +329,14 @@ const RoadMap = () => {
                 </div>
                 <div className="flex flex-col gap-2 pl-16">
                   <div className="flex gap-4 items-center">
-                    <p className="text-white/80">Establish VTuber Department</p>
+                    <p className="text-white/80">
+                      Establish VTuber Department (ChatGPT + Microsoft{" "}
+                    </p>
+                  </div>
+                  <div className="flex gap-4 items-center">
+                    <p className="text-white/80">
+                      edge voice reader+3D model+Al filmmaker)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -319,7 +348,10 @@ const RoadMap = () => {
           </div>
         </div>
 
-        <div className="flex w-full md:min-h-[80vh] md:justify-start ">
+        <div
+          id="2023-q3"
+          className="flex w-full md:min-h-[80vh] pt-48 md:justify-start "
+        >
           <div className="flex flex-col gap-6">
             <h2 className="font-bold w-fit text-3xl text-gradient">2023 Q3</h2>
             <div className="flex flex-col gap-3">
@@ -348,11 +380,6 @@ const RoadMap = () => {
                       FB / Discord / TikTok / 小红书 /Insta
                     </p>
                   </div>
-                  <div className="flex gap-4 items-center">
-                    <p className="text-white/80">
-                      1000 Shorts Preparation Start
-                    </p>
-                  </div>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -363,7 +390,10 @@ const RoadMap = () => {
           </div>
         </div>
 
-        <div className="flex w-full md:min-h-[80vh] md:justify-end ">
+        <div
+          id="2023-q4"
+          className="flex w-full md:min-h-[80vh] pt-48 md:justify-end "
+        >
           <div className="flex flex-col gap-6">
             <h2 className="font-bold w-fit text-3xl text-gradient">2023 Q4</h2>
             <div className="flex flex-col gap-3">
@@ -402,7 +432,10 @@ const RoadMap = () => {
           </div>
         </div>
 
-        <div className="flex w-full md:min-h-[80vh] md:justify-start ">
+        <div
+          id="2024-q1-q4"
+          className="flex w-full md:min-h-[80vh] pt-48 md:justify-start "
+        >
           <div className="flex flex-col gap-6">
             <h2 className="font-bold w-fit text-3xl text-gradient">
               2024 Q1~Q4
@@ -474,7 +507,10 @@ const RoadMap = () => {
           </div>
         </div>
 
-        <div className="flex w-full md:min-h-[80vh] md:justify-end ">
+        <div
+          id="2025-q1-q4"
+          className="flex w-full md:min-h-[80vh] pt-48 md:justify-end "
+        >
           <div className="flex flex-col gap-6">
             <h2 className="font-bold w-fit text-3xl text-gradient">
               2025 Q1~Q4
@@ -545,7 +581,10 @@ const RoadMap = () => {
           </div>
         </div>
 
-        <div className="flex w-full md:min-h-[80vh] md:justify-start ">
+        <div
+          id="2026-q1-q4"
+          className="flex w-full md:min-h-[80vh] pt-48 md:justify-start "
+        >
           <div className="flex flex-col gap-6">
             <h2 className="font-bold w-fit text-3xl text-gradient">
               2026 Q1~Q4
@@ -607,7 +646,10 @@ const RoadMap = () => {
           </div>
         </div>
 
-        <div className="flex w-full md:min-h-[80vh] md:justify-end ">
+        <div
+          id="2027-q1-q4"
+          className="flex w-full md:min-h-[80vh] pt-48 md:justify-end "
+        >
           <div className="flex flex-col gap-6">
             <h2 className="font-bold w-fit text-3xl text-gradient">
               2027 Q1~Q4
@@ -634,7 +676,10 @@ const RoadMap = () => {
           </div>
         </div>
 
-        <div className="flex w-full md:min-h-[80vh] md:justify-start ">
+        <div
+          id="2028"
+          className="flex w-full md:min-h-[80vh] pt-48 md:justify-start "
+        >
           <div className="flex flex-col gap-6">
             <h2 className="font-bold w-fit text-3xl text-gradient">2028</h2>
             <div className="flex flex-col gap-3">

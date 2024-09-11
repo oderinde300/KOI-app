@@ -1,24 +1,38 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 import { Button } from "../../components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Slider from "../../components/Slider";
+import { slides } from "@/lib/mock";
 
 const Web3SOC = () => {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
   return (
     <div className="min-h-screen relative bg-black text-white">
       <div className="flex justify-center items-center text-white w-full h-full min-h-screen relative after:content-[''] after:absolute after:w-full after:h-24 after:bottom-0 after:bg-gradient-to-t after:from-black after:to-transparent">
-        <Image
-          src="/touch screen 1.png"
+        {/* <Image
+          src="/touch screen 1.svg"
           alt="Space"
           fill={true}
           className="object-cover"
-        />
+        /> */}
+        <video
+          ref={videoRef}
+          autoPlay
+          muted
+          loop
+          className="absolute top-0 left-0 w-full h-full object-cover"
+        >
+          <source src="/videos/touch screen.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="flex justify-center items-center gap-12  px-6 flex-col md:flex-row z-10">
           <div className="flex relative flex-col md:w-2/3 gap-12">
             <div className="flex flex-col gap-4">
               <h2 className="font-molde-bold-italic text-2xl md:text-4xl md:w-1/2 ">
-                POWERFUL WEB3M SOCIAL PLATFORM
+                POWERFUL WEB3 SOCIAL PLATFORM
               </h2>
               <p className="text-xl font-molde md:text-2xl text-gradient w-fit">
                 WEB3SOC
@@ -30,18 +44,20 @@ const Web3SOC = () => {
               ecosystem, while viewing problem-solving as a key driver for
               business innovation and growth.
             </p>
-            <Button variant={"outline"} className="py-5">
-              Comming soon
-            </Button>
+            <div className="pointer-events-none">
+              <Button variant={"outline"} className="py-5 mouse-event-none">
+                Coming soon
+              </Button>
+            </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center gap-6 px-6 md:px-24">
+      <div className="flex flex-col items-center gap-6 px-6 md:px-36">
         <h2 className="font-bold md:text-3xl text-gradient">
-          Bridging Web 3.0 Social Gap
+          Bridging Web 3.0&#39;s Social Gap
         </h2>
         <div className="flex flex-col md:flex-row gap-6">
-          <div className="flex rounded-xl border flex-col gap-4 p-4 border-white/20 justify-between">
+          <div className="flex rounded-xl border flex-col gap-4 py-6 px-8 border-white/20 justify-between">
             <h2 className="text-xl font-bold">Web 3.0 Limitations</h2>
             <p className="text-white/60">
               Web 3.0 focuses on financial assets, overlooking trust-based
@@ -49,7 +65,7 @@ const Web3SOC = () => {
               loans&quot; and &quot;personal branding&quot;.
             </p>
           </div>
-          <div className="flex rounded-xl border flex-col gap-4 p-4 border-white/20 justify-between">
+          <div className="flex rounded-xl border flex-col gap-4 py-6 px-8 border-white/20 justify-between">
             <h2 className="text-xl font-bold">
               Introduction of Soulbound Tokens (SBTs)
             </h2>
@@ -59,7 +75,7 @@ const Web3SOC = () => {
               3.0&#39;s scope to include social interactions.
             </p>
           </div>
-          <div className="flex rounded-xl border flex-col gap-4 p-4 border-white/20 justify-between">
+          <div className="flex rounded-xl border flex-col gap-4 py-6 px-8 border-white/20 justify-between">
             <h2 className="text-xl font-bold">Advantages of SBTs</h2>
             <p className="text-white/60">
               SBTs establish trust in economic activities and facilitate digital
@@ -70,7 +86,11 @@ const Web3SOC = () => {
         </div>
       </div>
       <div className="flex w-full px-6 py-12 md:px-0 justify-center pt-24 items-center">
-        <Slider />
+        <Slider
+          className=" md:w-[55%] bg-[#121515] p-4 rounded-3xl border-2 border-white/40`"
+          slides={slides}
+          imageStyle="h-[14rem] md:h-[32rem] bg-white/60"
+        />
       </div>
     </div>
   );

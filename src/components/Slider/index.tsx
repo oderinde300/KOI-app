@@ -1,11 +1,27 @@
 "use client";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { slides } from "../../lib/mock";
 
-const Slider = () => {
+interface Props {
+  slides: string[];
+  className?: string;
+  imageStyle?: string;
+}
+
+const Slider = ({ slides, className, imageStyle }: Props) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Function to automatically go to the next slide
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    }, 3000); // Change slide every 3 seconds
+
+    // Cleanup the interval when the component unmounts
+    return () => clearInterval(interval);
+  }, []);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
@@ -18,14 +34,16 @@ const Slider = () => {
   };
 
   return (
-    <div className="flex relative w-full md:w-[55%] bg-[#121515] p-4 rounded-3xl border-2 border-white/40 ">
+    <div className={`${className} flex relative w-full`}>
       <div
         onClick={prevSlide}
         className="flex cursor-pointer left-4 absolute top-[50%] -translate-y-[50%] bg-black/40 shadow-lg p-2 z-20 rounded-full"
       >
         <ChevronLeft color="white" />
       </div>
-      <div className="flex w-full h-[14rem] md:h-[32rem] select-none pointer-events-none relative bg-white/60 ">
+      <div
+        className={`${imageStyle} flex w-full select-none pointer-events-none relative`}
+      >
         <Image
           src={slides[currentIndex]}
           alt="Space"

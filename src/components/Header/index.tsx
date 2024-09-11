@@ -10,15 +10,15 @@ const Header = () => {
   const [isMenu, setMenu] = useState(false);
 
   return (
-    <div className="flex  bg-black py-2 w-full px-4 md:px-24 z-40 fixed justify-between border-b border-b-white/30 md:border-none items-center">
-      <div className="flex text-white w-2/5">
+    <div className="flex  bg-black py-2 w-full px-4 md:px-40 z-40 fixed justify-between border-b border-b-white/30 md:border-none items-center">
+      <div className="flex text-white w-1/2">
         <Link href="/">
-          <div className="flex w-32 h-12 md:w-48 md:h-16 relative">
+          <div className="flex w-32 h-12 md:w-56 md:h-20 relative">
             <Image
-              src="/logo_KOI color+white (H) 1.png"
+              src="/logo_KOI color+white (H) 1.svg"
               alt="Koi Logo"
               fill={true}
-              className="object-fit"
+              className="object-cover"
             />
           </div>
         </Link>
@@ -33,10 +33,10 @@ const Header = () => {
               <Link href="/">
                 <div className="flex w-32 h-12 md:w-48 md:h-16 relative">
                   <Image
-                    src="/logo_KOI color+white (H) 1.png"
+                    src="/logo_KOI color+white (H) 1.svg"
                     alt="Koi Logo"
                     fill={true}
-                    className="object-fit"
+                    className="object-cover"
                   />
                 </div>
               </Link>

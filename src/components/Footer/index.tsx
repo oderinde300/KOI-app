@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="flex w-full flex-col gap-6">
           <Link href="/">
             <Image
-              src="/logo_KOI color+white (H) 1.png"
+              src="/logo_KOI color+white (H) 1.svg"
               alt="Koi Logo"
               className="dark:invert"
               width={200}

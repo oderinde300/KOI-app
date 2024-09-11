@@ -4,10 +4,10 @@ import { Button } from "../../components/ui/button";
 
 const Monokoily = () => {
   return (
-    <div className="min-h-screen relative bg-black">
-      <div className="flex justify-center items-center text-white w-full h-full min-h-screen relative after:content-[''] after:absolute after:w-full after:h-72 after:bottom-0 after:bg-gradient-to-t after:from-black after:to-transparent">
+    <div className="min-h-screen relative  bg-black">
+      <div className="flex justify-center pt-48 items-center text-white w-full h-full min-h-screen relative after:content-[''] after:absolute after:w-full after:h-72 after:bottom-0 after:bg-gradient-to-t after:from-black after:to-transparent">
         <Image
-          src="/AdobeStock_828629381 1.png"
+          src="/AdobeStock_828629381 1.svg"
           alt="Space"
           fill={true}
           className="object-cover"
@@ -42,9 +42,10 @@ const Monokoily = () => {
           </div>
           <div className="flex relative w-52 h-[25rem] md:w-64 md:h-[31.5rem]">
             <Image
-              src="/monokioly phone 2.png"
+              src="/monokioly phone 2.svg"
               alt="Monokoily"
               fill={true}
+              quality={100}
               className="object-cover"
             />
           </div>

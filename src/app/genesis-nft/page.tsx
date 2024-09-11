@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "../../components/ui/button";
+import Link from "next/link";
 
 const GenesisNFT = () => {
   return (
@@ -16,14 +17,15 @@ const GenesisNFT = () => {
                 KOI GENESIS NFT
               </p>
             </div>
-            <p className="text-sm md:text-base md:w-2/3">
-              A dynamic platform for the Web3 economy, enabling users to earn
-              social income and grow their blockchain assets via the Solana
-              ecosystem, while viewing problem-solving as a key driver for
-              business innovation and growth.
+            <p className="text-sm md:text-base text-white/60 md:w-2/3">
+              Join the KOI community and benefit from our collaboration with
+              SOLANA TAB, utilizing Phantom for seamless NFT purchases and
+              receiving dividends that grow with your investment.
             </p>
             <div className="flex gap-4">
-              <Button className="py-5 w-32 md:w-48">Get Started</Button>
+              <Button className="py-5 w-32 md:w-48">
+                <Link href="#get-started">Get Started</Link>
+              </Button>
               <Button variant={"outline"} className="py-5 w-32 md:w-48">
                 Whitepaper
               </Button>
@@ -31,7 +33,7 @@ const GenesisNFT = () => {
           </div>
           <div className="flex relative w-52 h-[25rem] md:w-64 md:h-[31.5rem]">
             <Image
-              src="/KOI Genesis 1(1).png"
+              src="/KOI Genesis 2.svg"
               alt="Monokoily"
               fill={true}
               className="object-cover"
@@ -41,20 +43,23 @@ const GenesisNFT = () => {
       </div>
       <div className="flex flex-col justify-start items-center min-h-[400vh] text-white relative after:content-[''] after:absolute after:w-full after:h-72 after:bottom-0 after:bg-gradient-to-t after:from-black after:to-transparent before:content-[''] before:absolute before:w-full before:h-72 before:top-0 before:bg-gradient-to-b before:from-black before:to-transparent before:z-10">
         <Image
-          src="/image 85.png"
+          src="/image 85.svg"
           alt="Space"
           fill={true}
           className="object-cover"
         />
-        <div className="flex z-20 flex-col min-h-screen py-24 items-center gap-6 px-6 md:px-24">
-          <h2 className="font-bold md:text-3xl text-gradient">
+        <div
+          id="get-started"
+          className="flex z-20 flex-col min-h-screen py-24 items-center gap-6 px-6 md:px-24"
+        >
+          <h2 className="font-bold md:text-3xl pt-6 text-gradient">
             What is the KOI NFT Project?
           </h2>
           <div className="flex flex-col md:flex-row gap-6">
             <div className="flex rounded-xl flex-col gap-4 p-4 justify-between w-full items-center ">
               <div className="relative">
                 <Image
-                  src="/1 201.png"
+                  src="/1 201.svg"
                   alt="Space"
                   width={150}
                   height={150}
@@ -62,7 +67,7 @@ const GenesisNFT = () => {
                 />
               </div>
               <div className="flex flex-col gap-2 h-full">
-                <h2 className="text-xl font-bold">Web 3.0 Limitations</h2>
+                <h2 className="text-xl font-bold">Foundation & Partnerships</h2>
                 <ul className="list-disc pl-4 text-white/60 ">
                   <li>
                     Built on SOLANA Blockchain: Ensures robustness and speed.
@@ -78,7 +83,7 @@ const GenesisNFT = () => {
             <div className="flex rounded-xl flex-col gap-4 p-4 justify-between w-full items-center">
               <div className="relative">
                 <Image
-                  src="/2 29.png"
+                  src="/2 29.svg"
                   alt="Space"
                   width={150}
                   height={150}
@@ -102,7 +107,7 @@ const GenesisNFT = () => {
             <div className="flex rounded-xl flex-col gap-4 p-4 justify-between w-full items-center">
               <div className="flex relative">
                 <Image
-                  src="/3 1.png"
+                  src="/3 1.svg"
                   alt="Space"
                   width={150}
                   height={150}
@@ -142,7 +147,7 @@ const GenesisNFT = () => {
         <div className="flex flex-col md:flex-row z-20 md:mb-60 p-6 md:px-64">
           <div className="flex relative w-full">
             <Image
-              src="/debit-06 1.png"
+              src="/debit-06 1.svg"
               alt="Space"
               width={564}
               height={300}
@@ -182,14 +187,16 @@ const GenesisNFT = () => {
             </div>
           </div>
         </div>
-        <div className="flex w-full z-20 justify-center px-6 pt-24 h-screen items-center">
-          <div className="flex flex-col border p-8 max-w-lg bg-[#010024] gap-5 border-white/60 rounded-tr-[5rem] rounded-bl-[5rem]">
+        <div className="flex w-full z-20 justify-center px-8 pt-24 h-screen items-center">
+          <div className="flex flex-col border p-8 max-w-lg bg-[#010024] gap-6 border-white/60 rounded-tr-[5rem] rounded-bl-[5rem]">
             <h2 className="font-bold md:text-3xl text-gradient">
               Join the KOI NFT Revolution
             </h2>
             <div className="flex flex-col gap-2 h-full">
-              <h2 className="text-xl font-bold">Web 3.0 Limitations</h2>
-              <ul className="list-disc pl-4 text-white/60 ">
+              <h2 className="text-lg font-bold">
+                Step-by-Step Guide to Purchasing KOI NFTs
+              </h2>
+              <ul className="list-disc pl-6 text-white/60 ">
                 <li>Purchase: Buy your KOI NFT on the designated platform.</li>
                 <li>
                   Verification: Email us at invest@koinflation.com with a
@@ -209,7 +216,17 @@ const GenesisNFT = () => {
                 </li>
               </ul>
             </div>
-            <Button>Get One Now</Button>
+            <div className="flex w-full justify-center">
+              <Button>
+                <a
+                  href="https://dapp.koinflation.io/home"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Get One Now
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </div>

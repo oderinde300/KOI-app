@@ -16,6 +16,19 @@ export default function Home() {
   const isInView = useInView(ref); // Detect when the element enters the viewport
   const [className, setClassName] = useState("text-black"); // Default class
 
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (videoRef.current?.readyState === 4) {
+        videoRef.current.play();
+        clearInterval(interval);
+      }
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   // Use the isInView hook to toggle classes
   useEffect(() => {
     if (isInView) {
@@ -25,40 +38,52 @@ export default function Home() {
     }
   }, [isInView]);
   return (
-    <main className="flex min-h-screen relative text-white flex-col items-center justify-between md:px-12 lg:px-24 bg-black overflow-x-hidden">
-      {/* <div className="flex"></div> */}
-      {/* <Header /> */}
-      <div className="flex flex-col w-full items-center justify-center pt-48 md:pt-56 gap-12 pointer-events-none">
-        <div className="flex flex-col justify-center gap-6 items-center relative md:w-2/3">
-          <h2 className="font-molde-bold-italic text-center text-4xl md:text-6xl">
-            BLOCKCHAIN REVOLUTION
-          </h2>
-          <h3 className="font-molde text-gradient text-center text-xl md:text-4xl">
-            REDEFINING INFLATION
-          </h3>
-          <p className="text-center md:w-2/3 font-light">
-            Pioneering a New Era of Profit Distribution in Social Networks for
-            Greater Transparency and Fairness
-          </p>
+    <main className="flex min-h-screen relative text-white flex-col items-center justify-between md:px-6 lg:px-12 bg-black overflow-x-hidden">
+      <div className="flex min-h-[120vh] flex-col relative w-full">
+        <video
+          ref={videoRef}
+          autoPlay
+          muted
+          loop
+          className="absolute top-0 left-0 w-full h-full object-cover"
+        >
+          <source src="/videos/01_hero banner video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className="flex flex-col z-10 w-full items-center justify-center pt-48 md:pt-72 gap-12">
+          <div className="flex flex-col justify-center gap-6 items-center relative md:w-2/3">
+            <h2 className="font-molde-bold-italic tracking-widest text-center text-4xl md:text-6xl">
+              BLOCKCHAIN REVOLUTION
+            </h2>
+            <h3 className="font-molde text-gradient text-center text-xl md:text-4xl">
+              REDEFINING INFLATION
+            </h3>
+            <p className="text-center text-white/80 font-light md:w-2/3">
+              Pioneering a New Era of Profit Distribution in Social Networks for
+              Greater Transparency and Fairness
+            </p>
+          </div>
+          <Button className="text-white w-56 py-6">
+            <Link href={"#welcome"}>Explore More</Link>
+          </Button>
         </div>
-        <Button className="text-white py-6">Explore More</Button>
-      </div>
-      <div className="flex py-24 gap-12 md:gap-28">
-        <div className="flex flex-col gap-2 text-white items-center">
-          <h2 className="text-xl md:text-2xl font-bold ">1200+</h2>
-          <p className="text-xs md:text-base">Monokolly Users</p>
-          <div className="flex w-28 md:w-44 h-1 mt-3 bg-button-gradient"></div>
-        </div>
-        <div className="flex flex-col gap-2 text-white items-center">
-          <h2 className="text-xl md:text-2xl font-bold ">1000+</h2>
-          <p className="text-xs md:text-base">Web3SOC Users</p>
-          <div className="flex w-28 md:w-44 h-1 mt-3 bg-button-gradient"></div>
+        <div className="flex mx-auto py-24 z-10 gap-12 md:gap-28">
+          <div className="flex flex-col gap-2 text-white items-center">
+            <h2 className="text-xl md:text-2xl font-bold ">1200+</h2>
+            <p className="text-xs md:text-base">Monokolly Users</p>
+            <div className="flex w-28 md:w-44 h-1 mt-3 bg-button-gradient"></div>
+          </div>
+          <div className="flex flex-col gap-2 text-white items-center">
+            <h2 className="text-xl md:text-2xl font-bold ">1000+</h2>
+            <p className="text-xs md:text-base">Web3SOC Users</p>
+            <div className="flex w-28 md:w-44 h-1 mt-3 bg-button-gradient"></div>
+          </div>
         </div>
       </div>
 
       {/* Our Partners */}
-      <div className="flex flex-col w-full my-4 mb-24 items-center gap-6">
-        <h2 className="font-bold text-xl md:text-2xl text-center text-white">
+      <div className="flex flex-col w-full my-4 mb-24 items-center gap-6 md:gap-16">
+        <h2 className="font-bold text-xl md:text-3xl text-center text-white">
           OUR PARTNERS
         </h2>
         <div className="flex w-[95%] md:w-[90%] flex-wrap relative">
@@ -79,36 +104,36 @@ export default function Home() {
       </div>
 
       {/* Miss Koi */}
-      <div className="flex flex-col mt-32 md:mt-48 min-h-[40vh] md:min-h-[80vh] justify-center items-start relative  w-full after:content-[''] after:absolute after:w-full after:h-72 after:bottom-0 after:bg-gradient-to-t after:from-black after:to-transparent">
+      <div className="flex flex-col mt-32 md:mt-48  min-h-[40vh] md:min-h-[100vh] justify-center items-start relative  w-full after:content-[''] after:absolute after:w-full after:h-6 md:after:h-72 after:bottom-0 after:bg-gradient-to-t after:z-50 after:from-black after:to-transparent">
         <Image
-          src="/space img 1.png"
+          src="/space img 1.svg"
           alt="Space"
           fill={true}
-          className="object-fit"
+          className="object-cover"
         />
 
-        <div className="flex w-full items-center flex-col relative z-10 p-4">
-          <h1 className="text-white font-molde-bold md:ml-56 text-3xl md:text-5xl font-bold md:w-1/3 text-center">
+        <div className="flex w-full items-center flex-col relative z-10">
+          <h1 className="text-white md:-mt-16 font-molde-bold md:ml-56 text-3xl md:text-5xl font-bold w-1/2 md:w-1/4 text-center">
             MEET MISS KOI
           </h1>
-          <div className="flex w-full md:gap-24">
-            <div className="flex flex-col w-full gap-3">
-              <div className="flex relative w-full md:-ml-8 justify-start md:justify-center">
+          <div className="flex w-full md:items-center md:px-48">
+            <div className="flex px-4 md:-mt-16 md:px-32 flex-col w-full gap-3 md:gap-12">
+              <div className="md:absolute top-[1%] left-[18%] flex ml-4 h-[4.5rem] w-[4.375rem] md:h-40 md:w-36 relative">
                 <Image
-                  src="/meteorite2 1.png"
+                  src="/meteorite2 1.svg"
                   alt="meteor"
-                  height={173}
-                  width={170}
-                  className="md:scale-100 scale-[0.6]"
+                  fill={true}
+                  quality={100}
+                  className="object-cover"
                 />
               </div>
-              <div className="flex w-full justify-start md:-ml-48 md:justify-end">
-                <h2 className="text-2xl md:text-4xl text-center w-1/3 text-white">
+              <div className="flex w-full justify-start">
+                <h2 className="text-2xl md:text-4xl font-light text-center w-1/2 text-white">
                   BLOCKCHAIN VIRTUAL IP
                 </h2>
               </div>
               <div className="flex w-full justify-start md:justify-end">
-                <div className="flex bg-black text-sm md:text-base md:font-normal font-light text-white p-4 rounded-lg border w-[70%] md:w-80 border-white ">
+                <div className="flex bg-black text-sm md:text-base md:font-normal font-light text-white/60 p-4 py-6 rounded-2xl border w-[70%] md:w-80 border-white/60 ">
                   <p>
                     I am Ms. KOI your virtual mentor from the blockchain world.
                     KOI stands for KO Inflation, dedicated to actively fighting
@@ -117,27 +142,24 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex absolute top-[50%] -translate-y-[30%] right-0 md:relative md:right-auto md: md:top-auto">
-              <div className="flex relative min-w-[300px]">
-                <Image
-                  src="/MsKOI Space_00000 1.png"
-                  alt="space"
-                  layout="responsive"
-                  height={568}
-                  width={477}
-                  className=""
-                />
-              </div>
+            <div className="flex absolute right-0 md:mt-16 top-[20%] md:relative h-56 w-48 md:h-[35rem] md:w-[29.8125rem]">
+              <Image
+                src="/MsKOI Space_00000 1.svg"
+                alt="space"
+                fill={true}
+                quality={100}
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
       </div>
 
-      <div className="flex z-10 flex-col px-4 md:px-24 lg:px-48 mt-24 md:mt-0 gap-6">
-        <h2 className="font-bold text-2xl md:text-4xl w-full text-left ">
+      <div className="flex z-10 flex-col px-4 md:px-24 lg:px-48 pb-8 mt-24 md:mt-0 gap-6 md:gap-12">
+        <h2 className="font-bold text-2xl md:text-3xl w-full text-left ">
           OUR GOALS
         </h2>
-        <div className="flex flex-col md:flex-row gap-6 md:gap-24">
+        <div className="flex flex-col md:flex-row text-white/60 gap-6 md:gap-24">
           <div className="flex relative justify-center items-center p-3 md:pl-6 before:content-[''] md:bg-black before:h-full before:absolute before:w-1 before:bg-custom-gradient before:left-0">
             Empower users to generate personal value and reach a wider audience.
           </div>
@@ -154,50 +176,56 @@ export default function Home() {
 
       <div className="flex flex-col my-24 min-h-[300vh] relative w-full after:content-[''] after:absolute after:w-full after:h-72 after:bottom-0 after:bg-gradient-to-t after:from-black after:to-transparent">
         <Image
-          src="/pawel-czerwinski-ZkzobNDayXo-unsplash (1) 1.png"
+          src="/pawel-czerwinski-ZkzobNDayXo-unsplash (1) 1.svg"
           alt="Space"
           fill={true}
           className="object-cover"
         />
 
         {/* Welcome to koi mobilize */}
-        <div className="flex relative md:py-48 gap-12 px-6 z-10 flex-col items-center overflow-hidden">
+        <div
+          id="welcome"
+          className="flex relative md:py-48 gap-12 px-6 z-10 flex-col items-center overflow-hidden"
+        >
           <h1 className="text-white text-2xl md:text-3xl mt-20 md:mt-0 font-bold w-full text-left md:text-center">
             WELCOME TO KOI MOBILIZE
           </h1>
           <div className="grid md:w-[80%] grid-cols-1 md:grid-cols-3  gap-4">
-            <div className="grid col-span-2 grid-cols-2 gap-2">
+            <div className="grid col-span-2 grid-cols-2 gap-4">
               <div className="flex flex-col w-full gap-4 h-full">
                 <div className="flex w-full h-full relative">
                   <Image
-                    src="/product-02 1.png"
+                    src="/product-02 1.svg"
                     alt="Space"
                     fill={true}
-                    className="object-fit"
+                    quality={100}
+                    className="object-cover"
                   />
                 </div>
                 <div className="flex w-full h-full relative">
                   <Image
-                    src="/product-03 1.png"
+                    src="/product-03 1.svg"
                     alt="Space"
                     fill={true}
-                    className="object-fit"
+                    quality={100}
+                    className="object-cover"
                   />
                 </div>
               </div>
-              <div className="flex w-full h-[17rem] md:h-full relative">
+              <div className="flex w-full h-[18rem] md:h-full relative">
                 <Image
-                  src="/product-04 1.png"
+                  src="/product-04 1.svg"
                   alt="Space"
                   fill={true}
-                  className="object-fit"
+                  quality={100}
+                  className="object-cover"
                 />
               </div>
             </div>
             <div className="flex col-span-1 w-80 md:w-full h-full py-8 md:px-8 gap-7 flex-col">
               <div className="flex flex-col gap-4">
                 <h3 className="text-xl font-bold">Transitioning to Web 3.0</h3>
-                <p className="">
+                <p className=" text-white/60">
                   KOI MOBILIZE guides you from Web 2.0 to Web 3.0, making
                   blockchain accessible and integral to daily life.
                 </p>
@@ -206,7 +234,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold">
                   Empowering Your Blockchain Future
                 </h3>
-                <p className="">
+                <p className="text-white/60">
                   With KOI Web3SOC and MONOKOILY, we build a vibrant network
                   through social activities and the sharing economy. Shape your
                   future in the blockchain world with us.
@@ -241,10 +269,10 @@ export default function Home() {
           <div className="flex w-full items-center justify-start md:justify-center">
             <div className="flex relative h-[7.5rem] w-[7.5rem] md:w-72 md:h-72">
               <Image
-                src="/logo_MONOKOILY color + white 1(1).png"
+                src="/logo_MONOKOILY color + white 1.svg"
                 alt="Monokoily"
                 fill={true}
-                className="object-fit"
+                className="object-cover"
               />
             </div>
           </div>
@@ -269,7 +297,7 @@ export default function Home() {
                 </li>
               </ul>
               <Button variant={"outline"} className="py-5">
-                <Link href="/monokoily">Learn more</Link>
+                <Link href="/monokoily">Read more</Link>
               </Button>
             </div>
           </div>
@@ -281,10 +309,10 @@ export default function Home() {
           <div className="flex w-full items-center justify-start md:justify-center">
             <div className="flex relative h-[7.5rem] w-[7.5rem] md:w-72 md:h-72">
               <Image
-                src="/logo_Web3SOC color + white 1(1).png"
+                src="/logo_Web3SOC color + white 1.svg"
                 alt="Web3soc"
                 fill={true}
-                className="object-fit"
+                className="object-cover"
               />
             </div>
           </div>
@@ -306,7 +334,7 @@ export default function Home() {
                 the Solana Ecosystem.
               </p>
               <Button variant={"outline"} className="py-5">
-                <Link href="/web3soc">Learn more</Link>
+                <Link href="/web3soc">Read more</Link>
               </Button>
             </div>
           </div>
@@ -318,10 +346,10 @@ export default function Home() {
           <div className="flex w-full items-center justify-start md:justify-center">
             <div className="flex relative w-[7.5rem] h-[10rem] md:w-72 md:h-[27.1875rem]">
               <Image
-                src="/KOI Genesis 1(1).png"
+                src="/KOI Genesis 2.svg"
                 alt="Koi Genesis"
                 fill={true}
-                className="object-fit"
+                className="object-cover"
               />
             </div>
           </div>
@@ -339,22 +367,22 @@ export default function Home() {
                 </p>
               </div>
               <Button variant={"outline"} className="py-5">
-                <Link href="/genesis-nft">Learn more</Link>
+                <Link href="/genesis-nft">Read more</Link>
               </Button>
             </div>
           </div>
           <div
-            className={`md:hidden my-6 flex transition-colors duration-500 ${className}  w-full h-1 md:h-screen md:w-2.5 `}
+            className={`md:hidden my-6 flex transition-colors duration-500 ${className} w-full h-1 md:h-screen md:w-2.5 `}
           ></div>
         </div>
         <div className="flex flex-col md:flex-row-reverse w-full">
           <div className="flex w-full items-center justify-start md:justify-center">
             <div className="flex relative h-[7.5rem] w-[7.5rem] md:w-72 md:h-72">
               <Image
-                src="/logo_KOI Token color + white 1.png"
+                src="/logo_KOI Token color + white 1.svg"
                 alt="Koi Genesis"
                 fill={true}
-                className="object-fit"
+                className="object-cover"
               />
             </div>
           </div>
@@ -372,7 +400,7 @@ export default function Home() {
                 </p>
               </div>
               <Button variant={"outline"} className="py-5">
-                <Link href="/tokenomic">Learn more</Link>
+                <Link href="/tokenomic">Read more</Link>
               </Button>
             </div>
           </div>

@@ -1,6 +1,7 @@
 "use client";
 import { Minus, Plus } from "lucide-react";
 import React, { useState } from "react";
+import FormattedParagraph from "../FormattedParagraph";
 
 export interface FAQ {
   number: number;
@@ -26,7 +27,7 @@ const Accordion = ({ number, question, answer }: FAQ) => {
         ) : (
           <div
             onClick={() => setOpen(!isOpen)}
-            className="flex cursor-pointer bg-[#C5C5E8] rounded-r-md px-4 py-3"
+            className="flex cursor-pointer bg-[#C5C5E8] hover:bg-button-gradient rounded-r-md px-4 py-3"
           >
             <Plus color="black" />
           </div>
@@ -34,7 +35,7 @@ const Accordion = ({ number, question, answer }: FAQ) => {
       </div>
       {isOpen && (
         <div className="flex p-6">
-          <p>{answer}</p>
+          <FormattedParagraph text={answer} />
         </div>
       )}
     </div>

@@ -6,3 +6,12 @@ export interface ITeam {
   position: string;
   icons: ReactNode[];
 }
+
+export interface IEvent {
+  id: number;
+  images: string[];
+  name: string;
+  date: string;
+  city: string;
+  description: string;
+}

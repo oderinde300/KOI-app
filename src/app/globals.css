@@ -111,3 +111,20 @@
   font-family: "molde-bold";
   src: url("../../public/fonts/Fontspring-DEMO-molde-expanded-bold.otf");
 }
+
+html {
+  @apply scroll-smooth;
+}
+
+/* Hide scrollbar across browsers */
+html,
+body {
+  overflow: auto; /* Allow scrolling */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for WebKit browsers */
+::-webkit-scrollbar {
+  display: none;
+}

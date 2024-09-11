@@ -15,7 +15,7 @@ const TeamCard = ({ data }: Props) => {
           src={data.image_url}
           alt="Space"
           fill={true}
-          className="object-fit"
+          className="object-cover"
         />
       </div>
       <div className="flex flex-col items-center">
