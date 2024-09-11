@@ -16,7 +16,11 @@ const ActivityModal = ({
 }) => {
   return (
     <div className="fixed top-0 left-0 flex z-50 h-screen w-full ">
-      <div className="flex flex-col relative h-[90vh] w-1/2 mx-auto my-auto bg-white rounded-2xl p-4">
+      <div
+        onClick={() => setModal()}
+        className="flex absolute top-0 right-0 w-full h-full bg-black/60"
+      ></div>
+      <div className="flex flex-col relative h-[90vh] w-[90%] md:w-1/2 mx-auto my-auto bg-white rounded-2xl p-4">
         <button
           onClick={() => setModal()}
           className="flex absolute cursor-pointer z-40 top-2 right-2 bg-white p-2 rounded-full"

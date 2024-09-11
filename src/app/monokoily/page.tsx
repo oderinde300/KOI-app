@@ -5,7 +5,7 @@ import { Button } from "../../components/ui/button";
 const Monokoily = () => {
   return (
     <div className="min-h-screen relative  bg-black">
-      <div className="flex justify-center pt-48 items-center text-white w-full h-full min-h-screen relative after:content-[''] after:absolute after:w-full after:h-72 after:bottom-0 after:bg-gradient-to-t after:from-black after:to-transparent">
+      <div className="flex justify-center md:pt-48 items-center text-white w-full h-full min-h-screen relative after:content-[''] after:absolute after:w-full after:h-72 after:bottom-0 after:bg-gradient-to-t after:from-black after:to-transparent">
         <Image
           src="/AdobeStock_828629381 1.svg"
           alt="Space"
@@ -13,7 +13,7 @@ const Monokoily = () => {
           className="object-cover"
         />
         <div className="flex justify-center items-center gap-12 pt-24 px-6 flex-col-reverse md:flex-row z-10">
-          <div className="flex relative flex-col md:w-1/2 gap-12">
+          <div className="flex relative flex-col md:w-1/2 gap-6 md:gap-12">
             <div className="flex flex-col">
               <h2 className="font-molde-bold-italic text-2xl md:text-4xl ">
                 LIVE TO EARN
@@ -28,7 +28,7 @@ const Monokoily = () => {
                 Your Educational Tool for Self-Management and Financial Planning
               </li>
             </ul>
-            <p className="text-sm md:text-base md:w-2/3">
+            <p className="text-sm md:text-base md:w-2/3 text-white/80">
               MONOKOILY offers a virtual life simulation where players navigate
               daily challenges and joys, managing time and resources as a
               virtual character. The game focuses on achieving life balance and
@@ -40,7 +40,7 @@ const Monokoily = () => {
               Comming soon
             </Button>
           </div>
-          <div className="flex relative w-52 h-[25rem] md:w-64 md:h-[31.5rem]">
+          <div className="flex relative w-[11.375rem] h-[22.75rem] md:w-64 md:h-[31.5rem]">
             <Image
               src="/monokioly phone 2.svg"
               alt="Monokoily"

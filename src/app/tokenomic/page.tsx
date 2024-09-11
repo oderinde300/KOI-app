@@ -13,17 +13,17 @@ const Tokenomic = () => {
           fill={true}
           className="object-cover"
         />
-        <div className="flex justify-center items-center gap-12  px-6 md:px-48 flex-col-reverse md:flex-row z-10">
-          <div className="flex relative flex-col md:w-2/3 gap-12">
-            <div className="flex flex-col gap-4">
-              <h2 className="font-molde-bold-italic text-2xl md:text-4xl md:w-1/2 ">
+        <div className="flex justify-center items-center pt-12 md:pt-0  md:gap-12  px-6 md:px-48 flex-col-reverse md:flex-row z-10">
+          <div className="flex relative items-center md:items-start flex-col md:w-2/3 md:gap-12 gap-6">
+            <div className="flex flex-col items-center md:items-start gap-4">
+              <h2 className="font-molde-bold-italic text-center md:text-start text-2xl md:text-4xl md:w-1/2 ">
                 EXPERIENCE REVOLUTIONARY FINANCE
               </h2>
-              <p className="text-xl font-molde md:text-2xl w-fit text-gradient">
+              <p className="text-lg font-molde text-center md:text-start md:text-2xl w-fit text-gradient">
                 TOKENOMIC ECOSYSTEM
               </p>
             </div>
-            <p className="text-sm md:text-base md:w-2/3">
+            <p className="text-sm md:text-base text-white/80 text-center md:text-start md:w-2/3">
               Secure Your Spot in the Future of Finance Join Our Telegram for
               the Latest Launch News
             </p>
@@ -37,7 +37,7 @@ const Tokenomic = () => {
               </a>
             </Button>
           </div>
-          <div className="flex relative w-52 h-[25rem] md:w-[500px] md:h-[31.5rem]">
+          <div className="flex relative w-[12.5rem] h-[12.6rem] md:w-[500px] md:h-[31.5rem]">
             <Image
               src="/logo_KOI Token color + white 1.png"
               alt="Monokoily"
@@ -48,9 +48,9 @@ const Tokenomic = () => {
         </div>
       </div>
 
-      <div className="flex w-full z-20 justify-center px-6 pt-24 h-screen items-center">
-        <div className="flex items-center flex-col border p-8 max-w-lg px-16 bg-white/20 gap-5 border-white/50 rounded-3xl">
-          <h2 className="font-bold md:text-3xl bg-clip-text text-white">
+      <div className="flex w-full z-20 justify-center px-6 pt-24 my-16 md:my-0 h-screen items-center">
+        <div className="flex items-center flex-col border p-8 max-w-lg px-12 md:px-16 bg-white/20 gap-5 border-white/50 rounded-3xl">
+          <h2 className="font-bold md:text-3xl bg-clip-text  text-white">
             TOKENOMIC ECOSYSTEM
           </h2>
           <div className="flex relative w-60 h-60">

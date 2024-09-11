@@ -8,16 +8,16 @@ const GenesisNFT = () => {
     <div className="min-h-screen relative bg-black text-white">
       <div className="flex  justify-center items-center text-white w-full h-full min-h-screen relative after:content-[''] after:absolute after:w-full after:h-24 after:bottom-0 after:bg-gradient-to-t after:from-black after:to-transparent">
         <div className="flex justify-center pt-24 md:pt-0 items-center gap-12  px-6 md:px-48 flex-col-reverse md:flex-row z-10">
-          <div className="flex relative flex-col md:w-2/3 gap-12">
-            <div className="flex flex-col gap-4">
-              <h2 className="font-molde-bold-italic text-2xl md:text-4xl md:w-1/2 ">
+          <div className="flex relative items-center md:items-start flex-col md:w-2/3 gap-6 md:gap-12">
+            <div className="flex flex-col items-center md:items-start gap-4">
+              <h2 className="font-molde-bold-italic text-center md:text-left text-2xl md:text-4xl md:w-1/2 ">
                 INVEST SMART EARN BIG
               </h2>
-              <p className="text-xl font-molde w-fit md:text-2xl text-gradient">
+              <p className="text-lg font-molde w-fit text-center md:text-left md:text-2xl text-gradient">
                 KOI GENESIS NFT
               </p>
             </div>
-            <p className="text-sm md:text-base text-white/60 md:w-2/3">
+            <p className="text-sm md:text-base text-center md:text-left text-white/80 md:w-2/3">
               Join the KOI community and benefit from our collaboration with
               SOLANA TAB, utilizing Phantom for seamless NFT purchases and
               receiving dividends that grow with your investment.
@@ -31,7 +31,7 @@ const GenesisNFT = () => {
               </Button>
             </div>
           </div>
-          <div className="flex relative w-52 h-[25rem] md:w-64 md:h-[31.5rem]">
+          <div className="flex relative w-[15.5rem] h-[20.15rem] md:w-64 md:h-[31.5rem]">
             <Image
               src="/KOI Genesis 2.svg"
               alt="Monokoily"
@@ -52,18 +52,17 @@ const GenesisNFT = () => {
           id="get-started"
           className="flex z-20 flex-col min-h-screen py-24 items-center gap-6 px-6 md:px-24"
         >
-          <h2 className="font-bold md:text-3xl pt-6 text-gradient">
+          <h2 className="font-bold text-xl md:text-3xl pt-6 text-gradient">
             What is the KOI NFT Project?
           </h2>
           <div className="flex flex-col md:flex-row gap-6">
             <div className="flex rounded-xl flex-col gap-4 p-4 justify-between w-full items-center ">
-              <div className="relative">
+              <div className="md:h-[9.375rem] h-[4.375rem] md:w-[9.375rem] w-[4.375rem] relative">
                 <Image
                   src="/1 201.svg"
                   alt="Space"
-                  width={150}
-                  height={150}
-                  className=""
+                  fill={true}
+                  className="object-cover"
                 />
               </div>
               <div className="flex flex-col gap-2 h-full">
@@ -81,13 +80,12 @@ const GenesisNFT = () => {
               </div>
             </div>
             <div className="flex rounded-xl flex-col gap-4 p-4 justify-between w-full items-center">
-              <div className="relative">
+              <div className=" md:h-[9.375rem] h-[4.375rem] md:w-[9.375rem] w-[4.375rem] relative">
                 <Image
                   src="/2 29.svg"
                   alt="Space"
-                  width={150}
-                  height={150}
-                  className=""
+                  fill={true}
+                  className="object-cover"
                 />
               </div>
               <div className="flex flex-col h-full">
@@ -105,13 +103,12 @@ const GenesisNFT = () => {
               </div>
             </div>
             <div className="flex rounded-xl flex-col gap-4 p-4 justify-between w-full items-center">
-              <div className="flex relative">
+              <div className="md:h-[9.375rem] h-[4.375rem] md:w-[9.375rem] w-[4.375rem] relative">
                 <Image
                   src="/3 1.svg"
                   alt="Space"
-                  width={150}
-                  height={150}
-                  className=""
+                  fill={true}
+                  className="object-cover"
                 />
               </div>
               <div className="flex flex-col h-full">

@@ -35,11 +35,13 @@ const ActivityBoard = () => {
         <div className="flex items-center gap-2 ">
           <div className="flex rounded-full border border-white/30 p-1">
             <Input
-              className="border-none"
+              className="border-none text-xs md:text-base"
               type="email"
               placeholder="Search by Keyword"
             />
-            <Button className="w-48">Search</Button>
+            <Button className="md:w-48 w-32 text-xs md:text-base">
+              Search
+            </Button>
           </div>
           <div className="flex py-2 px-3 cursor-pointer  border border-white rounded-xl">
             <Settings2 />

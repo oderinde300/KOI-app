@@ -32,25 +32,97 @@ const Footer = () => {
             />
           </Link>
 
-          <div className="flex gap-2">
-            <span className="bg-white/20 rounded-md p-2">
-              <Instagram fontSize={"1rem"} />
-            </span>
-            <span className="bg-white/20 rounded-md p-2">
-              <YoutubeIcon fontSize={"1rem"} />
-            </span>
-            <span className="bg-white/20 rounded-md p-2">
-              <Linkedin fontSize={"1rem"} />
-            </span>
-            <span className="bg-white/20 rounded-md p-2">
-              <FacebookIcon fontSize={"1rem"} />
-            </span>
-            <span className="bg-white/20 rounded-md p-2">
-              <Twitter fontSize={"1rem"} />
-            </span>
-            <span className="bg-white/20 rounded-md p-2">
-              <Twitch fontSize={"1rem"} />
-            </span>
+          <div className="flex gap-4">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/ko-inflation-8563b1268/"
+              className=""
+            >
+              <div className="flex h-8 w-8 relative">
+                <Image
+                  src="/linkedin.svg"
+                  alt="linkedin"
+                  fill={true}
+                  className="object-cover"
+                />
+              </div>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.youtube.com/@MissKOI-VirtualIP"
+              className=""
+            >
+              <div className="flex h-8 w-8 relative">
+                <Image
+                  src="/youtube.svg"
+                  alt="youtube"
+                  fill={true}
+                  className="object-cover"
+                />
+              </div>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/nft_mskoi/"
+              className=""
+            >
+              <div className="flex h-8 w-8 relative">
+                <Image
+                  src="/instagram.svg"
+                  alt="instagram"
+                  fill={true}
+                  className="object-cover"
+                />
+              </div>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.facebook.com/people/KOI-Mobilize/100090738491053/"
+              className=""
+            >
+              <div className="flex h-8 w-8 relative">
+                <Image
+                  src="/facebook.svg"
+                  alt="facebook"
+                  fill={true}
+                  className="object-cover"
+                />
+              </div>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://t.me/+vL6fzqgtXIE2MzBl"
+              className=""
+            >
+              <div className="flex h-8 w-8 relative">
+                <Image
+                  src="/telegram.svg"
+                  alt="telegram"
+                  fill={true}
+                  className="object-cover"
+                />
+              </div>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://twitter.com/koi_inflation"
+              className=""
+            >
+              <div className="flex h-8 w-8 relative">
+                <Image
+                  src="/x.svg"
+                  alt="x"
+                  fill={true}
+                  className="object-cover"
+                />
+              </div>
+            </a>
           </div>
         </div>
         <div className="flex w-full justify-between">
@@ -94,7 +166,9 @@ const Footer = () => {
         <p>
           Copyright by <span className="font-semibold">KOI MOBILIZE</span>
         </p>
-        <p>Disclaimer</p>
+        <p>
+          <Link href="/disclaimer">Disclaimer</Link>
+        </p>
       </div>
     </div>
   );

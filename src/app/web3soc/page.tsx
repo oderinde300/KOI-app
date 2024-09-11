@@ -11,7 +11,7 @@ const Web3SOC = () => {
 
   return (
     <div className="min-h-screen relative bg-black text-white">
-      <div className="flex justify-center items-center text-white w-full h-full min-h-screen relative after:content-[''] after:absolute after:w-full after:h-24 after:bottom-0 after:bg-gradient-to-t after:from-black after:to-transparent">
+      <div className="flex justify-center items-center text-white w-full h-full min-h-screen relative after:content-[''] after:absolute after:w-full after:h-72 md:after:h-24 after:bottom-0 after:bg-gradient-to-t after:from-black after:to-transparent">
         {/* <Image
           src="/touch screen 1.svg"
           alt="Space"
@@ -29,16 +29,16 @@ const Web3SOC = () => {
           Your browser does not support the video tag.
         </video>
         <div className="flex justify-center items-center gap-12  px-6 flex-col md:flex-row z-10">
-          <div className="flex relative flex-col md:w-2/3 gap-12">
-            <div className="flex flex-col gap-4">
-              <h2 className="font-molde-bold-italic text-2xl md:text-4xl md:w-1/2 ">
+          <div className="flex relative items-center md:items-start flex-col md:w-2/3 gap-12">
+            <div className="flex items-center md:items-start flex-col gap-4">
+              <h2 className="font-molde-bold-italic text-center md:text-left text-2xl md:text-4xl md:w-1/2 ">
                 POWERFUL WEB3 SOCIAL PLATFORM
               </h2>
-              <p className="text-xl font-molde md:text-2xl text-gradient w-fit">
+              <p className="text-lg text-center md:text-left font-molde md:text-2xl text-gradient w-fit">
                 WEB3SOC
               </p>
             </div>
-            <p className="text-sm md:text-base md:w-2/3">
+            <p className="text-sm text-center md:text-left md:text-base md:w-2/3 text-white/80">
               A dynamic platform for the Web3 economy, enabling users to earn
               social income and grow their blockchain assets via the Solana
               ecosystem, while viewing problem-solving as a key driver for
