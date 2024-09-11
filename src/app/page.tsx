@@ -110,6 +110,7 @@ export default function Home() {
           alt="Space"
           fill={true}
           className="object-cover"
+          priority
         />
 
         <div className="flex w-full items-center flex-col relative z-10">
@@ -123,7 +124,6 @@ export default function Home() {
                   src="/meteorite2 1.svg"
                   alt="meteor"
                   fill={true}
-                  quality={100}
                   className="object-cover"
                 />
               </div>
@@ -147,7 +147,6 @@ export default function Home() {
                 src="/MsKOI Space_00000 1.svg"
                 alt="space"
                 fill={true}
-                quality={100}
                 className="object-cover"
               />
             </div>
@@ -198,7 +197,6 @@ export default function Home() {
                     src="/product-02 1.svg"
                     alt="Space"
                     fill={true}
-                    quality={100}
                     className="object-cover"
                   />
                 </div>
@@ -207,7 +205,6 @@ export default function Home() {
                     src="/product-03 1.svg"
                     alt="Space"
                     fill={true}
-                    quality={100}
                     className="object-cover"
                   />
                 </div>
@@ -217,7 +214,6 @@ export default function Home() {
                   src="/product-04 1.svg"
                   alt="Space"
                   fill={true}
-                  quality={100}
                   className="object-cover"
                 />
               </div>
@@ -269,7 +265,7 @@ export default function Home() {
           <div className="flex w-full items-center justify-start md:justify-center">
             <div className="flex relative h-[7.5rem] w-[7.5rem] md:w-72 md:h-72">
               <Image
-                src="/logo_MONOKOILY color + white 1.svg"
+                src="/logo_MONOKOILY color + white 1.png"
                 alt="Monokoily"
                 fill={true}
                 className="object-cover"
@@ -309,7 +305,7 @@ export default function Home() {
           <div className="flex w-full items-center justify-start md:justify-center">
             <div className="flex relative h-[7.5rem] w-[7.5rem] md:w-72 md:h-72">
               <Image
-                src="/logo_Web3SOC color + white 1.svg"
+                src="/logo_Web3SOC color + white 1.png"
                 alt="Web3soc"
                 fill={true}
                 className="object-cover"
@@ -379,7 +375,7 @@ export default function Home() {
           <div className="flex w-full items-center justify-start md:justify-center">
             <div className="flex relative h-[7.5rem] w-[7.5rem] md:w-72 md:h-72">
               <Image
-                src="/logo_KOI Token color + white 1.svg"
+                src="/logo_KOI Token color + white 1.png"
                 alt="Koi Genesis"
                 fill={true}
                 className="object-cover"
