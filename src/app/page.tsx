@@ -87,7 +87,7 @@ export default function Home() {
         <h2 className="font-bold text-xl md:text-3xl text-center text-white">
           OUR PARTNERS
         </h2>
-        <div className="flex w-[95%] md:w-[90%] flex-wrap relative">
+        {/* <div className="flex w-[95%] md:w-[90%] flex-wrap relative">
           {partners.map((url: string, index: number) => (
             <div
               key={index}
@@ -101,6 +101,22 @@ export default function Home() {
               />
             </div>
           ))}
+        </div> */}
+        <div className="hidden md:flex relative min-w-[71.25rem]  min-h-36">
+          <Image
+            src="/partners/partner.svg"
+            alt={`Partners`}
+            className="object-contain w-full h-full"
+            fill={true}
+          />
+        </div>
+        <div className="flex md:hidden relative w-[95%]  min-h-[8.6875rem]">
+          <Image
+            src="/partners/partner_mobile.svg"
+            alt={`Partners`}
+            className="object-contain w-full h-full"
+            fill={true}
+          />
         </div>
       </div>
 
@@ -280,8 +296,12 @@ export default function Home() {
             <div className="flex w-full items-center justify-center">
               <div className="flex relative flex-col md:w-2/3 gap-12">
                 <div className="flex flex-col">
-                  <h2 className="text-2xl md:text-4xl font-molde-bold-italic">
-                    LIVE TO EARN
+                  <h2 className="text-2xl flex items-center gap-1  md:text-4xl font-molde-bold-italic">
+                    <span>LIVE</span>
+                    <span className="min-h-1 min-w-3 md:min-h-2 md:min-w-4 -skew-x-[9deg] bg-white"></span>
+                    <span>TO</span>
+                    <span className="min-h-1 min-w-3 md:min-h-2 md:min-w-4 -skew-x-[9deg] bg-white"></span>
+                    <span>EARN</span>
                   </h2>
                   <p className="text-xl md:text-2xl text-gradient font-molde">
                     MONOKOILY

@@ -17,7 +17,7 @@ const ScrollAnimationWrapper: React.FC<ScrollAnimationWrapperProps> = ({
   const wrapperRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: wrapperRef,
-    offset: ["start 0.5", "start 0.1"],
+    offset: ["start 0.75", "start 0.2"],
   });
   const [value, setValue] = useState<number | null>(null);
 

@@ -16,7 +16,11 @@ const Monokoily = () => {
           <div className="flex relative flex-col md:w-1/2 gap-6 md:gap-12">
             <div className="flex flex-col">
               <h2 className="font-molde-bold-italic text-2xl md:text-4xl ">
-                LIVE TO EARN
+                <span>LIVE</span>
+                <span className="min-h-1 min-w-3 md:min-h-2 md:min-w-4 -skew-x-[9deg] bg-white"></span>
+                <span>TO</span>
+                <span className="min-h-1 min-w-3 md:min-h-2 md:min-w-4 -skew-x-[9deg] bg-white"></span>
+                <span>EARN</span>
               </h2>
               <p className="text-xl w-fit font-molde md:text-2xl text-gradient">
                 MONOKOILY
