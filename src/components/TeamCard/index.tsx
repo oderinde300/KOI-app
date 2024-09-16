@@ -19,14 +19,31 @@ const TeamCard = ({ data }: Props) => {
         />
       </div>
       <div className="flex flex-col items-center">
-        <p className="text-white/80">{data.name}</p>
-        <h3 className="font-bold text-white">{data.position}</h3>
+        <p className="text-white/80 text-center text-sm md:text-base">
+          {data.name}
+        </p>
+        <h3 className="font-bold text-center text-sm md:text-base text-white">
+          {data.position}
+        </h3>
       </div>
-      <div className="flex gap-3">
-        {data.icons.map((icon: ReactNode, index: number) => (
-          <div key={index} className="">
-            {icon}
-          </div>
+      <div className="flex items-center gap-3">
+        {data.social_media.map((item: any, index: number) => (
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={item.link}
+            className=""
+            key={index}
+          >
+            <div className="flex h-5 w-5 relative">
+              <Image
+                src={item.icon}
+                alt="icon"
+                fill={true}
+                className="object-cover"
+              />
+            </div>
+          </a>
         ))}
       </div>
     </div>

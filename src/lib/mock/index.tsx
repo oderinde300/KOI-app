@@ -5,65 +5,109 @@ import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 export const teamList: ITeam[] = [
   {
     name: "Co Siau",
-    image_url: "/team_co siau 1.svg",
+    image_url: "/team/team_co siau 1.png",
     position: "FOUNDER/DIRECTOR",
-    icons: [
-      <Linkedin key={1} size={"1.5rem"} />,
-      <Twitter key={1} size={"1.5rem"} />,
+    social_media: [
+      {
+        icon: "/team/linkedin.svg",
+        link: "https://www.linkedin.com/in/co-siau-cryptodevelopment/",
+      },
+      {
+        icon: "/team/twitter.svg",
+        link: "https://x.com/CoSiau?t= 6AmVDKWle1l44GJHlO qRyQ&s=09",
+      },
     ],
   },
   {
     name: "Bryan Lim",
-    image_url: "/team_bryan 1.svg",
+    image_url: "/team/team_bryan 1.png",
     position: "CREATIVE DIRECTOR",
-    icons: [<Facebook key={1} size={"1.5rem"} />],
+    social_media: [
+      {
+        icon: "team/facebook.svg",
+        link: "https://www.facebook.com/bryanlim111?mibextid=ZbWKwL",
+      },
+    ],
   },
   {
     name: "Chin Jia Huei",
-    image_url: "/team_jia huei 1.svg",
+    image_url: "/team/team_jia huei 1.png",
     position: "ADMIN DIRECTOR",
-    icons: [<Linkedin key={1} size={"1.5rem"} />],
+    social_media: [
+      {
+        icon: "/team/linkedin.svg",
+        link: "https://www.linkedin.com/in/jia-huei-45552a125/",
+      },
+    ],
   },
   {
     name: "Jay Coh",
-    image_url: "/team_jay 1.svg",
+    image_url: "/team/team_jay 1.png",
     position: "WEB3 ADVISOR",
-    icons: [
-      <Linkedin key={1} size={"1.5rem"} />,
-      <Twitter key={1} size={"1.5rem"} />,
+    social_media: [
+      {
+        icon: "/team/linkedin.svg",
+        link: "https://www.linkedin.com/in/jay-koh/",
+      },
+      {
+        icon: "/team/twitter.svg",
+        link: "https://x.com/Krypto_JayK",
+      },
     ],
   },
   {
     name: "Gary Wong",
-    image_url: "/team_gary 1.svg",
+    image_url: "/team/team_gary 1.png",
     position: "BLOCKCHAIN ADVISOR",
-    icons: [<Twitter key={1} size={"1.5rem"} />],
+    social_media: [
+      {
+        icon: "/team/twitter.svg",
+        link: "https://x.com/Garywong8888",
+      },
+    ],
   },
   {
     name: "Ben Kok",
-    image_url: "/team_ben kok 1.svg",
+    image_url: "/team/team_ben kok 1.png",
     position: "TECH ADVISOR",
-    icons: [<Linkedin key={1} size={"1.5rem"} />],
+    social_media: [
+      {
+        icon: "/team/linkedin.svg",
+        link: "https://www.linkedin.com/in/benjamin-kok/",
+      },
+    ],
   },
   {
     name: "Sharon Yong",
-    image_url: "/team_sharon 1.svg",
+    image_url: "/team/team_sharon 1.png",
     position: "CISO",
-    icons: [<Linkedin key={1} size={"1.5rem"} />],
+    social_media: [
+      {
+        icon: "/team/linkedin.svg",
+        link: "https://www.linkedin.com/in/sharonyong",
+      },
+    ],
   },
   {
     name: "Wilson Wong",
-    image_url: "/team_wilson 1.svg",
+    image_url: "/team/team_wilson 1.png",
     position: "CTO",
-    icons: [<Linkedin key={1} size={"1.5rem"} />],
+    social_media: [
+      {
+        icon: "/team/linkedin.svg",
+        link: "https://www.linkedin.com/in/wilson-wong-412046184/",
+      },
+    ],
   },
   {
     name: "Tan Yu Ning",
-    image_url: "/team_yuning 1.svg",
+    image_url: "/team/team_yuning 1.png",
     position: "Design Manager",
-    icons: [
-      <Linkedin key={1} size={"1.5rem"} />,
-      <Twitter key={1} size={"1.5rem"} />,
+    social_media: [
+      {
+        icon: "/team/linkedin.svg",
+        link: "https://www.linkedin.com/in/yu-ning-tan-37297231b/",
+      },
     ],
   },
 ];

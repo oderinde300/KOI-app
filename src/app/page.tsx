@@ -161,7 +161,7 @@ export default function Home() {
             </div>
             <div className="flex absolute right-0 md:mt-16 top-[20%] md:relative h-56 w-48 md:h-[35rem] md:w-[29.8125rem]">
               <Image
-                src="/MsKOI Space_00000 1.svg"
+                src="/MsKOI Space_00000 1.png"
                 alt="space"
                 fill={true}
                 className="object-cover"
