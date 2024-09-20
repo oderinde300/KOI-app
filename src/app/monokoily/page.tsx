@@ -15,7 +15,7 @@ const Monokoily = () => {
         <div className="flex justify-center items-center gap-12 pt-24 px-6 flex-col-reverse md:flex-row z-10">
           <div className="flex relative flex-col md:w-1/2 gap-6 md:gap-12">
             <div className="flex flex-col">
-              <h2 className="font-molde-bold-italic text-2xl md:text-4xl ">
+              <h2 className="text-2xl flex items-center gap-1  md:text-4xl font-molde-bold-italic">
                 <span>LIVE</span>
                 <span className="min-h-1 min-w-3 md:min-h-2 md:min-w-4 -skew-x-[9deg] bg-white"></span>
                 <span>TO</span>
@@ -41,7 +41,7 @@ const Monokoily = () => {
               MONOKOILY, live fully and earn as you play.
             </p>
             <Button variant={"outline"} className="py-5">
-              Comming soon
+              Comming Soon
             </Button>
           </div>
           <div className="flex relative w-[11.375rem] h-[22.75rem] md:w-64 md:h-[31.5rem]">

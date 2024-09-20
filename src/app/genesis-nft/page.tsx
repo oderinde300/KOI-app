@@ -65,7 +65,7 @@ const GenesisNFT = () => {
                   className="object-cover"
                 />
               </div>
-              <div className="flex flex-col gap-2 h-full">
+              <div className="flex flex-col gap-4 h-full">
                 <h2 className="text-xl font-bold">Foundation & Partnerships</h2>
                 <ul className="list-disc pl-4 text-white/60 ">
                   <li>
@@ -88,7 +88,7 @@ const GenesisNFT = () => {
                   className="object-cover"
                 />
               </div>
-              <div className="flex flex-col h-full">
+              <div className="flex flex-col gap-4 h-full">
                 <h2 className="text-xl font-bold">Benefits for NFT Holders</h2>
                 <ul className="list-disc pl-4 text-white/60">
                   <li>
@@ -111,7 +111,7 @@ const GenesisNFT = () => {
                   className="object-cover"
                 />
               </div>
-              <div className="flex flex-col h-full">
+              <div className="flex flex-col gap-4 h-full">
                 <h2 className="text-xl font-bold">Token Utility and Goals</h2>
                 <ul className="list-disc pl-4 text-white/60">
                   <li>
@@ -141,15 +141,9 @@ const GenesisNFT = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row z-20 md:mb-60 p-6 md:px-64">
+        <div className="flex flex-col md:flex-row z-20 md:mb-28 p-6 md:px-64">
           <div className="flex relative w-full">
-            <Image
-              src="/debit-06 1.svg"
-              alt="Space"
-              width={564}
-              height={300}
-              className=""
-            />
+            <Image src="/debit-06 1.svg" alt="Space" width={564} height={300} />
           </div>
           <div className="flex flex-col gap-12 md:gap-2 w-full">
             <div className="flex flex-col gap-2">

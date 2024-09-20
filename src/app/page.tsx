@@ -315,7 +315,7 @@ export default function Home() {
                   </li>
                 </ul>
                 <Button variant={"outline"} className="py-5">
-                  <Link href="/monokoily">Read more</Link>
+                  <Link href="/monokoily">Read More</Link>
                 </Button>
               </div>
             </div>
@@ -354,7 +354,7 @@ export default function Home() {
                   the Solana Ecosystem.
                 </p>
                 <Button variant={"outline"} className="py-5">
-                  <Link href="/web3soc">Read more</Link>
+                  <Link href="/web3soc">Read More</Link>
                 </Button>
               </div>
             </div>
@@ -389,7 +389,7 @@ export default function Home() {
                   </p>
                 </div>
                 <Button variant={"outline"} className="py-5">
-                  <Link href="/genesis-nft">Read more</Link>
+                  <Link href="/genesis-nft">Read More</Link>
                 </Button>
               </div>
             </div>
@@ -424,7 +424,7 @@ export default function Home() {
                   </p>
                 </div>
                 <Button variant={"outline"} className="py-5">
-                  <Link href="/tokenomic">Read more</Link>
+                  <Link href="/tokenomic">Read More</Link>
                 </Button>
               </div>
             </div>

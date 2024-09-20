@@ -46,7 +46,7 @@ const Web3SOC = () => {
             </p>
             <div className="pointer-events-none">
               <Button variant={"outline"} className="py-5 mouse-event-none">
-                Coming soon
+                Coming Soon
               </Button>
             </div>
           </div>
@@ -57,31 +57,39 @@ const Web3SOC = () => {
           Bridging Web 3.0&#39;s Social Gap
         </h2>
         <div className="flex flex-col md:flex-row gap-6">
-          <div className="flex rounded-xl border flex-col gap-4 py-6 px-8 border-white/20 justify-between">
-            <h2 className="text-xl font-bold">Web 3.0 Limitations</h2>
-            <p className="text-white/60">
-              Web 3.0 focuses on financial assets, overlooking trust-based
-              relationships vital for activities like &quot;unsecured
-              loans&quot; and &quot;personal branding&quot;.
-            </p>
+          <div className="flex-none max-w-[394px] w-full">
+            <div className="flex rounded-xl border flex-col gap-10 py-6 px-8 border-white/20 justify-between">
+              <h2 className="text-xl font-bold">Web 3.0&#39;s Limitations</h2>
+              <p className="text-white/60">
+                Web 3.0 focuses on financial assets, overlooking trust-based
+                relationships vital for activities like &quot;unsecured
+                loans&quot; and &quot;personal branding&quot;.
+              </p>
+            </div>
           </div>
-          <div className="flex rounded-xl border flex-col gap-4 py-6 px-8 border-white/20 justify-between">
-            <h2 className="text-xl font-bold">
-              Introduction of Soulbound Tokens (SBTs)
-            </h2>
-            <p className="text-white/60">
-              Vitalik Buterin introduced &quot;Soulbound Tokens&quot; in his
-              2022 paper, representing enduring social ties and enhancing Web
-              3.0&#39;s scope to include social interactions.
-            </p>
+
+          <div className="flex-none max-w-[394px] w-full">
+            <div className="flex rounded-xl border flex-col gap-4 py-6 px-8 border-white/20 justify-between">
+              <h2 className="text-xl font-bold">
+                Introduction of Soulbound Tokens (SBTs)
+              </h2>
+              <p className="text-white/60">
+                Vitalik Buterin introduced &quot;Soulbound Tokens&quot; in his
+                2022 paper, representing enduring social ties and enhancing Web
+                3.0&#39;s scope to include social interactions.
+              </p>
+            </div>
           </div>
-          <div className="flex rounded-xl border flex-col gap-4 py-6 px-8 border-white/20 justify-between">
-            <h2 className="text-xl font-bold">Advantages of SBTs</h2>
-            <p className="text-white/60">
-              SBTs establish trust in economic activities and facilitate digital
-              identity representation, potentially transforming digital
-              engagement and personal identity in Web 3.0..
-            </p>
+
+          <div className="flex-none max-w-[394px] w-full">
+            <div className="flex rounded-xl border flex-col gap-10 py-6 px-8 border-white/20 justify-between">
+              <h2 className="text-xl font-bold">Advantages of SBTs</h2>
+              <p className="text-white/60">
+                SBTs establish trust in economic activities and facilitate
+                digital identity representation, potentially transforming
+                digital engagement and personal identity in Web 3.0..
+              </p>
+            </div>
           </div>
         </div>
       </div>
