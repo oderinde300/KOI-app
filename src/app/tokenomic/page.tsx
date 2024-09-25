@@ -82,7 +82,14 @@ const Tokenomic = () => {
                   <span className={`bg-[#D44161] rounded-full h-3 w-3`}></span>
                   <p>Private Sales</p>
                 </div>
-                <p>13%</p>
+                <p>5%</p>
+              </div>
+              <div className="flex items-center w-full border-b border-b-white/40 pb-2 justify-between">
+                <div className="flex items-center gap-1 py-2">
+                  <span className={`bg-[#D44161] rounded-full h-3 w-3`}></span>
+                  <p>VC</p>
+                </div>
+                <p>5%</p>
               </div>
               <div className="flex items-center w-full border-b border-b-white/40 pb-2 justify-between">
                 <div className="flex items-center gap-1 py-2">

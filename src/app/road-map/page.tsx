@@ -36,6 +36,7 @@ const RoadMap = () => {
         <div className="hidden md:flex absolute z-10 bottom-[20%] -right-[30%]">
           <Blob className="h-[40rem] w-[40rem] " />
         </div>
+
         <div
           id="2020-oct"
           className="flex w-full md:min-h-[80vh] pt-24 md:justify-start "
@@ -89,9 +90,9 @@ const RoadMap = () => {
 
         <div
           id="2022-dec"
-          className="flex w-full md:min-h-[80vh] pt-48 md:justify-end "
+          className="flex w-full md:min-h-[80vh] pt-48 md:justify-end"
         >
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 md:min-w-[32.125rem] items-start">
             <h2 className="font-bold w-fit text-3xl text-gradient">2022 DEC</h2>
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-4">
@@ -244,9 +245,9 @@ const RoadMap = () => {
 
         <div
           id="2023-q2"
-          className="flex w-full md:min-h-[80vh] pt-48 md:justify-end "
+          className="flex w-full md:min-h-[80vh] pt-48 md:justify-end"
         >
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 md:min-w-[32.125rem] items-start">
             <h2 className="font-bold w-fit text-3xl text-gradient">2023 Q2</h2>
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-4">
@@ -392,9 +393,9 @@ const RoadMap = () => {
 
         <div
           id="2023-q4"
-          className="flex w-full md:min-h-[80vh] pt-48 md:justify-end "
+          className="flex w-full md:min-h-[80vh] pt-48 md:justify-end"
         >
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 md:min-w-[32.125rem] items-start">
             <h2 className="font-bold w-fit text-3xl text-gradient">2023 Q4</h2>
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-4">
@@ -412,9 +413,9 @@ const RoadMap = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 md:w-[28rem]">
                 <span className="h-4 w-4 rounded-full bg-white"></span>
-                <h3 className="font-bold">
+                <h3 className="font-bold break-words">
                   KOI Web3.0 Business Club e-Commerce anchor Merchant connection
                 </h3>
               </div>
@@ -509,9 +510,9 @@ const RoadMap = () => {
 
         <div
           id="2025-q1-q4"
-          className="flex w-full md:min-h-[80vh] pt-48 md:justify-end "
+          className="flex w-full md:min-h-[80vh] pt-48 md:justify-end"
         >
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 md:min-w-[32.125rem] items-start">
             <h2 className="font-bold w-fit text-3xl text-gradient">
               2025 Q1~Q4
             </h2>
@@ -648,9 +649,9 @@ const RoadMap = () => {
 
         <div
           id="2027-q1-q4"
-          className="flex w-full md:min-h-[80vh] pt-48 md:justify-end "
+          className="flex w-full md:min-h-[80vh] pt-48 md:justify-end"
         >
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 md:min-w-[32.125rem] items-start">
             <h2 className="font-bold w-fit text-3xl text-gradient">
               2027 Q1~Q4
             </h2>

@@ -44,6 +44,26 @@ export const teamList: ITeam[] = [
     ],
   },
   {
+    name: "Sky Wee",
+    // image_url: "/team/team_jia huei 1.png",
+    image_url: "/team-photo/Sky Wee.png",
+    position: "LEAD ADVISOR",
+    social_media: [
+      {
+        icon: "/team/linkedin.svg",
+        link: "https://www.linkedin.com/in/skywee97/",
+      },
+      {
+        icon: "/team/facebook.svg",
+        link: "https://www.facebook.com/skywee97",
+      },
+      {
+        icon: "/team/twitter.svg",
+        link: "https://x.com/OfficialSkyWee1",
+      },
+    ],
+  },
+  {
     name: "Jay Koh",
     // image_url: "/team/team_jay 1.png",
     image_url: "/team-photo/Jay Koh.png",
@@ -269,7 +289,7 @@ export const events: IEvent[] = [
       "/eventslides/A6.svg",
     ],
     name: "Penang Masverse Dev Day",
-    date: "January 19, 2024",
+    date: "2024-1-19",
     city: "Penang",
     description: `
     KOI Mobilize Sdn Bhd is thrilled to announce our participation in the inaugural grand event of 2024 hosted by Masverse, taking place on January 19th at 8 p.m. at the Masverse Web 3.0 Hub in Auto-City, Penang, Malaysia. Following the successful launch of the MasChain testnet, we are eager to engage at the MasChain Dev Day, an initiative backed by the Malaysia Digital Economy Corporation (MDEC). \n
@@ -291,7 +311,7 @@ export const events: IEvent[] = [
       "/eventslides/B4 1.svg",
     ],
     name: "Malacca Event",
-    date: "October 26, 2023",
+    date: "2023-10-26",
     city: "Malacca",
     description: `
     An enlightening gathering titled “The Future of Digitalization: Exploring Web3.0 and Malaysia’s Digital Ecosystem” was hosted with distinction at The Sail in Malacca. This pivotal event was spearheaded by an alliance of forward-thinking organizations, including the Malacca Elite Association, the Malacca Youth Wing, Tencent Cloud, Golden Finance, the Malaysia Digital Economy Development Corporation (MDEC), KOI Mobilize SDN BHD, and ZhongHua 90. \n\n

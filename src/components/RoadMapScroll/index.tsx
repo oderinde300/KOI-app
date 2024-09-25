@@ -32,7 +32,7 @@ const RoadMapScroll = () => {
   }, []);
 
   return (
-    <div className="hidden md:flex gap-4 min-h-[50vh] rounded-xl p-4 fixed right-36 top-[50%] -translate-y-[40%] z-50 bg-white/20 backdrop-blur-sm w-[8.375rem]">
+    <div className="hidden md:flex gap-4 min-h-[50vh] rounded-xl p-4 fixed right-24 top-[50%] -translate-y-[40%] z-50 bg-white/20 backdrop-blur-sm w-[8.375rem]">
       <div className="flex min-h-[50vh] w-0.5 bg-white/40">
         <div className="flex w-full h-full relative">
           <motion.div

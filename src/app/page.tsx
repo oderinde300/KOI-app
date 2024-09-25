@@ -41,7 +41,7 @@ export default function Home() {
   }, [isInView]);
   return (
     <main className="flex min-h-screen relative text-white flex-col items-center justify-between md:px-6 lg:px-12 bg-black overflow-x-hidden">
-      <div className="flex min-h-[120vh] flex-col relative w-full">
+      <div className="flex min-h-[120vh] flex-col relative w-full sca">
         <video
           ref={videoRef}
           autoPlay
@@ -122,7 +122,7 @@ export default function Home() {
       </div>
 
       {/* Miss Koi */}
-      <div className="flex flex-col mt-32 md:mt-48  min-h-[40vh] md:min-h-[100vh] justify-center items-start relative  w-full after:content-[''] after:absolute after:w-full after:h-6 md:after:h-72 after:bottom-0 after:bg-gradient-to-t after:z-50 after:from-black after:to-transparent">
+      <div className="flex flex-col mt-32 md:mt-48  min-h-[40vh] md:min-h-[100vh] justify-center items-start relative  w-full after:content-[''] after:absolute after:w-full after:h-6 md:after:h-72 after:bottom-0 after:bg-gradient-to-t after:z-20 after:from-black after:to-transparent">
         <Image
           src="/space img 1.svg"
           alt="Space"

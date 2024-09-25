@@ -143,7 +143,12 @@ const GenesisNFT = () => {
         </div>
         <div className="flex flex-col md:flex-row z-20 md:mb-28 p-6 md:px-64">
           <div className="flex relative w-full">
-            <Image src="/debit-06 1.svg" alt="Space" width={564} height={300} />
+            <Image
+              src="/crypto debit card.png"
+              alt="Space"
+              width={564}
+              height={300}
+            />
           </div>
           <div className="flex flex-col gap-12 md:gap-2 w-full">
             <div className="flex flex-col gap-2">
