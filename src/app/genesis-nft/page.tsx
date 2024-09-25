@@ -159,7 +159,7 @@ const GenesisNFT = () => {
             </div>
             <div className="flex flex-col gap-2">
               <h2 className="text-xl font-bold">
-                Standard Benefits for the Remaining 900 Genesis NFT Holders
+                Standard Benefits for the Remaining 400 Genesis NFT Holders
               </h2>
               <ul className="list-disc pl-4 text-white/60 ">
                 <li>
