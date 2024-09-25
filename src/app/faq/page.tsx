@@ -6,7 +6,7 @@ import AccordionComp from "@/components/AccordionComp";
 
 const FAQ = () => {
   return (
-    <div className="min-h-[150vh] relative justify-center items-center px-10 bg-black text-white">
+    <div className="min-h-[150vh] relative justify-center items-center px-10 bg-black text-white/80">
       <div className="flex pt-24 justify-center items-center gap-6 flex-col w-full ">
         <h2 className="font-bold text-2xl">FREQUENTLY ASKED QUESTIONS</h2>
         <div className="flex flex-col gap-3">

@@ -5,7 +5,8 @@ import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 export const teamList: ITeam[] = [
   {
     name: "Co Siau",
-    image_url: "/team/team_co siau 1.png",
+    // image_url: "/team/team_co siau 1.png",
+    image_url: "/team-photo/Co Siau.png",
     position: "FOUNDER/DIRECTOR",
     social_media: [
       {
@@ -20,7 +21,8 @@ export const teamList: ITeam[] = [
   },
   {
     name: "Bryan Lim",
-    image_url: "/team/team_bryan 1.png",
+    // image_url: "/team/team_bryan 1.png",
+    image_url: "/team-photo/Bryan Lim.jpg",
     position: "CREATIVE DIRECTOR",
     social_media: [
       {
@@ -31,7 +33,8 @@ export const teamList: ITeam[] = [
   },
   {
     name: "Chin Jia Huei",
-    image_url: "/team/team_jia huei 1.png",
+    // image_url: "/team/team_jia huei 1.png",
+    image_url: "/team-photo/Chin Jia Huei.png",
     position: "ADMIN DIRECTOR",
     social_media: [
       {
@@ -41,8 +44,9 @@ export const teamList: ITeam[] = [
     ],
   },
   {
-    name: "Jay Coh",
-    image_url: "/team/team_jay 1.png",
+    name: "Jay Koh",
+    // image_url: "/team/team_jay 1.png",
+    image_url: "/team-photo/Jay Koh.png",
     position: "WEB3 ADVISOR",
     social_media: [
       {
@@ -57,7 +61,8 @@ export const teamList: ITeam[] = [
   },
   {
     name: "Gary Wong",
-    image_url: "/team/team_gary 1.png",
+    // image_url: "/team/team_gary 1.png",
+    image_url: "/team-photo/Gary Wong.png",
     position: "BLOCKCHAIN ADVISOR",
     social_media: [
       {
@@ -68,7 +73,8 @@ export const teamList: ITeam[] = [
   },
   {
     name: "Ben Kok",
-    image_url: "/team/team_ben kok 1.png",
+    // image_url: "/team/team_ben kok 1.png",
+    image_url: "/team-photo/Ben Kok.png",
     position: "TECH ADVISOR",
     social_media: [
       {
@@ -79,7 +85,8 @@ export const teamList: ITeam[] = [
   },
   {
     name: "Sharon Yong",
-    image_url: "/team/team_sharon 1.png",
+    // image_url: "/team/team_sharon 1.png",
+    image_url: "/team-photo/Sharon Yong.png",
     position: "CISO",
     social_media: [
       {
@@ -90,7 +97,8 @@ export const teamList: ITeam[] = [
   },
   {
     name: "Wilson Wong",
-    image_url: "/team/team_wilson 1.png",
+    // image_url: "/team/team_wilson 1.png",
+    image_url: "/team-photo/Wilson Wong.png",
     position: "CTO",
     social_media: [
       {
@@ -101,7 +109,8 @@ export const teamList: ITeam[] = [
   },
   {
     name: "Tan Yu Ning",
-    image_url: "/team/team_yuning 1.png",
+    // image_url: "/team/team_yuning 1.png",
+    image_url: "/team-photo/Tan Yu Ning.png",
     position: "Design Manager",
     social_media: [
       {

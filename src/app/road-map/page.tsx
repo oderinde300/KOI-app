@@ -30,9 +30,9 @@ const RoadMap = () => {
         <div className="hidden md:flex absolute z-10 top-[15%] -right-[30%]">
           <Blob className="h-[40rem] w-[40rem] " />
         </div>
-        <div className="hidden md:flex absolute z-10 top-[40%] -left-[30%]">
+        {/* <div className="hidden md:flex absolute z-10 top-[40%] -left-[30%]">
           <Blob className="h-[40rem] w-[40rem] " />
-        </div>
+        </div> */}
         <div className="hidden md:flex absolute z-10 bottom-[20%] -right-[30%]">
           <Blob className="h-[40rem] w-[40rem] " />
         </div>
@@ -40,7 +40,7 @@ const RoadMap = () => {
           id="2020-oct"
           className="flex w-full md:min-h-[80vh] pt-24 md:justify-start "
         >
-          <div className="flex  flex-col gap-6">
+          <div className="flex flex-col gap-6">
             <h2 className="font-bold w-fit text-3xl text-gradient">2022 OCT</h2>
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-4">

@@ -3,11 +3,25 @@ import { ChevronDown, ChevronRight, Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
   const [isOpenSM, setOpenSM] = useState(false);
   const [isMenu, setMenu] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (href: string) => pathname === href;
+  const subNavIsActive = () => {
+    let active = false;
+    if (pathname === "/monokoily") active = true;
+    if (pathname === "/web3soc") active = true;
+    if (pathname === "/genesis-nft") active = true;
+    if (pathname === "/tokenomic") active = true;
+    return active;
+  };
+
+  console.log(pathname, isActive("/"));
 
   return (
     <div className="flex  bg-black py-2 w-full px-4 md:px-40 z-40 fixed justify-between border-b border-b-white/30 md:border-none items-center">
@@ -49,7 +63,7 @@ const Header = () => {
             </div>
             <div className="flex flex-col gap-2">
               <ul className="flex  flex-col w-full justify-between">
-                <li className="text-white/80 py-3">
+                <li className={`${"text-white/80 py-3"}`}>
                   <Link onClick={() => setMenu(false)} href="/">
                     INTRO
                   </Link>
@@ -118,58 +132,106 @@ const Header = () => {
       </div>
       <div className="hidden md:flex w-3/5">
         <ul className="flex w-full justify-between">
-          <li className="text-white/80">
-            <Link href="/">INTRO</Link>
+          <li
+            className={`${
+              isActive("/") ? "text-white font-bold underline" : "text-white/80"
+            }`}
+          >
+            <Link onClick={() => setMenu(false)} href="/">
+              INTRO
+            </Link>
           </li>
-          <li className="text-white/80 relative">
+
+          <li className="text-white/80 relative group">
             <Link
-              onClick={() => setOpen(!isOpen)}
-              className="flex gap-2"
+              // onClick={() => setOpen(!isOpen)}
+
+              className={`
+            ${
+              subNavIsActive()
+                ? "text-white font-bold underline"
+                : "text-white/80"
+            } flex gap-2"`}
               href="#"
             >
               <span>KOI SOLUTIONS</span>
               {isOpen ? <ChevronDown /> : <ChevronRight />}
             </Link>
-            {isOpen && (
-              <div className="flex flex-col absolute top-[160%] w-full bg-black">
+
+            <div className="absolute top-[1rem] bg-transparent">
+              <div className="flex-col w-full bg-black hidden group-hover:flex mt-[1rem]">
                 <Link
-                  onClick={() => setOpen(false)}
+                  // onClick={() => setOpen(false)}
                   href="/monokoily"
-                  className="py-2 w-full px-2"
+                  className={`${
+                    isActive("/monokoily")
+                      ? "text-white font-bold"
+                      : "text-white/80"
+                  } py-2 w-full px-2`}
                 >
                   Monokoily
                 </Link>
                 <Link
                   onClick={() => setOpen(false)}
                   href="/web3soc"
-                  className="py-2 w-full px-2"
+                  className={`${
+                    isActive("/web3soc")
+                      ? "text-white font-bold"
+                      : "text-white/80"
+                  } py-2 w-full px-2`}
                 >
                   Web3SOC
                 </Link>
                 <Link
                   onClick={() => setOpen(false)}
                   href="/genesis-nft"
-                  className="py-2 w-full px-2"
+                  className={`${
+                    isActive("/genesis-nft")
+                      ? "text-white font-bold"
+                      : "text-white/80"
+                  } py-2 w-full px-2`}
                 >
                   Genesis NFT
                 </Link>
                 <Link
                   onClick={() => setOpen(false)}
                   href="/tokenomic"
-                  className="py-2 w-full px-2"
+                  className={`${
+                    isActive("/tokenomic")
+                      ? "text-white font-bold"
+                      : "text-white/80"
+                  } py-2 w-full px-2`}
                 >
                   Tokenomic
                 </Link>
               </div>
-            )}
+            </div>
           </li>
-          <li className="text-white/80">
+          <li
+            className={`${
+              isActive("/road-map")
+                ? "text-white font-bold underline"
+                : "text-white/80"
+            }`}
+          >
             <Link href="/road-map">ROADMAP</Link>
           </li>
-          <li className="text-white/80">
+          <li
+            className={`${
+              isActive("/activity")
+                ? "text-white font-bold underline"
+                : "text-white/80"
+            }`}
+          >
             <Link href="/activity">ACTIVITY</Link>
           </li>
-          <li className="text-white/80">
+          <li
+            className={`${
+              isActive("/faq")
+                ? "text-white font-bold underline"
+                : "text-white/80"
+            }`}
+          >
             <Link href="/faq">FAQs</Link>
           </li>
         </ul>

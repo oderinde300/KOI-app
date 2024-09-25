@@ -11,6 +11,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { useInView } from "framer-motion";
 import ScrollAnimationWrapper from "@/components/ScrollAnimationWrapper";
+import ScrollToTopButton from "@/components/ScrollToTop";
 
 export default function Home() {
   const ref = useRef(null);
@@ -150,7 +151,7 @@ export default function Home() {
                 </h2>
               </div>
               <div className="flex w-full justify-start md:justify-end">
-                <div className="flex bg-black text-sm md:text-base md:font-normal font-light text-white/60 p-4 py-6 rounded-2xl border w-[70%] md:w-80 border-white/60 ">
+                <div className="flex bg-black text-sm md:text-base md:font-normal font-light text-white/80 p-4 py-6 rounded-2xl border w-[70%] md:w-80 border-white/60 ">
                   <p>
                     I am Ms. KOI your virtual mentor from the blockchain world.
                     KOI stands for KO Inflation, dedicated to actively fighting
@@ -175,7 +176,7 @@ export default function Home() {
         <h2 className="font-bold text-2xl md:text-3xl w-full text-left ">
           OUR GOALS
         </h2>
-        <div className="flex flex-col md:flex-row text-white/60 gap-6 md:gap-24">
+        <div className="flex flex-col md:flex-row text-white/80 gap-6 md:gap-24">
           <div className="flex relative justify-center items-center p-3 md:pl-6 before:content-[''] md:bg-black before:h-full before:absolute before:w-1 before:bg-custom-gradient before:left-0">
             Empower users to generate personal value and reach a wider audience.
           </div>
@@ -191,12 +192,12 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col my-24 min-h-[300vh] relative w-full after:content-[''] after:absolute after:w-full after:h-72 after:bottom-0 after:bg-gradient-to-t after:from-black after:to-transparent">
-        <Image
+        {/* <Image
           src="/pawel-czerwinski-ZkzobNDayXo-unsplash (1) 1.svg"
           alt="Space"
           fill={true}
           className="object-cover"
-        />
+        /> */}
 
         {/* Welcome to koi mobilize */}
         <div
@@ -206,9 +207,9 @@ export default function Home() {
           <h1 className="text-white text-2xl md:text-3xl mt-20 md:mt-0 font-bold w-full text-left md:text-center">
             WELCOME TO KOI MOBILIZE
           </h1>
-          <div className="grid md:w-[80%] grid-cols-1 md:grid-cols-3  gap-4">
-            <div className="grid col-span-2 grid-cols-2 gap-4">
-              <div className="flex flex-col w-full gap-4 h-full">
+          <div className="grid md:w-[80%] grid-cols-1 md:grid-cols-2  gap-4">
+            <div className="">
+              {/* <div className="flex flex-col w-full gap-4 h-full">
                 <div className="flex w-full h-full relative">
                   <Image
                     src="/product-02 1.svg"
@@ -225,16 +226,17 @@ export default function Home() {
                     className="object-cover"
                   />
                 </div>
-              </div>
+              </div> */}
               <div className="flex w-full h-[18rem] md:h-full relative">
                 <Image
                   src="/product-04 1.svg"
                   alt="Space"
                   fill={true}
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
             </div>
+
             <div className="flex col-span-1 w-80 md:w-full h-full py-8 md:px-8 gap-7 flex-col">
               <div className="flex flex-col gap-4">
                 <h3 className="text-xl font-bold">Transitioning to Web 3.0</h3>
@@ -262,6 +264,9 @@ export default function Home() {
           <h1 className="text-white text-3xl font-bold w-full text-center">
             CORE TEAM
           </h1>
+          <div>
+            <Blob className="absolute h-[40rem] w-[40rem] " />
+          </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {teamList.map((team: ITeam, index: number) => (
               <TeamCard key={index} data={team} />
@@ -434,6 +439,7 @@ export default function Home() {
           <Blob />
         </div> */}
       </div>
+      <ScrollToTopButton />
     </main>
   );
 }
