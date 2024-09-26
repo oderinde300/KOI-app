@@ -18,6 +18,7 @@ const config: Config = {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 				'button-gradient': 'linear-gradient(91.79deg, #A759FF 2.5%, #F05615 50.59%, #FFA515 98.68%)',
+				'button-gradient-hover': 'linear-gradient(91.79deg, #FFA515 1.5%, #F05615 50.59%, #A759FF 90.5%)',
 				'custom-gradient': 'linear-gradient(15.58deg, #A759FF -16.58%, #F05615 32.19%, #FFA515 97.98%)',
 				'custom-gradient-reverse': 'linear-gradient(15.58deg, #FFA515 -16.58%, #F05615 32.19%, #A759FF 97.98%)',
 				'text-gradient': 'linear-gradient(92.66deg, #A759FF 3.66%, #F05615 21.75%, #FFA515 39.84%)'

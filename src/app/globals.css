@@ -156,3 +156,32 @@ body {
 .animate-scroll {
   animation: scroll 20s linear infinite;
 }
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%); /* Start from right */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0); /* End at original position */
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0); /* Start at original position */
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%); /* Move to left */
+    opacity: 0;
+  }
+}
+
+.animate-slide-enter {
+  animation: slideIn 0.2s ease-in-out forwards; /* Slide in animation */
+}
+
+.animate-slide-exit {
+  animation: slideOut 0.2s ease-in-out forwards; /* Slide out animation */
+}
