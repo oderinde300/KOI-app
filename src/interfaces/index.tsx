@@ -16,3 +16,10 @@ export interface IEvent {
   city: string;
   description: string;
 }
+
+export interface IChartData {
+  name: string;
+  color: string;
+  percentage: number;
+  image: string;
+}

@@ -63,13 +63,22 @@ const config: Config = {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
-				chart: {
-					'1': 'hsl(var(--chart-1))',
-					'2': 'hsl(var(--chart-2))',
-					'3': 'hsl(var(--chart-3))',
-					'4': 'hsl(var(--chart-4))',
-					'5': 'hsl(var(--chart-5))'
-				}
+				'chart-1': '#FFA515', // Replace with your actual color
+				'chart-2': '#9ED441',
+				'chart-3': '#D44161',
+				'chart-4': '#D45741',
+				'chart-5': '#41D499',
+				'chart-6': '#2255D6',
+				'chart-7': '#6D41D4',
+				// chart: {
+				// 	'1': 'hsl(var(--chart-1))',
+				// 	'2': 'hsl(var(--chart-2))',
+				// 	'3': 'hsl(var(--chart-3))',
+				// 	'4': 'hsl(var(--chart-4))',
+				// 	'5': 'hsl(var(--chart-5))',
+				// 	'6': 'hsl(var(--chart-6))',
+				// 	'7': 'hsl(var(--chart-7))'
+				// }
 			},
 			keyframes: {
 				'accordion-down': {

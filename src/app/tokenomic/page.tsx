@@ -1,9 +1,15 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "../../components/ui/button";
 import Link from "next/link";
+import { chartData } from "@/lib/mock";
+import { IChartData } from "@/interfaces";
+import { Pin } from "lucide-react";
 
 const Tokenomic = () => {
+  const [hoveredImage, setHoveredImage] = useState("Group.svg");
+
   return (
     <div className="min-h-screen relative bg-black text-white">
       <div className="flex  justify-center items-center text-white w-full h-full min-h-screen relative after:content-[''] after:absolute after:w-full after:h-[50rem] after:bottom-0 after:bg-gradient-to-t after:from-black after:to-transparent">
@@ -55,7 +61,7 @@ const Tokenomic = () => {
           </h2>
           <div className="flex relative w-60 h-60">
             <Image
-              src="/Group.svg"
+              src={`/${hoveredImage}`}
               alt="chart"
               fill={true}
               className="object-cover"
@@ -63,62 +69,26 @@ const Tokenomic = () => {
           </div>
           <div className="flex flex-col gap-2 w-full text-white/80 h-full">
             <div className="flex flex-col w-full">
-              <div className="flex items-center w-full border-b border-b-white/40 pb-2 justify-between">
-                <div className="flex items-center gap-1 py-2">
-                  <span className={`bg-[#FFA515] rounded-full h-3 w-3`}></span>
-                  <p>Web3SOC Rewards</p>
+              {chartData.map((item: IChartData, index: number) => (
+                <div
+                  key={index}
+                  className="flex items-center w-full border-b cursor-pointer group border-b-white/40 pb-2 justify-between"
+                  onMouseEnter={() => setHoveredImage(item.image)}
+                  onMouseLeave={() => setHoveredImage("Group.svg")}
+                >
+                  <div className="flex items-center gap-1 py-2">
+                    <span
+                      style={{ backgroundColor: item.color }}
+                      className={`rounded-full group-hover:hidden h-3 w-3`}
+                    ></span>
+                    <span className="group-hover:block rotate-45 hidden">
+                      <Pin />
+                    </span>
+                    <p className="group-hover:font-bold">{item.name}</p>
+                  </div>
+                  <p className="group-hover:font-bold">{item.percentage}%</p>
                 </div>
-                <p>50%</p>
-              </div>
-              <div className="flex items-center w-full border-b border-b-white/40 pb-2 justify-between">
-                <div className="flex items-center gap-1 py-2">
-                  <span className={`bg-[#9ED441] rounded-full h-3 w-3`}></span>
-                  <p>Monokoily Rewards</p>
-                </div>
-                <p>15%</p>
-              </div>
-              <div className="flex items-center w-full border-b border-b-white/40 pb-2 justify-between">
-                <div className="flex items-center gap-1 py-2">
-                  <span className={`bg-[#D44161] rounded-full h-3 w-3`}></span>
-                  <p>Private Sales</p>
-                </div>
-                <p>5%</p>
-              </div>
-              <div className="flex items-center w-full border-b border-b-white/40 pb-2 justify-between">
-                <div className="flex items-center gap-1 py-2">
-                  <span className={`bg-[#D44161] rounded-full h-3 w-3`}></span>
-                  <p>VC</p>
-                </div>
-                <p>5%</p>
-              </div>
-              <div className="flex items-center w-full border-b border-b-white/40 pb-2 justify-between">
-                <div className="flex items-center gap-1 py-2">
-                  <span className={`bg-[#D45741] rounded-full h-3 w-3`}></span>
-                  <p>Future Development</p>
-                </div>
-                <p>10%</p>
-              </div>
-              <div className="flex items-center w-full border-b border-b-white/40 pb-2 justify-between">
-                <div className="flex items-center gap-1 py-2">
-                  <span className={`bg-[#41D499] rounded-full h-3 w-3`}></span>
-                  <p>Team</p>
-                </div>
-                <p>5%</p>
-              </div>
-              <div className="flex items-center w-full border-b border-b-white/40 pb-2 justify-between">
-                <div className="flex items-center gap-1 py-2">
-                  <span className={`bg-[#2255D6] rounded-full h-3 w-3`}></span>
-                  <p>LP</p>
-                </div>
-                <p>5%</p>
-              </div>
-              <div className="flex items-center w-full justify-between">
-                <div className="flex items-center gap-1 py-2">
-                  <span className={`bg-[#6D41D4] rounded-full h-3 w-3`}></span>
-                  <p>Advisor</p>
-                </div>
-                <p>2%</p>
-              </div>
+              ))}
             </div>
           </div>
         </div>

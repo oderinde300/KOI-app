@@ -196,22 +196,22 @@ export default function Home() {
               </div>
             </div>
             <div className="flex absolute right-0 md:mt-16 top-[20%] md:relative h-56 min-w-48 md:h-[35rem] md:min-w-[29.8125rem]">
-              <video
+              {/* <video
                 ref={videoRef}
                 autoPlay
                 muted
                 loop
                 className="absolute top-0 left-0 w-full h-full object-cover"
               >
-                <source src="/videos/MsKOI Space.webm" type="video/webm" />
+                <source src="/videos/MsKOI Space.gif" type="video/gif" />
                 Your browser does not support the video tag.
-              </video>
-              {/* <Image
-                src="/MsKOI Space.png"
+              </video> */}
+              <Image
+                src="/videos/MsKOI Space.gif"
                 alt="space"
                 fill={true}
                 className="object-cover"
-              /> */}
+              />
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { IEvent, ITeam } from "@/interfaces";
+import { IChartData, IEvent, ITeam } from "@/interfaces";
 import { FAQ } from "../../components/Accordion/index";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
@@ -323,5 +323,64 @@ The event garnered attention from tech enthusiasts and entrepreneurs from both t
 This assembly marks a significant stride towards integrating Malaysia’s business community with the dynamic Web3.0 landscape. KOI Mobilize SDN BHD remains dedicated to fostering educational and business collaborations within this sphere, aiming to lead as a global pioneer in blockchain education.
 
     `,
+  },
+];
+
+const color = "#FFA515";
+const color1 = "#9ED441";
+const color2 = "#D44161";
+const color3 = "#D45741";
+const color4 = "#41D499";
+const color5 = "#2255D6";
+const color6 = "#6D41D4";
+
+export const chartData: IChartData[] = [
+  {
+    name: "Web3SOC Rewards",
+    percentage: 50,
+    color: "#FFA515",
+    image: "Group 1.svg",
+  },
+  {
+    name: "Monokoily Rewards",
+    percentage: 15,
+    color: "#9ED441",
+    image: "Group 2.svg",
+  },
+  {
+    name: "Private Sales",
+    percentage: 5,
+    color: "#D44161",
+    image: "Group 3.svg",
+  },
+  {
+    name: "VC",
+    percentage: 5,
+    color: "#D44161",
+    image: "Group 3.svg",
+  },
+  {
+    name: "Future Development",
+    percentage: 10,
+    color: "#D45741",
+    image: "Group 4.svg",
+  },
+  {
+    name: "Team",
+    percentage: 5,
+    color: "#41D499",
+    image: "Group 5.svg",
+  },
+  {
+    name: "LP",
+    percentage: 5,
+    color: "#2255D6",
+    image: "Group 6.svg",
+  },
+  {
+    name: "Advisor",
+    percentage: 2,
+    color: "#6D41D4",
+    image: "Group 7.svg",
   },
 ];
