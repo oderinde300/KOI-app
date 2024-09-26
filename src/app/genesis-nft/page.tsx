@@ -33,7 +33,8 @@ const GenesisNFT = () => {
           </div>
           <div className="flex relative w-[15.5rem] h-[20.15rem] md:w-64 md:h-[31.5rem]">
             <Image
-              src="/KOI Genesis 2.svg"
+              // src="/KOI Genesis 2.svg"
+              src="/videos/KOI Genesis.gif"
               alt="Monokoily"
               fill={true}
               className="object-cover"
