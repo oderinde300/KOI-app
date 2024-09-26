@@ -72,7 +72,7 @@ export default function Home() {
         <div className="flex mx-auto py-24 z-10 gap-12 md:gap-28">
           <div className="flex flex-col gap-2 text-white items-center">
             <h2 className="text-xl md:text-2xl font-bold ">1200+</h2>
-            <p className="text-xs md:text-base">Monokolly Users</p>
+            <p className="text-xs md:text-base">Monokoily Users</p>
             <div className="flex w-28 md:w-44 h-1 mt-3 bg-button-gradient"></div>
           </div>
           <div className="flex flex-col gap-2 text-white items-center">
@@ -103,7 +103,42 @@ export default function Home() {
             </div>
           ))}
         </div> */}
-        <div className="hidden md:flex relative min-w-[71.25rem]  min-h-36">
+        {/* <div className="overflow-hidden w-full">
+          <div className="animate-scroll flex w-max">
+            {partners.map((url: string, index: number) => (
+              <div
+                key={index}
+                className="flex h-10 w-24 md:h-14 md:min-w-48 relative"
+              >
+                <Image
+                  src={url}
+                  alt={`Partners ${index}`}
+                  className="object-contain w-full h-full"
+                  fill={true}
+                />
+              </div>
+            ))}
+          </div>
+        </div> */}
+        <div className="overflow-hidden w-full">
+          <div className="animate-scroll flex w-max">
+            {[...partners, ...partners].map((url: string, index: number) => (
+              <div
+                key={index}
+                className="flex h-10 w-24 md:h-14 md:min-w-48 relative"
+              >
+                <Image
+                  src={url}
+                  alt={`Partners ${index}`}
+                  className="object-contain w-full h-full"
+                  fill={true}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* <div className="hidden md:flex relative min-w-[71.25rem]  min-h-36">
           <Image
             src="/partners/partner.svg"
             alt={`Partners`}
@@ -118,7 +153,7 @@ export default function Home() {
             className="object-contain w-full h-full"
             fill={true}
           />
-        </div>
+        </div> */}
       </div>
 
       {/* Miss Koi */}
@@ -383,7 +418,7 @@ export default function Home() {
             <div className="flex w-full items-center justify-start md:justify-center">
               <div className="flex relative w-[7.5rem] h-[10rem] md:w-72 md:h-[27.1875rem]">
                 <Image
-                  src="/KOI Genesis 2.svg"
+                  src="/videos/KOI Genesis.gif"
                   alt="Koi Genesis"
                   fill={true}
                   className="object-cover"

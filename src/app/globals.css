@@ -129,6 +129,33 @@ body {
   display: none;
 } */
 
+/* @keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+} */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start at the beginning of the container */
+  }
+  100% {
+    transform: translateX(
+      -50%
+    ); /* Move left by 50%, which is the width of the container */
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
 @keyframes slideIn {
   0% {
     transform: translateX(100%); /* Start from right */
