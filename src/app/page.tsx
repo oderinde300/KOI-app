@@ -167,12 +167,12 @@ export default function Home() {
         />
 
         <div className="flex w-full items-center flex-col relative z-10">
-          <h1 className="text-white md:-mt-16 font-molde-bold md:ml-56 text-3xl md:text-5xl font-bold w-1/2 md:w-1/4 text-center">
+          <h1 className="text-white lg:-mt-16 font-molde-bold lg:ml-56 text-3xl lg:text-5xl font-bold w-1/2 lg:w-1/4 text-center">
             MEET MISS KOI
           </h1>
-          <div className="flex w-full md:items-center md:px-48">
-            <div className="flex px-4 md:-mt-16 md:px-32 flex-col w-full gap-3 md:gap-12">
-              <div className="md:absolute top-[1%] left-[18%] flex ml-4 h-[4.5rem] w-[4.375rem] md:h-40 md:w-36 relative">
+          <div className="flex w-full md:items-center lg:px-48">
+            <div className="flex px-4 lg:-mt-16 lg:pl-32  flex-col w-full gap-3 md:gap-5 lg:gap-12">
+              <div className="lg:absolute top-[1%] left-[18%] flex ml-4 h-[4.5rem] w-[4.375rem] lg:h-40 lg:w-36 relative">
                 <Image
                   src="/meteorite2 1.svg"
                   alt="meteor"
@@ -180,13 +180,13 @@ export default function Home() {
                   className="object-cover"
                 />
               </div>
-              <div className="flex w-full justify-start">
-                <h2 className="text-2xl md:text-4xl font-light text-center w-1/2 text-white">
+              <div className="flex w-full justify-start md:justify-center md:w-2/3 lg:justify-start lg:w-2/3">
+                <h2 className="text-2xl lg:text-4xl font-light text-center md:w-1/2 lg:w-full text-white">
                   BLOCKCHAIN VIRTUAL IP
                 </h2>
               </div>
-              <div className="flex w-full justify-start md:justify-end">
-                <div className="flex bg-black text-sm md:text-base md:font-normal font-light text-white/80 p-4 py-6 rounded-2xl border w-[70%] md:w-80 border-white/60 ">
+              <div className="flex w-full lg:pl-24 justify-start md:justify-end md:w-2/3 lg:w-full">
+                <div className="flex  bg-black text-sm lg:text-base lg:font-normal font-light text-white/80 p-4 py-6 rounded-2xl border max-w-80 lg:min-w-96 border-white/60 ">
                   <p>
                     I am Ms. KOI your virtual mentor from the blockchain world.
                     KOI stands for KO Inflation, dedicated to actively fighting
@@ -195,7 +195,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex absolute right-0 md:mt-16 top-[20%] md:relative h-56 min-w-48 md:h-[35rem] md:min-w-[29.8125rem]">
+            <div className="flex absolute right-0 lg:mt-16 top-[20%] lg:relative h-56 min-w-48 md:h-[25rem] md:min-w-[1x9.8125rem] lg:h-[35rem] lg:min-w-[29.8125rem]">
               {/* <video
                 ref={videoRef}
                 autoPlay
@@ -207,7 +207,7 @@ export default function Home() {
                 Your browser does not support the video tag.
               </video> */}
               <Image
-                src="/videos/MsKOI Space.gif"
+                src="/MsKOI Space_00000 1.png"
                 alt="space"
                 fill={true}
                 className="object-cover"
