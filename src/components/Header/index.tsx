@@ -63,12 +63,21 @@ const Header = () => {
             </div>
             <div className="flex flex-col gap-2">
               <ul className="flex  flex-col w-full justify-between">
-                <li className={`${"text-white/80 py-3"}`}>
+                <li
+                  className={`${
+                    isActive("/") ? "text-white font-bold" : "text-white/80"
+                  } py-3`}
+                >
                   <Link onClick={() => setMenu(false)} href="/">
                     INTRO
                   </Link>
                 </li>
-                <li className="text-white/80 py-3 relative">
+                <li
+                  className={`
+                  ${
+                    subNavIsActive() ? "text-white font-bold" : "text-white/80"
+                  } py-3 relative"`}
+                >
                   <Link
                     onClick={() => setOpenSM(!isOpenSM)}
                     className="flex gap-2"
@@ -82,45 +91,77 @@ const Header = () => {
                       <Link
                         onClick={() => setMenu(false)}
                         href="/monokoily"
-                        className="py-2 w-full px-2"
+                        className={`${
+                          isActive("/monokoily")
+                            ? "text-white font-bold"
+                            : "text-white/80"
+                        } py-2 w-full px-2`}
                       >
                         Monokoily
                       </Link>
                       <Link
                         onClick={() => setMenu(false)}
                         href="/web3soc"
-                        className="py-2 w-full px-2"
+                        className={`${
+                          isActive("/web3soc")
+                            ? "text-white font-bold"
+                            : "text-white/80"
+                        } py-2 w-full px-2`}
                       >
                         Web3SOC
                       </Link>
                       <Link
                         onClick={() => setMenu(false)}
                         href="/genesis-nft"
-                        className="py-2 w-full px-2"
+                        className={`${
+                          isActive("/genesis-nft")
+                            ? "text-white font-bold"
+                            : "text-white/80"
+                        } py-2 w-full px-2`}
                       >
                         Genesis NFT
                       </Link>
                       <Link
                         onClick={() => setMenu(false)}
                         href="/tokenomic"
-                        className="py-2 w-full px-2"
+                        className={`${
+                          isActive("/tokenomic")
+                            ? "text-white font-bold"
+                            : "text-white/80"
+                        } py-2 w-full px-2`}
                       >
                         Tokenomic
                       </Link>
                     </div>
                   )}
                 </li>
-                <li className="text-white/80 py-3">
+                <li
+                  className={`${
+                    isActive("/road-map")
+                      ? "text-white font-bold"
+                      : "text-white/80"
+                  } py-3`}
+                >
                   <Link onClick={() => setMenu(false)} href="/road-map">
                     ROADMAP
                   </Link>
                 </li>
-                <li className="text-white/80 py-3">
+                <li
+                  className={`${
+                    isActive("/activity")
+                      ? "text-white font-bold"
+                      : "text-white/80"
+                  } py-3`}
+                >
                   <Link onClick={() => setMenu(false)} href="/activity">
                     ACTIVITY
                   </Link>
                 </li>
-                <li className="text-white/80 py-3">
+                <li
+                  className={`${
+                    isActive("/faq") ? "text-white font-bold" : "text-white/80"
+                  } py-3`}
+                >
                   <Link onClick={() => setMenu(false)} href="/faq">
                     FAQs
                   </Link>
