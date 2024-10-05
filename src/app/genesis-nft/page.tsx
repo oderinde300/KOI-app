@@ -28,7 +28,7 @@ const GenesisNFT = () => {
               </Button>
               <Button variant={"outline"} className="py-5 w-32 md:w-48">
                 <Link
-                  href="https://doc-08-6c-prod-00-apps-viewer.googleusercontent.com/viewer2/prod-00/pdf/njd0150in665iqssadmj3980pfhdu3au/spcjrcdlfhikqg8nplf7qmpefcqlo3qp/1728124200000/3/102992468779875256520/APznzab98BkHXE4jmUHZto-BI3eE9rHs78lvAqfae0uBTzz_tV17uCzAW4baQyIVKY0DuNCAWw9BxcdIgFx42coaG3DqjMjkt291XJNxyrKDz0CE71M6l6rzCvVkWT7sQstViPxZ1QkzangvpAmxgqcqwUUbJ-GugzjWauNokWDgNEQ8_PcmDelVc562NE6c2Ow-hUvV5k2CuCXsJCSYrDfbxjRav1zsPqHWfLq_aIDpt8cgMQVsjpp88Wt3rq1xdE8dES_IkZzzpLFe6G97aWdhYxXWQ4XLx69Jy5DVf3ZfnZQWtpg3FS4OIXkchxUQb3HaxpZLlSIEtQcij5GHGlqT9ekeNUI3GuqBXMZV6b5bK5PHnWXqct_OnlyWqA0ULHzh8HjFCNNuEozVWPUocQIt1iHVnokfFw==?authuser=0&nonce=kj0bunfhj06o8&user=102992468779875256520&hash=nfl9ea4asu99p7dtrjap6rsilfq7nd6d"
+                  href="https://drive.google.com/file/d/1XMlHc7vUsZL7y-5r_4_3gdrU-4ooPRjX/view?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
