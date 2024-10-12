@@ -27,6 +27,7 @@ const Monokoily = () => {
               </p>
             </div>
             <ul className="list-disc pl-4 md:w-2/3">
+              <li>Blockchain Version of Classic Monopoly Game</li>
               <li>Experience Lifes Balance and Challenges</li>
               <li>
                 Your Educational Tool for Self-Management and Financial Planning
@@ -40,9 +41,12 @@ const Monokoily = () => {
               learning and exploring without the fear of failure. With
               MONOKOILY, live fully and earn as you play.
             </p>
-            <Button variant={"outline"} className="py-5">
-              Comming Soon
-            </Button>
+            {/* <Button variant={"outline"} className="py-5">
+              Coming Soon
+            </Button> */}
+            <button className="border border-input bg-transparent shadow-sm h-9 w-48 px-4 py-5 text-sm rounded-full flex items-center justify-center">
+              <span>Coming Soon</span>
+            </button>
           </div>
           <div className="flex relative w-[11.375rem] h-[22.75rem] md:w-64 md:h-[31.5rem]">
             <Image

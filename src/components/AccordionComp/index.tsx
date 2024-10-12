@@ -10,6 +10,16 @@ export interface FAQ {
 }
 const AccordionComp = ({ number, question, answer }: FAQ) => {
   const [isOpen, setOpen] = useState(false);
+
+  const checkNumber = () => {
+    let result = String(number);
+    console.log(result);
+    if (result?.length < 2) {
+      return `0${result}`;
+    } else {
+      return result;
+    }
+  };
   return (
     <div className="flex flex-col rounded-md border max-w-[40rem]">
       <div
@@ -17,7 +27,7 @@ const AccordionComp = ({ number, question, answer }: FAQ) => {
           isOpen ? "" : "max-h-[3.5rem] overflow-hidden"
         }`}
       >
-        <div className="flex px-4 py-3">0{number}</div>
+        <div className="flex px-4 py-3">{checkNumber()}</div>
         <div className="flex w-full">
           <p>{question}</p>
         </div>

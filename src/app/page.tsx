@@ -12,6 +12,7 @@ import { useEffect, useRef, useState } from "react";
 import { useInView } from "framer-motion";
 import ScrollAnimationWrapper from "@/components/ScrollAnimationWrapper";
 import ScrollToTopButton from "@/components/ScrollToTop";
+import { Video } from "lucide-react";
 
 export default function Home() {
   const ref = useRef(null);
@@ -40,7 +41,7 @@ export default function Home() {
     }
   }, [isInView]);
   return (
-    <main className="flex min-h-screen relative text-white flex-col items-center justify-between md:px-6 lg:px-12 bg-black overflow-x-hidden">
+    <main className="flex min-h-screen relative text-white flex-col items-center justify-between  bg-black overflow-x-hidden">
       <div className="flex min-h-[120vh] flex-col relative w-full sca">
         <video
           ref={videoRef}
@@ -195,7 +196,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex absolute right-0 lg:mt-16 top-[20%] lg:relative h-56 min-w-48 md:h-[25rem] md:min-w-[1x9.8125rem] lg:h-[35rem] lg:min-w-[29.8125rem]">
+            <div className="flex absolute right-0 lg:right-[3rem] xl:right-[-4rem] lg:mt-16 top-[20%] lg:relative h-56 min-w-48 md:h-[25rem] md:min-w-[1x9.8125rem] lg:h-[35rem] lg:min-w-[29.8125rem]">
               {/* <video
                 ref={videoRef}
                 autoPlay
@@ -206,12 +207,19 @@ export default function Home() {
                 <source src="/videos/MsKOI Space.gif" type="video/gif" />
                 Your browser does not support the video tag.
               </video> */}
-              <Image
+              {/* <Image
                 src="/MsKOI Space_00000 1.png"
                 alt="space"
                 fill={true}
                 className="object-cover"
-              />
+              /> */}
+
+              <div className="video-container">
+                <video loop muted autoPlay>
+                  <source src="/videos/MsKOI Space.webm" type="video/webm" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
           </div>
         </div>
@@ -274,10 +282,12 @@ export default function Home() {
               </div> */}
               <div className="flex w-full h-[18rem] md:h-full relative">
                 <Image
-                  src="/product-04 1.svg"
+                  src="/welcome-to-mobilize.png"
                   alt="Space"
-                  fill={true}
+                  // fill={true}
                   className="object-contain"
+                  width={500}
+                  height={500}
                 />
               </div>
             </div>
@@ -305,17 +315,19 @@ export default function Home() {
         </div>
 
         {/* Core Team */}
-        <div className="flex relative px-4 md:px-0  gap-12 mt-12 z-10 flex-col items-center overflow-hidden">
-          <h1 className="text-white text-3xl font-bold w-full text-center">
-            CORE TEAM
-          </h1>
-          <div>
-            <Blob className="absolute h-[40rem] w-[40rem] " />
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-            {teamList.map((team: ITeam, index: number) => (
-              <TeamCard key={index} data={team} />
-            ))}
+        <div className="relative">
+          <div className="flex  px-4 md:px-0  gap-12 mt-12 z-20 flex-col items-center overflow-hidden">
+            <h1 className="text-white text-3xl font-bold w-full text-center">
+              CORE TEAM
+            </h1>
+            <div className="hidden md:flex absolute top-[20%] -right-[30%]">
+              <Blob className="h-[40rem] w-[40rem] " />
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+              {teamList.map((team: ITeam, index: number) => (
+                <TeamCard key={index} data={team} />
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -399,10 +411,13 @@ export default function Home() {
                     WEB3SOC
                   </p>
                 </div>
-                <p className="">
-                  Earn Social Income and Acquire More Blockchain Assets through
-                  the Solana Ecosystem.
-                </p>
+                <ul className="list-disc">
+                  <li>Web3 Version of Classic Meta</li>
+                  <li className="">
+                    Earn Social Income and Acquire More Blockchain Assets
+                    through the Solana Ecosystem.
+                  </li>
+                </ul>
                 <Button variant={"outline"} className="py-5">
                   <Link href="/web3soc">Read More</Link>
                 </Button>
