@@ -188,3 +188,15 @@ body {
 .animate-slide-exit {
   animation: slideOut 0.2s ease-in-out forwards; /* Slide out animation */
 }
+
+/* styles/globals.css */
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}

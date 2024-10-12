@@ -44,22 +44,38 @@ export const teamList: ITeam[] = [
     ],
   },
   {
-    name: "Sky Wee",
-    // image_url: "/team/team_jia huei 1.png",
-    image_url: "/team-photo/Sky Wee.png",
-    position: "LEAD ADVISOR",
+    name: "Wilson Wong",
+    // image_url: "/team/team_wilson 1.png",
+    image_url: "/team-photo/Wilson Wong.png",
+    position: "CTO",
     social_media: [
       {
         icon: "/team/linkedin.svg",
-        link: "https://www.linkedin.com/in/skywee97/",
+        link: "https://www.linkedin.com/in/wilson-wong-412046184/",
       },
+    ],
+  },
+  {
+    name: "Tan Yu Ning",
+    // image_url: "/team/team_yuning 1.png",
+    image_url: "/team-photo/Tan Yu Ning.png",
+    position: "Design Manager",
+    social_media: [
       {
-        icon: "/team/facebook.svg",
-        link: "https://www.facebook.com/skywee97",
+        icon: "/team/linkedin.svg",
+        link: "https://www.linkedin.com/in/yu-ning-tan-37297231b/",
       },
+    ],
+  },
+  {
+    name: "Sharon Yong",
+    // image_url: "/team/team_sharon 1.png",
+    image_url: "/team-photo/Sharon Yong.png",
+    position: "CISO",
+    social_media: [
       {
-        icon: "/team/twitter.svg",
-        link: "https://x.com/OfficialSkyWee1",
+        icon: "/team/linkedin.svg",
+        link: "https://www.linkedin.com/in/sharonyong",
       },
     ],
   },
@@ -104,38 +120,22 @@ export const teamList: ITeam[] = [
     ],
   },
   {
-    name: "Sharon Yong",
-    // image_url: "/team/team_sharon 1.png",
-    image_url: "/team-photo/Sharon Yong.png",
-    position: "CISO",
+    name: "Sky Wee",
+    // image_url: "/team/team_jia huei 1.png",
+    image_url: "/team-photo/Sky Wee.png",
+    position: "LEAD ADVISOR",
     social_media: [
       {
         icon: "/team/linkedin.svg",
-        link: "https://www.linkedin.com/in/sharonyong",
+        link: "https://www.linkedin.com/in/skywee97/",
       },
-    ],
-  },
-  {
-    name: "Wilson Wong",
-    // image_url: "/team/team_wilson 1.png",
-    image_url: "/team-photo/Wilson Wong.png",
-    position: "CTO",
-    social_media: [
       {
-        icon: "/team/linkedin.svg",
-        link: "https://www.linkedin.com/in/wilson-wong-412046184/",
+        icon: "/team/facebook.svg",
+        link: "https://www.facebook.com/skywee97",
       },
-    ],
-  },
-  {
-    name: "Tan Yu Ning",
-    // image_url: "/team/team_yuning 1.png",
-    image_url: "/team-photo/Tan Yu Ning.png",
-    position: "Design Manager",
-    social_media: [
       {
-        icon: "/team/linkedin.svg",
-        link: "https://www.linkedin.com/in/yu-ning-tan-37297231b/",
+        icon: "/team/twitter.svg",
+        link: "https://x.com/OfficialSkyWee1",
       },
     ],
   },
@@ -336,51 +336,51 @@ const color6 = "#6D41D4";
 
 export const chartData: IChartData[] = [
   {
-    name: "Web3SOC Rewards",
+    name: "Web3SOC Reward",
     percentage: 50,
-    color: "#FFA515",
+    color: "#be80ff",
     image: "Group 1.svg",
   },
   {
-    name: "Monokoily Rewards",
+    name: "Monokoily Reward",
     percentage: 15,
-    color: "#9ED441",
+    color: "#bb39ff",
     image: "Group 2.svg",
   },
   {
     name: "Future Development",
     percentage: 10,
-    color: "#D45741",
+    color: "#cc23bc",
     image: "Group 3.svg",
   },
   {
     name: "VC",
     percentage: 8,
-    color: "#3D8597",
+    color: "#ce215f",
     image: "Group 4.svg",
   },
   {
     name: "Private Sales",
     percentage: 5,
-    color: "#D44161",
+    color: "#e05314",
     image: "Group 5.svg",
   },
   {
     name: "Team",
     percentage: 5,
-    color: "#41D499",
+    color: "#f78a11",
     image: "Group 6.svg",
   },
   {
     name: "LP",
     percentage: 5,
-    color: "#2255D6",
+    color: "#ffbc64",
     image: "Group 7.svg",
   },
   {
     name: "Advisor",
     percentage: 2,
-    color: "#6D41D4",
+    color: "#ffc89f",
     image: "Group 8.svg",
   },
 ];

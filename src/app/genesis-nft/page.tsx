@@ -24,7 +24,7 @@ const GenesisNFT = () => {
             </p>
             <div className="flex gap-4">
               <Button className="py-5 w-32 md:w-48">
-                <Link href="#get-started">Get Started</Link>
+                <Link href="#target-section">Get Started</Link>
               </Button>
               <Button variant={"outline"} className="py-5 w-32 md:w-48">
                 <Link
@@ -158,7 +158,7 @@ const GenesisNFT = () => {
             />
           </div>
           <div className="flex flex-col gap-12 md:gap-2 w-full">
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 mb-4">
               <h2 className="text-xl font-bold">
                 Exclusive Benefits for the First 100 Genesis NFT Holders
               </h2>
@@ -190,7 +190,10 @@ const GenesisNFT = () => {
             </div>
           </div>
         </div>
-        <div className="flex w-full z-20 justify-center px-8 pt-24 h-screen items-center">
+        <div
+          className="flex w-full z-20 justify-center px-8 pt-24 h-screen items-center"
+          id="target-section"
+        >
           <div className="flex flex-col border p-8 max-w-lg bg-[#010024] gap-6 border-white/60 rounded-tr-[5rem] rounded-bl-[5rem]">
             <h2 className="font-bold md:text-3xl text-gradient">
               Join the KOI NFT Revolution

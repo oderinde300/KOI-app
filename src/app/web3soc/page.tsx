@@ -45,7 +45,7 @@ const Web3SOC = () => {
               business innovation and growth.
             </p>
             <div className="pointer-events-none">
-              <Button variant={"outline"} className="py-5 mouse-event-none">
+              <Button variant={"destructive"} className="py-5">
                 Coming Soon
               </Button>
             </div>
