@@ -1,13 +1,14 @@
 "use client";
 import Image from "next/image";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
 import ActivityCard from "../../components/ActivityCard";
-import { Settings2 } from "lucide-react";
+// import { Settings2 } from "lucide-react";
 import ActivityModal from "@/components/ActivityModal";
 import { events } from "@/lib/mock"; // assuming events has a date property
 import { IEvent } from "@/interfaces";
+import dayjs from "dayjs";
 
 type TimeframeOption =
   | "Select a Timeframe"
@@ -21,44 +22,44 @@ const ActivityBoard = () => {
   const [modal, setModal] = useState(false);
   const [event, setEvent] = useState<IEvent | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
-  const [sortedEvents, setSortedEvents] = useState<IEvent[]>(events);
-  const [sortByDate, setSortByDate] = useState(false);
+  // const [sortedEvents, setSortedEvents] = useState<IEvent[]>(events);
+  // const [sortByDate, setSortByDate] = useState(false);
 
   const showModal = (event: IEvent) => {
     setEvent(event);
     setModal(true);
   };
 
-  useEffect(() => {
-    const filteredEvents = events.filter((e) =>
-      Object.values(e).some((value) =>
-        String(value).toLowerCase().includes(searchQuery.toLowerCase())
-      )
-    );
+  // useEffect(() => {
+  //   const filteredEvents = events.filter((e) =>
+  //     Object.values(e).some((value) =>
+  //       String(value).toLowerCase().includes(searchQuery.toLowerCase())
+  //     )
+  //   );
 
-    // Debugging: Check if all dates are valid before sorting
-    filteredEvents.forEach((event) => {});
+  //   // Debugging: Check if all dates are valid before sorting
+  //   filteredEvents.forEach((event) => {});
 
-    // Sort based on isAscending state
-    filteredEvents.sort((a, b) => {
-      const dateA = new Date(a.date).getTime();
-      const dateB = new Date(b.date).getTime();
+  //   // Sort based on isAscending state
+  //   filteredEvents.sort((a, b) => {
+  //     const dateA = new Date(a.date).getTime();
+  //     const dateB = new Date(b.date).getTime();
 
-      if (isNaN(dateA) || isNaN(dateB)) return 0; // Handle invalid dates
+  //     if (isNaN(dateA) || isNaN(dateB)) return 0; // Handle invalid dates
 
-      return sortByDate ? dateA - dateB : dateB - dateA; // Ascending or Descending
-    });
+  //     return sortByDate ? dateA - dateB : dateB - dateA; // Ascending or Descending
+  //   });
 
-    setSortedEvents(filteredEvents);
-  }, [searchQuery, sortByDate]);
+  //   setSortedEvents(filteredEvents);
+  // }, [searchQuery, sortByDate]);
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(e.target.value);
   };
 
-  const toggleSortByDate = () => {
-    setSortByDate((prev) => !prev);
-  };
+  // const toggleSortByDate = () => {
+  //   setSortByDate((prev) => !prev);
+  // };
 
   const filterOptions: TimeframeOption[] = [
     "This Past Week",
@@ -70,6 +71,36 @@ const ActivityBoard = () => {
   const [activeOption, setActiveOption] =
     useState<TimeframeOption>("Select a Timeframe");
 
+  const filterEvents = (events: IEvent[], activeOption: string): IEvent[] => {
+    const today = dayjs();
+
+    switch (activeOption) {
+      case "Select a Timeframe":
+      case "All time":
+        return events;
+
+      case "Now":
+        return events.filter((event) => dayjs(event.date).isSame(today, "day"));
+
+      case "This Past Week":
+        return events.filter((event) =>
+          dayjs(event.date).isAfter(today.subtract(7, "day"))
+        );
+
+      case "This Past Month":
+        return events.filter((event) =>
+          dayjs(event.date).isAfter(today.subtract(1, "month"))
+        );
+
+      case "This Past Year":
+        return events.filter((event) =>
+          dayjs(event.date).isAfter(today.subtract(1, "year"))
+        );
+
+      default:
+        return events;
+    }
+  };
   return (
     <div className="min-h-screen relative bg-black text-white">
       <div className="flex justify-center pb-24 items-end text-white w-full h-[60vh] relative after:content-[''] after:absolute after:w-full after:h-[40rem] after:bottom-0 after:bg-gradient-to-t after:from-black after:to-transparent">
@@ -83,7 +114,7 @@ const ActivityBoard = () => {
       </div>
 
       <div className="flex flex-col w-full z-20 justify-start gap-24 px-6 pt-24 min-h-screen md:px-12 lg:px-56">
-        <div className="flex items-center gap-2">
+        <div className="flex flex-col sm:flex-row items-center gap-2">
           <div className="flex rounded-full border border-white/30 p-1">
             <Input
               className="border-none text-xs md:text-base"
@@ -123,7 +154,7 @@ const ActivityBoard = () => {
                 viewBox="0 0 15 15"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="group-hover:rotate-180 transition-all ease-in-out duration-100"
+                className="rotate-180 group-hover:rotate-0 transition-all ease-in-out duration-100"
               >
                 <path
                   d="M3.13523 8.84197C3.3241 9.04343 3.64052 9.05363 3.84197 8.86477L7.5 5.43536L11.158 8.86477C11.3595 9.05363 11.6759 9.04343 11.8648 8.84197C12.0536 8.64051 12.0434 8.32409 11.842 8.13523L7.84197 4.38523C7.64964 4.20492 7.35036 4.20492 7.15803 4.38523L3.15803 8.13523C2.95657 8.32409 2.94637 8.64051 3.13523 8.84197Z"
@@ -194,10 +225,23 @@ const ActivityBoard = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 md:px-8 lg:grid-cols-3 gap-4">
-          {sortedEvents.map((data: IEvent) => (
+          {filterEvents(events, activeOption).map((data: IEvent) => (
             <ActivityCard key={data.id} event={data} showModal={showModal} />
           ))}
         </div>
+        {filterEvents(events, activeOption).length < 1 && (
+          <div className="flex flex-col justify-center items-center gap-y-8">
+            <Image
+              src="/No_record.svg"
+              alt="icon"
+              width={100}
+              height={100}
+              className="w-[10rem] h-[10rem]"
+            />
+
+            <p className="text-white text-xl md:text-3xl">No Results Found</p>
+          </div>
+        )}
 
         {modal && <ActivityModal event={event!} setModal={setModal} />}
       </div>
