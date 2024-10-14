@@ -191,8 +191,9 @@ const ActivityBoard = () => {
                     </span>
                   )}
                 </li>
-                {filterOptions?.map((option) => (
+                {filterOptions?.map((option, index: number) => (
                   <li
+                    key={index}
                     className={`${
                       option === activeOption && "border"
                     } flex items-center justify-between cursor-pointer hover:border border-white p-1 rounded-lg transition-all duration-100 ease-in-out`}
