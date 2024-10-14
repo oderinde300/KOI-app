@@ -388,7 +388,7 @@ const FAQ = () => {
           />
           <AccordionComp
             number={13}
-            question="Will there be any difficult requirements to enter the platform, such as identity authentication in the Web3.0 world, like having an encrypted wallet?"
+            question="Will Web3.0 platforms require complex entry steps like identity verification or an encrypted wallet?"
             answer={
               <div>
                 <p>
