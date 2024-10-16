@@ -24,10 +24,10 @@ const Header = () => {
   console.log(pathname, isActive("/"));
 
   return (
-    <div className="flex  bg-black py-2 w-full px-4 md:px-40 z-40 fixed justify-between border-b border-b-white/30 md:border-none items-center">
+    <div className="flex  bg-black py-2 w-full px-4 lg:px-40 z-40 fixed justify-between border-b border-b-white/30 lg:border-none items-center">
       <div className="flex text-white w-1/2">
         <Link href="/">
-          <div className="flex w-32 h-12 md:w-56 md:h-20 relative">
+          <div className="flex w-32 h-12 lg:w-56 lg:h-20 relative">
             <Image
               src="/logo_KOI color+white (H) 1.png"
               alt="Koi Logo"
@@ -37,7 +37,7 @@ const Header = () => {
           </div>
         </Link>
       </div>
-      <div className="flex md:hidden text-white">
+      <div className="flex lg:hidden text-white">
         <div onClick={() => setMenu(true)} className="flex">
           <Menu />
         </div>
@@ -45,7 +45,7 @@ const Header = () => {
           <div className="flex absolute bg-black right-0 z-50 flex-col h-screen w-[80%] pl-6">
             <div className="flex justify-between text-white w-full">
               <Link href="/">
-                <div className="flex w-32 h-12 md:w-48 md:h-16 relative">
+                <div className="flex w-32 h-12 lg:w-48 lg:h-16 relative">
                   <Image
                     src="/logo_KOI color+white (H) 1.png"
                     alt="Koi Logo"
@@ -171,7 +171,7 @@ const Header = () => {
           </div>
         )}
       </div>
-      <div className="hidden md:flex w-3/5">
+      <div className="hidden lg:flex w-3/5">
         <ul className="flex w-full justify-between">
           <li
             className={`${
