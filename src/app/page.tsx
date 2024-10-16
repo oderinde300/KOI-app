@@ -323,7 +323,7 @@ export default function Home() {
             <div className="hidden md:flex absolute top-[20%] -right-[30%]">
               <Blob className="h-[40rem] w-[40rem] " />
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 relative z-30">
               {teamList.map((team: ITeam, index: number) => (
                 <TeamCard key={index} data={team} />
               ))}
