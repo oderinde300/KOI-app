@@ -58,6 +58,7 @@ export const teamList: ITeam[] = [
   {
     name: "Tan Yu Ning",
     // image_url: "/team/team_yuning 1.png",
+    // image_url: "/team-photo/Tan Yu Ning.png",
     image_url: "/team-photo/Tan Yu Ning.png",
     position: "Design Manager",
     social_media: [
