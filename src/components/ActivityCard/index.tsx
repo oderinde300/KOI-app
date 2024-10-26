@@ -4,6 +4,7 @@ import { Button } from "../ui/button";
 import Blob from "../Blob";
 import { IEvent } from "@/interfaces";
 import { formatText } from "@/lib/utils";
+import { Fullscreen } from "lucide-react";
 
 const ActivityCard = ({
   showModal,
@@ -19,7 +20,7 @@ const ActivityCard = ({
           src={event.images[0]}
           alt="Space"
           fill={true}
-          className="object-cover"
+          className="object-contain md:object-cover"
         />
       </div>
       <div className="flex absolute bottom-16 left-[50%] -translate-x-[50%]">
