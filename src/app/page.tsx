@@ -13,6 +13,8 @@ import { useInView } from "framer-motion";
 import ScrollAnimationWrapper from "@/components/ScrollAnimationWrapper";
 import ScrollToTopButton from "@/components/ScrollToTop";
 import { Video } from "lucide-react";
+import Meteorite from "@/assets/images/meteorite.svg";
+import Space from "@/assets/images/space-img.svg";
 
 export default function Home() {
   const ref = useRef(null);
@@ -160,7 +162,7 @@ export default function Home() {
       {/* Miss Koi */}
       <div className="flex flex-col mt-32 md:mt-48  min-h-[40vh] md:min-h-[100vh] justify-center items-start relative  w-full after:content-[''] after:absolute after:w-full after:h-6 md:after:h-72 after:bottom-0 after:bg-gradient-to-t after:z-20 after:from-black after:to-transparent">
         <Image
-          src="/space img 1.svg"
+          src={Space}
           alt="Space"
           fill={true}
           className="object-cover"
@@ -175,7 +177,7 @@ export default function Home() {
             <div className="flex px-4 lg:-mt-16 lg:pl-32  flex-col w-full gap-3 md:gap-5 lg:gap-12">
               <div className="lg:absolute top-[1%] left-[18%] flex ml-4 h-[4.5rem] w-[4.375rem] lg:h-40 lg:w-36 relative">
                 <Image
-                  src="/meteorite2 1.svg"
+                  src={Meteorite}
                   alt="meteor"
                   fill={true}
                   className="object-cover"
@@ -255,41 +257,21 @@ export default function Home() {
         {/* Welcome to koi mobilize */}
         <div
           id="welcome"
-          className="flex relative md:py-48 gap-12 px-6 z-10 flex-col items-center overflow-hidden"
+          className="flex relative md:py-48 gap-12 px-6 z-10 flex-col items-center overflow-hidden h-full"
         >
           <h1 className="text-white text-2xl md:text-3xl mt-20 md:mt-0 font-bold w-full text-left md:text-center">
             WELCOME TO KOI MOBILIZE
           </h1>
           <div className="grid md:w-[80%] grid-cols-1 md:grid-cols-2  gap-4">
-            <div className="">
-              {/* <div className="flex flex-col w-full gap-4 h-full">
-                <div className="flex w-full h-full relative">
-                  <Image
-                    src="/product-02 1.svg"
-                    alt="Space"
-                    fill={true}
-                    className="object-cover"
-                  />
-                </div>
-                <div className="flex w-full h-full relative">
-                  <Image
-                    src="/product-03 1.svg"
-                    alt="Space"
-                    fill={true}
-                    className="object-cover"
-                  />
-                </div>
-              </div> */}
-              <div className="flex w-full h-[18rem] md:h-full relative">
-                <Image
-                  src="/welcome-to-mobilize.png"
-                  alt="Space"
-                  // fill={true}
-                  className="object-contain"
-                  width={500}
-                  height={500}
-                />
-              </div>
+            <div className="flex w-full h-[18rem] md:h-full relative">
+              <Image
+                src="/welcome-to-mobilize-2.png"
+                alt="Space"
+                // fill={true}
+                className="object-cover w-full h-full"
+                width={1500}
+                height={1500}
+              />
             </div>
 
             <div className="flex col-span-1 w-80 md:w-full h-full py-8 md:px-8 gap-7 flex-col">
@@ -370,6 +352,7 @@ export default function Home() {
                   </p>
                 </div>
                 <ul className="list-disc pl-4">
+                  <li>Blockchain Version of Classic Monopoly Game</li>
                   <li>Experience Lifes Balance and Challenges</li>
                   <li>
                     Your Educational Tool for Self-Management and Financial
@@ -432,11 +415,17 @@ export default function Home() {
           <div className="flex flex-col md:flex-row w-full">
             <div className="flex w-full items-center justify-start md:justify-center">
               <div className="flex relative w-[7.5rem] h-[10rem] md:w-72 md:h-[27.1875rem]">
-                <Image
+                {/* <Image
                   src="/videos/KOI Genesis.gif"
                   alt="Koi Genesis"
                   fill={true}
                   className="object-cover"
+                /> */}
+                <img
+                  src="/videos/KOI Genesis.gif"
+                  alt="Koi Genesis"
+                  className="object-cover"
+                  style={{ width: "100%", height: "100%" }} // Adjust size as needed
                 />
               </div>
             </div>
