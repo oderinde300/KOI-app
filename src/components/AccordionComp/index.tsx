@@ -29,7 +29,9 @@ const AccordionComp = ({ number, question, answer }: FAQ) => {
       >
         <div className="flex px-4 py-3">{checkNumber()}</div>
         <div className="flex w-full">
-          <p>{question}</p>
+          <p className={`${isOpen ? "text-base" : "text-xs"} sm:text-base`}>
+            {question}
+          </p>
         </div>
         {isOpen ? (
           <div

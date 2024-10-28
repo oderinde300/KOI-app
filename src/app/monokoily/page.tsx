@@ -44,7 +44,7 @@ const Monokoily = () => {
             {/* <Button variant={"outline"} className="py-5">
               Coming Soon
             </Button> */}
-            <button className="border border-input bg-transparent shadow-sm h-9 w-48 px-4 py-5 text-sm rounded-full flex items-center justify-center">
+            <button className="border border-input bg-transparent shadow-sm h-9 w-48 px-4 py-5 text-sm rounded-full flex items-center justify-center cursor-auto">
               <span>Coming Soon</span>
             </button>
           </div>

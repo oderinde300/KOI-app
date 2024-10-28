@@ -47,9 +47,9 @@ const renderActiveShape = (props: any) => {
         dy={8}
         textAnchor="middle"
         fill={`white`}
-        style={{ fontWeight: 700, fontSize: "24px" }}
+        style={{ fontWeight: 700, fontSize: "48px" }}
       >
-        {`${(percent * 100).toFixed(2)}%`}
+        {`${(percent * 100).toFixed(0)}%`}
       </text>
       <text x={cx} y={cy} dy={30} textAnchor="middle" fill={`white`}>
         {payload.name}

@@ -50,7 +50,7 @@ export default function Home() {
           autoPlay
           muted
           loop
-          className="absolute top-0 left-0 w-full h-full object-cover"
+          className="hidden md:flex md:absolute top-0 left-0 w-full h-full object-cover"
         >
           <source src="/videos/01_hero banner video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -126,10 +126,7 @@ export default function Home() {
         <div className="overflow-hidden w-full">
           <div className="animate-scroll flex w-max">
             {[...partners, ...partners].map((url: string, index: number) => (
-              <div
-                key={index}
-                className="flex h-10 w-24 md:h-14 md:min-w-48 relative"
-              >
+              <div key={index} className="flex h-14 min-w-48 relative">
                 <Image
                   src={url}
                   alt={`Partners ${index}`}

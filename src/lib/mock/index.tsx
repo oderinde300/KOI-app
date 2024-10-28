@@ -247,7 +247,7 @@ Wallet.)`,
 ];
 
 export const partners: string[] = [
-  "/partners/atecl 1.svg",
+  // "/partners/atecl 1.svg",
   "/partners/creative 1.svg",
   "/partners/gtouch 1.svg",
   "/partners/magic eden 1.svg",

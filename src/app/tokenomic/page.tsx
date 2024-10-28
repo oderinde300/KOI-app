@@ -68,7 +68,7 @@ const Tokenomic = () => {
                 {chartData.map((item: IChartData, index: number) => (
                   <div
                     key={index}
-                    className="flex items-center w-full border-b cursor-pointer group border-b-white/40 pb-2 justify-between gap-x-8"
+                    className="flex items-center w-full border-b group border-b-white/40 pb-2 justify-between gap-x-8"
                   >
                     <div className="flex items-center gap-1 py-2">
                       <span

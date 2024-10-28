@@ -31,21 +31,28 @@ const Web3SOC = () => {
         <div className="flex justify-center items-center gap-12  px-6 flex-col md:flex-row z-10">
           <div className="flex relative items-center md:items-start flex-col md:w-2/3 gap-12">
             <div className="flex items-center md:items-start flex-col gap-4">
-              <h2 className="font-molde-bold-italic text-center md:text-left text-2xl md:text-4xl md:w-1/2 ">
-                POWERFUL WEB3 SOCIAL PLATFORM
+              <h2 className="font-molde-bold-italic md:text-nowrap text-center md:text-left text-2xl md:text-4xl md:w-1/2 ">
+                SOCIAL PLATFORM
               </h2>
               <p className="text-lg text-center md:text-left font-molde md:text-2xl text-gradient w-fit">
                 WEB3SOC
               </p>
             </div>
-            <p className="text-sm text-center md:text-left md:text-base md:w-2/3 text-white/80">
+            <ul className="list-disc text-sm text-center md:text-left md:text-base md:w-2/4 text-white/80">
+              <li>Web3 Version of Classic Meta</li>
+              <li>
+                Earn Social Income and Acquire More Blockchain Assets through
+                the Solana Ecosystem.
+              </li>
+            </ul>
+            <p className="text-sm text-center md:text-left md:text-base md:w-2/4 text-white/80">
               A dynamic platform for the Web3 economy, enabling users to earn
               social income and grow their blockchain assets via the Solana
               ecosystem, while viewing problem-solving as a key driver for
               business innovation and growth.
             </p>
-            <div className="pointer-events-none">
-              <Button variant={"destructive"} className="py-5">
+            <div className="">
+              <Button variant={"destructive"} className="py-5 hover:bg-black">
                 Coming Soon
               </Button>
             </div>
