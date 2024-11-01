@@ -24,11 +24,11 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t your-image-name:latest .
+          docker build -t koi:latest .
 
       - name: Push Docker image to Docker Hub
         run: |
-          docker push your-image-name:latest
+          docker push koi:latest
 
       - name: Deploy to EC2
         env:
@@ -40,10 +40,10 @@ jobs:
           chmod 600 private_key.pem
           ssh -o StrictHostKeyChecking=no -i private_key.pem ${USER}@${HOST} << 'EOF'
             # Pull the latest image
-            docker pull your-image-name:latest
+            docker pull koi:latest
             # Stop and remove the existing container
-            docker stop your-container-name || true
-            docker rm your-container-name || true
+            docker stop koi || true
+            docker rm koi || true
             # Run the new container
-            docker run -d --name your-container-name -p 80:80 your-image-name:latest
+            docker run -d koi -p 3000:3000 koi:latest
           EOF
