@@ -45,5 +45,6 @@ jobs:
             docker stop koi || true
             docker rm koi || true
             # Run the new container
-            docker run -d koi -p 3000:3000 koi:latest
+            docker run -d --name koi -p 3000:3000 koi:latest
+
           EOF
