@@ -24,7 +24,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t koi:latest .
+          docker build -t koi:latest -f ./koi/Dockerfile ./koi
 
       - name: Push Docker image to Docker Hub
         run: |
