@@ -13,6 +13,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Set up Node.js  # Added Node.js setup
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'  # Specify your Node.js version
+
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
 
@@ -22,13 +27,23 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}  # Your Docker Hub username
           password: ${{ secrets.DOCKER_TOKEN }}  # Your Docker Hub password
 
-      - name: Build Docker image
-        run: |
-          docker build -t koi:latest -f ./koi/Dockerfile ./koi
+      - name: Cache Node.js modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
-      - name: Push Docker image to Docker Hub
-        run: |
-          docker push koi:latest
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: ${{ secrets.DOCKER_USERNAME }}/koi:latest
 
       - name: Deploy to EC2
         env:
