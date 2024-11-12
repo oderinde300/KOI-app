@@ -23,7 +23,7 @@ const AccordionComp = ({ number, question, answer }: FAQ) => {
   return (
     <div className="flex flex-col rounded-md border max-w-[40rem]">
       <div
-        className={`flex justify-center items-start md:items-center md:min-w-[40rem] ${
+        className={`flex justify-center items-center md:items-center md:min-w-[40rem] ${
           isOpen ? "" : "max-h-[3.5rem] overflow-hidden"
         }`}
       >
