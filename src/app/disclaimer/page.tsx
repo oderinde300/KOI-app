@@ -6,6 +6,10 @@ const Disclaimer = () => {
       <div className="flex pt-24 items-start gap-6 md:px-48 md:pt-48 flex-col w-full ">
         <h2 className="font-bold text-2xl text-left">DISCLAIMER</h2>
         <div className="flex flex-col gap-4 text-white/80">
+          {/* <p className="">
+            All information provided on this website is for informational
+            purposes only and does not constitute professional advice.
+          </p> */}
           <p className="">
             All information provided on this website is for informational
             purposes only and does not constitute professional advice.
