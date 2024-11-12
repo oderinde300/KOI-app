@@ -12,7 +12,6 @@ import { useEffect, useRef, useState } from "react";
 import { useInView } from "framer-motion";
 import ScrollAnimationWrapper from "@/components/ScrollAnimationWrapper";
 import ScrollToTopButton from "@/components/ScrollToTop";
-import { Video } from "lucide-react";
 import Meteorite from "@/assets/images/meteorite.svg";
 import Space from "@/assets/images/space-img.svg";
 

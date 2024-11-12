@@ -49,7 +49,7 @@ const RoadMapScroll = () => {
         </div>
       </div>
       <div className="flex text-white/70 flex-col gap-5">
-        <Link href="#2020-oct">
+        {/* <Link href="#2020-oct">
           <p
             onClick={() => setClick(!click)}
             className={`text-sm cursor-pointer 
@@ -61,7 +61,7 @@ const RoadMapScroll = () => {
           >
             2020 Oct
           </p>
-        </Link>
+        </Link> */}
         <Link href="#2022-dec">
           <p
             onClick={() => setClick(!click)}
