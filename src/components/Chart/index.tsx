@@ -47,7 +47,7 @@ const renderActiveShape = (props: any) => {
         dy={8}
         textAnchor="middle"
         fill={`white`}
-        style={{ fontWeight: 700, fontSize: "48px" }}
+        style={{ fontWeight: 700, fontSize: "56px" }}
       >
         {`${(percent * 100).toFixed(0)}%`}
       </text>
@@ -127,26 +127,58 @@ export default class Chart extends PureComponent {
 
   render() {
     return (
-      // <ResponsiveContainer width="100%" height="100%">
-      <PieChart width={500} height={500}>
-        <Pie
-          activeIndex={this.state.activeIndex}
-          activeShape={renderActiveShape}
-          data={data}
-          cx="50%"
-          cy="50%"
-          innerRadius={90}
-          outerRadius={130}
-          fill="#8884d8"
-          dataKey="value"
-          onMouseEnter={this.onPieEnter}
-        >
-          {data.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-          ))}
-        </Pie>
-      </PieChart>
-      // </ResponsiveContainer>
+      <>
+        <div className="hidden md:flex h-full w-full">
+          <ResponsiveContainer>
+            <PieChart>
+              <Pie
+                activeIndex={this.state.activeIndex}
+                activeShape={renderActiveShape}
+                data={data}
+                cx="50%"
+                cy="50%"
+                innerRadius={140}
+                outerRadius={190}
+                fill="#8884d8"
+                dataKey="value"
+                onMouseEnter={this.onPieEnter}
+              >
+                {data.map((entry, index) => (
+                  <Cell
+                    key={`cell-${index}`}
+                    fill={COLORS[index % COLORS.length]}
+                  />
+                ))}
+              </Pie>
+            </PieChart>
+          </ResponsiveContainer>
+        </div>
+        <div className="flex md:hidden h-full w-full">
+          <ResponsiveContainer>
+            <PieChart>
+              <Pie
+                activeIndex={this.state.activeIndex}
+                activeShape={renderActiveShape}
+                data={data}
+                cx="50%"
+                cy="50%"
+                innerRadius={90}
+                outerRadius={120}
+                fill="#8884d8"
+                dataKey="value"
+                onMouseEnter={this.onPieEnter}
+              >
+                {data.map((entry, index) => (
+                  <Cell
+                    key={`cell-${index}`}
+                    fill={COLORS[index % COLORS.length]}
+                  />
+                ))}
+              </Pie>
+            </PieChart>
+          </ResponsiveContainer>
+        </div>
+      </>
     );
   }
 }
