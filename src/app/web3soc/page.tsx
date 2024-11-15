@@ -31,8 +31,8 @@ const Web3SOC = () => {
         <div className="flex justify-center items-center gap-12  px-6 flex-col md:flex-row z-10">
           <div className="flex relative items-center md:items-start flex-col md:w-2/3 gap-12">
             <div className="flex items-center md:items-start flex-col gap-4">
-              <h2 className="font-molde-bold-italic md:text-nowrap text-center md:text-left text-2xl md:text-4xl md:w-1/2 ">
-                SOCIAL PLATFORM
+              <h2 className="font-molde-bold-italic uppercase md:text-nowrap text-center md:text-left text-2xl md:text-4xl md:w-1/2 ">
+                powerful web3 <br></br> SOCIAL PLATFORM
               </h2>
               <p className="text-lg text-center md:text-left font-molde md:text-2xl text-gradient w-fit">
                 WEB3SOC
@@ -52,7 +52,7 @@ const Web3SOC = () => {
               business innovation and growth.
             </p>
             <div className="">
-              <Button variant={"destructive"} className="py-5 hover:bg-black">
+              <Button className="py-5 bg-black text-white hover:bg-black cursor-auto hover:scale-100">
                 Coming Soon
               </Button>
             </div>
