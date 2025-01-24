@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import TeamCard from "@/components/TeamCard";
 import { Button } from "@/components/ui/button";
 import { ITeam } from "@/interfaces";
-import { partners, teamList } from "@/lib/mock";
+import { partners, teamList, teamList2, teamList3 } from "@/lib/mock";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
@@ -299,12 +299,24 @@ export default function Home() {
               CORE TEAM
             </h1>
             <div className="hidden md:flex absolute top-[20%] -right-[30%]">
-              <Blob className="h-[40rem] w-[40rem] " />
+              <Blob className="h-[40rem] w-[40rem]" />
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 relative z-30">
-              {teamList.map((team: ITeam, index: number) => (
-                <TeamCard key={index} data={team} />
-              ))}
+            <div className="flex flex-col space-y-3">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6 gap-3 relative z-30">
+                {teamList.map((team: ITeam, index: number) => (
+                  <TeamCard key={index} data={team} />
+                ))}
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6 gap-3 relative z-30">
+                {teamList2.map((team: ITeam, index: number) => (
+                  <TeamCard key={index} data={team} />
+                ))}
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6 gap-3 relative z-30">
+                {teamList3.map((team: ITeam, index: number) => (
+                  <TeamCard key={index} data={team} />
+                ))}
+              </div>
             </div>
           </div>
         </div>

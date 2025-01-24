@@ -2,16 +2,14 @@ import React, { PureComponent } from "react";
 import { PieChart, Pie, Sector, ResponsiveContainer, Cell } from "recharts";
 
 const data = [
-  { name: "Monokoily Reward", value: 150, color: "#bb39ff" },
-  { name: "Future Development", value: 100, color: "#cc23bc" },
-  { name: "Web3SOC Reward", value: 500, color: "#be80ff" },
-
-  { name: "VC", value: 80, color: "#ce215f" },
-
-  { name: "Private Sales", value: 50, color: "#e05314" },
-  { name: "Team", value: 50, color: "#f78a11" },
-  { name: "LP", value: 50, color: "#ffbc64" },
-  { name: "Advisor", value: 20, color: "#ffc89f" },
+  { name: "Monokoily Game", value: 150, color: "#bb39ff" },
+  { name: "Private Round", value: 80, color: "#cc23bc" },
+  { name: "WebHUBs Rewards", value: 500, color: "#be80ff" },
+  { name: "Public Round", value: 80, color: "#ce215f" },
+  { name: "Marketing", value: 70, color: "#e05314" },
+  { name: "Development", value: 50, color: "#f78a11" },
+  { name: "Team", value: 50, color: "#ffbc64" },
+  { name: "Advisors", value: 20, color: "#ffc89f" },
 ];
 
 const renderActiveShape = (props: any) => {
@@ -102,9 +100,7 @@ const COLORS = [
   "#bb39ff",
   "#cc23bc",
   "#be80ff",
-
   "#ce215f",
-
   "#e05314",
   "#f78a11",
   "#ffbc64",

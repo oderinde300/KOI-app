@@ -9,7 +9,7 @@ interface Props {
 
 const TeamCard = ({ data }: Props) => {
   return (
-    <div className="flex rounded-2xl bg-[#898989]/15  flex-col p-3 backdrop-blur-3xl border border-white/10 gap-2 items-center">
+    <div className="flex rounded-2xl bg-[#898989]/15  flex-col p-3 backdrop-blur-3xl border border-white/10 gap-2 items-center w-full sm:min-w-[250px] max-w-[250px]">
       <div className="flex w-full h-36 md:h-48 bg-slate-400 rounded-2xl relative">
         <Image
           src={data.image_url}
