@@ -1,6 +1,5 @@
 import { IChartData, IEvent, ITeam } from "@/interfaces";
 import { FAQ } from "../../components/Accordion/index";
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 export const teamList: ITeam[] = [
   {
@@ -19,6 +18,44 @@ export const teamList: ITeam[] = [
       },
     ],
   },
+  {
+    name: "Kok Poh Fui",
+    image_url: "/team-photo/Kok Poh Fui.png",
+    position: "CHIEF FINANCIAL OFFICER",
+    social_media: [
+      {
+        icon: "/team/website.svg",
+        link: "https://www.klsescreener.com/v2/announcements/view/3089372",
+      },
+    ],
+  },
+  {
+    name: "Sharon Yong",
+    // image_url: "/team/team_sharon 1.png",
+    image_url: "/team-photo/Sharon Yong.png",
+    position: "CISO",
+    social_media: [
+      {
+        icon: "/team/linkedin.svg",
+        link: "https://www.linkedin.com/in/sharonyong",
+      },
+    ],
+  },
+  {
+    name: "Wilson Wong",
+    // image_url: "/team/team_wilson 1.png",
+    image_url: "/team-photo/Wilson Wong.png",
+    position: "CTO",
+    social_media: [
+      {
+        icon: "/team/linkedin.svg",
+        link: "https://www.linkedin.com/in/wilson-wong-412046184/",
+      },
+    ],
+  },
+];
+
+export const teamList2: ITeam[] = [
   {
     name: "Bryan Lim",
     // image_url: "/team/team_bryan 1.png",
@@ -43,24 +80,13 @@ export const teamList: ITeam[] = [
       },
     ],
   },
-  {
-    name: "Wilson Wong",
-    // image_url: "/team/team_wilson 1.png",
-    image_url: "/team-photo/Wilson Wong.png",
-    position: "CTO",
-    social_media: [
-      {
-        icon: "/team/linkedin.svg",
-        link: "https://www.linkedin.com/in/wilson-wong-412046184/",
-      },
-    ],
-  },
+
   {
     name: "Tan Yu Ning",
     // image_url: "/team/team_yuning 1.png",
     // image_url: "/team-photo/Tan Yu Ning.png",
     image_url: "/team-photo/Tan Yu Ning.png",
-    position: "Design Manager",
+    position: "DESIGN DIRECTOR",
     social_media: [
       {
         icon: "/team/linkedin.svg",
@@ -68,18 +94,8 @@ export const teamList: ITeam[] = [
       },
     ],
   },
-  {
-    name: "Sharon Yong",
-    // image_url: "/team/team_sharon 1.png",
-    image_url: "/team-photo/Sharon Yong.png",
-    position: "CISO",
-    social_media: [
-      {
-        icon: "/team/linkedin.svg",
-        link: "https://www.linkedin.com/in/sharonyong",
-      },
-    ],
-  },
+];
+export const teamList3: ITeam[] = [
   {
     name: "Jay Koh",
     // image_url: "/team/team_jay 1.png",
@@ -100,7 +116,7 @@ export const teamList: ITeam[] = [
     name: "Gary Wong",
     // image_url: "/team/team_gary 1.png",
     image_url: "/team-photo/Gary Wong.png",
-    position: "BLOCKCHAIN ADVISOR",
+    position: "CHIEF BLOCKCHAIN ADVISOR",
     social_media: [
       {
         icon: "/team/twitter.svg",
@@ -338,32 +354,32 @@ const color6 = "#6D41D4";
 
 export const chartData: IChartData[] = [
   {
-    name: "Web3SOC Reward",
+    name: "WebHUBs Rewards",
     percentage: 50,
     color: "#be80ff",
     image: "Group 1.svg",
   },
   {
-    name: "Monokoily Reward",
+    name: "Monokoily Game",
     percentage: 15,
     color: "#bb39ff",
     image: "Group 2.svg",
   },
   {
-    name: "Future Development",
-    percentage: 10,
+    name: "Private Round",
+    percentage: 8,
     color: "#cc23bc",
     image: "Group 3.svg",
   },
   {
-    name: "VC",
+    name: "Public Round",
     percentage: 8,
     color: "#ce215f",
     image: "Group 4.svg",
   },
   {
-    name: "Private Sales",
-    percentage: 5,
+    name: "Marketing",
+    percentage: 7,
     color: "#e05314",
     image: "Group 5.svg",
   },
@@ -374,13 +390,13 @@ export const chartData: IChartData[] = [
     image: "Group 6.svg",
   },
   {
-    name: "LP",
+    name: "Team",
     percentage: 5,
     color: "#ffbc64",
     image: "Group 7.svg",
   },
   {
-    name: "Advisor",
+    name: "Advisors",
     percentage: 2,
     color: "#ffc89f",
     image: "Group 8.svg",

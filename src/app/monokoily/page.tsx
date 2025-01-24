@@ -49,13 +49,23 @@ const Monokoily = () => {
             </button>
           </div>
           <div className="flex relative w-[11.375rem] h-[22.75rem] md:w-64 md:h-[31.5rem]">
-            <Image
+            {/* <Image
               src="/monokioly phone 2.svg"
               alt="Monokoily"
               fill={true}
               quality={100}
               className="object-cover"
-            />
+            /> */}
+            <div className="flex relative w-[11.375rem] h-[22.75rem] md:w-64 md:h-[31.5rem]">
+              <video
+                src="videos/Monokoily.webm" // Replace with the path to your video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="object-cover w-full h-full pointer-events-none"
+              />
+            </div>
           </div>
         </div>
       </div>

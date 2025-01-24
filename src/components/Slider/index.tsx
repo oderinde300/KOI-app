@@ -108,7 +108,7 @@ const Slider = ({ slides, className, imageStyle }: Props) => {
             </div>
           ))}
         </div>
-        <div className="flex gap-2 items-center absolute bottom-8 z-50 left-1/2 -translate-x-1/2">
+        <div className="flex gap-2 items-center absolute bottom-8 z-30 left-1/2 -translate-x-1/2">
           {slides.map((item: any, index: number) => (
             <span
               key={index}
