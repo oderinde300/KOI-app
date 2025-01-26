@@ -1,7 +1,5 @@
 "use client";
 import Blob from "@/components/Blob";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import TeamCard from "@/components/TeamCard";
 import { Button } from "@/components/ui/button";
 import { ITeam } from "@/interfaces";
@@ -47,6 +45,7 @@ export default function Home() {
       setClassName("bg-custom-gradient-reverse"); // Default class
     }
   }, [isInView]);
+
   return (
     <main className="flex min-h-screen relative text-white flex-col items-center justify-between  bg-black overflow-x-hidden">
       <div className="flex min-h-[120vh] flex-col relative w-full sca">
@@ -170,7 +169,6 @@ export default function Home() {
           className="object-cover"
           priority
         />
-
         <div className="flex w-full items-center flex-col relative z-10">
           <h1 className="text-white lg:-mt-16 font-molde-bold lg:ml-56 text-3xl lg:text-5xl font-bold w-1/2 lg:w-1/4 text-center">
             MEET MISS KOI
@@ -217,7 +215,6 @@ export default function Home() {
                 fill={true}
                 className="object-cover"
               /> */}
-
               <div className="video-container">
                 <video loop muted autoPlay>
                   <source src="/videos/MsKOI Space.webm" type="video/webm" />
@@ -313,12 +310,12 @@ export default function Home() {
                   <TeamCard key={index} data={team} />
                 ))}
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-3 lg:flex items-center justify-center  relative z-30">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-3 lg:flex items-center justify-center items-center relative z-30">
                 {teamList2.map((team: ITeam, index: number) => (
                   <TeamCard key={index} data={team} />
                 ))}
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:flex items-center justify-center  relative z-30">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-3 lg:flex items-center justify-center items-center relative z-30">
                 {teamList3.map((team: ITeam, index: number) => (
                   <TeamCard key={index} data={team} />
                 ))}
