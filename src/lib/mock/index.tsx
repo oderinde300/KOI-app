@@ -53,6 +53,159 @@ export const teamList: ITeam[] = [
       },
     ],
   },
+  {
+    name: "Bryan Lim",
+    // image_url: "/team/team_bryan 1.png",
+    image_url: "/team-photo/Bryan Lim.jpg",
+    position: "CREATIVE DIRECTOR",
+    social_media: [
+      {
+        icon: "team/facebook.svg",
+        link: "https://www.facebook.com/bryanlim111?mibextid=ZbWKwL",
+      },
+    ],
+  },
+  {
+    name: "Chin Jia Huei",
+    // image_url: "/team/team_jia huei 1.png",
+    image_url: "/team-photo/Chin Jia Huei.png",
+    position: "ADMIN DIRECTOR",
+    social_media: [
+      {
+        icon: "/team/linkedin.svg",
+        link: "https://www.linkedin.com/in/jia-huei-45552a125/",
+      },
+    ],
+  },
+
+  {
+    name: "Tan Yu Ning",
+    // image_url: "/team/team_yuning 1.png",
+    // image_url: "/team-photo/Tan Yu Ning.png",
+    image_url: "/team-photo/Tan Yu Ning.png",
+    position: "DESIGN DIRECTOR",
+    social_media: [
+      {
+        icon: "/team/linkedin.svg",
+        link: "https://www.linkedin.com/in/yu-ning-tan-37297231b/",
+      },
+    ],
+  },
+
+  {
+    name: "Jay Koh",
+    // image_url: "/team/team_jay 1.png",
+    image_url: "/team-photo/Jay Koh.png",
+    position: "WEB3 ADVISOR",
+    social_media: [
+      {
+        icon: "/team/linkedin.svg",
+        link: "https://www.linkedin.com/in/jay-koh/",
+      },
+      {
+        icon: "/team/twitter.svg",
+        link: "https://x.com/Krypto_JayK",
+      },
+    ],
+  },
+  {
+    name: "Gary Wong",
+    // image_url: "/team/team_gary 1.png",
+    image_url: "/team-photo/Gary Wong.png",
+    position: "CHIEF BLOCKCHAIN ADVISOR",
+    social_media: [
+      {
+        icon: "/team/twitter.svg",
+        link: "https://x.com/Garywong8888",
+      },
+    ],
+  },
+  {
+    name: "Ben Kok",
+    // image_url: "/team/team_ben kok 1.png",
+    image_url: "/team-photo/Ben Kok.png",
+    position: "TECH ADVISOR",
+    social_media: [
+      {
+        icon: "/team/linkedin.svg",
+        link: "https://www.linkedin.com/in/benjamin-kok/",
+      },
+    ],
+  },
+  {
+    name: "Sky Wee",
+    // image_url: "/team/team_jia huei 1.png",
+    image_url: "/team-photo/Sky Wee.png",
+    position: "LEAD ADVISOR",
+    social_media: [
+      {
+        icon: "/team/linkedin.svg",
+        link: "https://www.linkedin.com/in/skywee97/",
+      },
+      {
+        icon: "/team/facebook.svg",
+        link: "https://www.facebook.com/skywee97",
+      },
+      {
+        icon: "/team/twitter.svg",
+        link: "https://x.com/OfficialSkyWee1",
+      },
+    ],
+  },
+];
+
+export const teamList1: ITeam[] = [
+  {
+    name: "Co Siau",
+    // image_url: "/team/team_co siau 1.png",
+    image_url: "/team-photo/Co Siau.png",
+    position: "FOUNDER/DIRECTOR",
+    social_media: [
+      {
+        icon: "/team/linkedin.svg",
+        link: "https://www.linkedin.com/in/co-siau-cryptodevelopment/",
+      },
+      {
+        icon: "/team/twitter.svg",
+        link: "https://x.com/CoSiau?t= 6AmVDKWle1l44GJHlO qRyQ&s=09",
+      },
+    ],
+  },
+  {
+    name: "Kok Poh Fui",
+    image_url: "/team-photo/Kok Poh Fui.png",
+    position: "CHIEF FINANCIAL OFFICER",
+    social_media: [
+      {
+        icon: "/team/website.svg",
+        link: "https://www.klsescreener.com/v2/announcements/view/3089372",
+      },
+    ],
+  },
+  {
+    name: "Sharon Yong",
+    // image_url: "/team/team_sharon 1.png",
+    image_url: "/team-photo/Sharon Yong.png",
+    position: "CISO",
+    social_media: [
+      {
+        icon: "/team/linkedin.svg",
+        link: "https://www.linkedin.com/in/sharonyong",
+      },
+    ],
+  },
+  {
+    name: "Wilson Wong",
+    // image_url: "/team/team_wilson 1.png",
+    image_url: "/team-photo/Wilson Wong.png",
+    position: "CTO",
+    social_media: [
+      {
+        icon: "/team/linkedin.svg",
+        link: "https://www.linkedin.com/in/wilson-wong-412046184/",
+      },
+    ],
+  },
 ];
 
 export const teamList2: ITeam[] = [
@@ -384,7 +537,7 @@ export const chartData: IChartData[] = [
     image: "Group 5.svg",
   },
   {
-    name: "Team",
+    name: "Development",
     percentage: 5,
     color: "#f78a11",
     image: "Group 6.svg",
