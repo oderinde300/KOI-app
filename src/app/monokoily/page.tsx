@@ -5,7 +5,7 @@ import { Button } from "../../components/ui/button";
 const Monokoily = () => {
   return (
     <div className="min-h-screen relative  bg-black">
-      <div className="flex justify-center md:pt-48 items-center text-white w-full h-full min-h-screen relative after:content-[''] after:absolute after:w-full after:h-72 after:bottom-0 after:bg-gradient-to-t after:from-black after:to-transparent">
+      <div className="flex justify-center md:pt-12 items-center text-white w-full h-full min-h-screen relative after:content-[''] after:absolute after:w-full after:h-72 after:bottom-0 after:bg-gradient-to-t after:from-black after:to-transparent">
         <Image
           src="/AdobeStock_828629381 1.svg"
           alt="Space"

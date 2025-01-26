@@ -5,7 +5,13 @@ import Header from "@/components/Header";
 import TeamCard from "@/components/TeamCard";
 import { Button } from "@/components/ui/button";
 import { ITeam } from "@/interfaces";
-import { partners, teamList, teamList2, teamList3 } from "@/lib/mock";
+import {
+  partners,
+  teamList,
+  teamList1,
+  teamList2,
+  teamList3,
+} from "@/lib/mock";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
@@ -293,30 +299,35 @@ export default function Home() {
         </div>
 
         {/* Core Team */}
-        <div className="relative">
-          <div className="flex  px-4 md:px-0  gap-12 mt-12 z-20 flex-col items-center overflow-hidden">
+        <div className="relative w-full">
+          <div className="flex  px-4 md:px-0  gap-12 mt-12 z-20 flex-col items-center overflow-hidden w-full">
             <h1 className="text-white text-3xl font-bold w-full text-center">
               CORE TEAM
             </h1>
-            <div className="hidden md:flex absolute top-[20%] -right-[30%]">
+            <div className="hidden lg:flex absolute top-[20%] -right-[30%]">
               <Blob className="h-[40rem] w-[40rem]" />
             </div>
-            <div className="flex flex-col space-y-3">
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6 gap-3 relative z-30">
-                {teamList.map((team: ITeam, index: number) => (
+            <div className="hidden lg:flex flex-col space-y-3 justify-center items-center w-full">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-3 lg:flex items-center justify-center relative z-30 items-center">
+                {teamList1.map((team: ITeam, index: number) => (
                   <TeamCard key={index} data={team} />
                 ))}
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6 gap-3 relative z-30">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-3 lg:flex items-center justify-center  relative z-30">
                 {teamList2.map((team: ITeam, index: number) => (
                   <TeamCard key={index} data={team} />
                 ))}
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6 gap-3 relative z-30">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:flex items-center justify-center  relative z-30">
                 {teamList3.map((team: ITeam, index: number) => (
                   <TeamCard key={index} data={team} />
                 ))}
               </div>
+            </div>
+            <div className="lg:hidden grid grid-cols-2 md:grid-cols-3 gap-3 lg:flex items-center justify-center relative z-30 items-center">
+              {teamList.map((team: ITeam, index: number) => (
+                <TeamCard key={index} data={team} />
+              ))}
             </div>
           </div>
         </div>
