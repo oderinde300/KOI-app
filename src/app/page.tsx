@@ -200,14 +200,22 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex absolute right-[-10%] sm:right-0 lg:right-[3rem] xl:right-[-4rem] lg:mt-16 top-[10%] sm:top-[20%] lg:relative h-56 min-w-48 md:h-[25rem] md:min-w-[1x9.8125rem] lg:h-[35rem] lg:min-w-[29.8125rem]">
+            {/* <div className="flex absolute right-[-10%] sm:right-0 lg:right-[3rem] xl:right-[-4rem] lg:mt-16 top-[10%] sm:top-[20%] lg:relative h-56 min-w-48 md:h-[25rem] md:min-w-[1x9.8125rem] lg:h-[35rem] lg:min-w-[29.8125rem]">
               <div className="video-container">
                 <video loop muted autoPlay playsInline>
                   <source src="/videos/MsKOI Space.webm" type="video/webm" />
                   Your browser does not support the video tag.
                 </video>
               </div>
-            </div>
+            </div> */}
+            <video
+              src="/videos/MsKOI Space.webm"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="flex absolute right-[-10%] sm:right-0 lg:right-[3rem] xl:right-[-4rem] lg:mt-16 top-[10%] sm:top-[20%] lg:relative h-56 min-w-48 md:h-[25rem] md:min-w-[1x9.8125rem] lg:h-[35rem] lg:min-w-[29.8125rem]"
+            />
           </div>
         </div>
       </div>
