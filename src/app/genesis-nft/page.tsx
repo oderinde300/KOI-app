@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "../../components/ui/button";
 import Link from "next/link";
-import WhitePaperButton from "@/components/WhitePaperButton";
 
 const GenesisNFT = () => {
   return (
@@ -27,7 +26,16 @@ const GenesisNFT = () => {
               <Button className="py-5 w-32 md:w-48">
                 <Link href="#target-section">Get Started</Link>
               </Button>
-              <WhitePaperButton />
+              <Link
+                href="https://monokoily-kois-organization.gitbook.io/webbinhubs"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {/* <WhitePaperButton /> */}
+                <Button className="py-5 bg-black text-white border-white hover:bg-white hover:text-black border">
+                  Whitepaper
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="flex relative w-[15.5rem] h-[20.15rem] md:w-64 md:h-[31.5rem]">

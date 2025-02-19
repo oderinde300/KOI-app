@@ -26,7 +26,7 @@ export default function RootLayout({
         <Header />
         {children}
         <div className="hidden md:flex absolute bottom-0 -right-[30%]">
-          <Blob className="h-[50rem] w-[50rem] " />
+          <Blob className="h-[50rem] w-[50rem]" />
         </div>
         <Footer />
       </body>

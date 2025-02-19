@@ -431,21 +431,21 @@ export const partners: string[] = [
 ];
 
 export const slides: string[] = [
-  "/slides/Web3SOC-01 3.svg",
-  "/slides/Web3SOC-02 2.svg",
-  "/slides/Web3SOC-03 1.svg",
-  "/slides/Web3SOC-04 2.svg",
-  "/slides/Web3SOC-05 2.svg",
-  "/slides/Web3SOC-06 2.svg",
-  "/slides/Web3SOC-07 2.svg",
-  "/slides/Web3SOC-08 2.svg",
-  "/slides/Web3SOC-09 2.svg",
-  "/slides/Web3SOC-10 2.svg",
-  "/slides/Web3SOC-11 2.svg",
-  "/slides/Web3SOC-12 2.svg",
-  "/slides/Web3SOC-13 2.svg",
-  "/slides/Web3SOC-14 2.svg",
-  "/slides/Web3SOC-15 1.svg",
+  "/slides/WebbinHUBS-02.jpg",
+  "/slides/WebbinHUBS-03.jpg",
+  "/slides/WebbinHUBS-04.jpg",
+  "/slides/WebbinHUBS-05.jpg",
+  "/slides/WebbinHUBS-06.jpg",
+  "/slides/WebbinHUBS-07.jpg",
+  "/slides/WebbinHUBS-08.jpg",
+  "/slides/WebbinHUBS-09.jpg",
+  "/slides/WebbinHUBS-10.jpg",
+  "/slides/WebbinHUBS-11.jpg",
+  "/slides/WebbinHUBS-12.jpg",
+  "/slides/WebbinHUBS-013.jpg",
+  "/slides/WebbinHUBS-14.jpg",
+  "/slides/WebbinHUBS-15.jpg",
+  "/slides/WebbinHUBS-1.jpg",
 ];
 
 export const events: IEvent[] = [
@@ -507,7 +507,7 @@ const color6 = "#6D41D4";
 
 export const chartData: IChartData[] = [
   {
-    name: "WebHUBs Rewards",
+    name: "WebbinHUBS Rewards",
     percentage: 50,
     color: "#be80ff",
     image: "Group 1.svg",

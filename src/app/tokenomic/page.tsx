@@ -35,11 +35,12 @@ const Tokenomic = () => {
             </p>
             <Button className="py-5 w-32 md:w-48">
               <a
-                href="https://t.me/+vL6fzqgtXIE2MzBl"
+                // href="https://t.me/+vL6fzqgtXIE2MzBl"
+                href="https://monokoily-kois-organization.gitbook.io/webbinhubs"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Telegram
+                Whitepaper
               </a>
             </Button>
           </div>

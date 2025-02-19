@@ -150,7 +150,7 @@ const Footer = () => {
                 <Link href="/monokoily">Monokoily</Link>
               </li>
               <li>
-                <Link href="/web3soc">Web3SOC</Link>
+                <Link href="/webbinHUBS">WebbinHUBS</Link>
               </li>
               <li>
                 <Link href="/genesis-nft">Genesis NFT</Link>
