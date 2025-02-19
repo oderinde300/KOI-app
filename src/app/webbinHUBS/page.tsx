@@ -24,6 +24,7 @@ const Web3SOC = () => {
           autoPlay
           muted
           loop
+          playsInline
           className="absolute top-0 left-0 w-full h-full object-cover"
         >
           <source src="/videos/touch screen.mp4" type="video/mp4" />
