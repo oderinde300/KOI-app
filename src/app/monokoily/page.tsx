@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { Button } from "../../components/ui/button";
 
 const Monokoily = () => {
   return (
@@ -48,22 +47,31 @@ const Monokoily = () => {
               <span>Coming Soon</span>
             </button>
           </div>
-          <div className="flex relative w-[11.375rem] h-[22.75rem] md:w-64 md:h-[31.5rem]">
-            {/* <Image
+          {/* <Image
               src="/monokioly phone 2.svg"
               alt="Monokoily"
               fill={true}
               quality={100}
               className="object-cover"
             /> */}
-            <div className="flex relative w-[11.375rem] h-[22.75rem] md:w-64 md:h-[31.5rem]">
+          <div className="w-full max-w-[400px] py-12 flex justify-center items-center md:justify-start md:items-start relative">
+            {/* Video Container with Clipping */}
+            <div className="relative w-full h-[520px] sm:h-[800px] sm:max-w-[350px] overflow-hidden">
+              {/* Phone Frame */}
+              <img
+                src="/phone-frame-3.png"
+                alt="Phone Frame"
+                className="absolute w-[230px] sm:w-full h-[520px] sm:h-full z-20"
+              />
+
+              {/* Video inside the frame */}
               <video
-                src="videos/Monokoily.webm" // Replace with the path to your video
+                src="videos/Monokoily.webm"
                 autoPlay
                 loop
                 muted
                 playsInline
-                className="object-cover w-full h-full pointer-events-none"
+                className="absolute top-[2rem] left-[1rem] w-[200px] sm:w-[320px] h-[450px] sm:h-[700px] object-cover pointer-events-none"
               />
             </div>
           </div>

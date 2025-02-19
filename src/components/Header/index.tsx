@@ -15,7 +15,7 @@ const Header = () => {
   const subNavIsActive = () => {
     let active = false;
     if (pathname === "/monokoily") active = true;
-    if (pathname === "/web3soc") active = true;
+    if (pathname === "/webbinHUBS") active = true;
     if (pathname === "/genesis-nft") active = true;
     if (pathname === "/tokenomic") active = true;
     return active;
@@ -101,14 +101,14 @@ const Header = () => {
                       </Link>
                       <Link
                         onClick={() => setMenu(false)}
-                        href="/web3soc"
+                        href="/webbinHUBS"
                         className={`${
-                          isActive("/web3soc")
+                          isActive("/webbinHUBS")
                             ? "text-white font-bold"
                             : "text-white/80"
                         } py-2 w-full px-2`}
                       >
-                        Web3SOC
+                        WebbinHUBS
                       </Link>
                       <Link
                         onClick={() => setMenu(false)}
@@ -214,14 +214,14 @@ const Header = () => {
                 </Link>
                 <Link
                   onClick={() => setOpen(false)}
-                  href="/web3soc"
+                  href="/webbinHUBS"
                   className={`${
-                    isActive("/web3soc")
+                    isActive("/webbinHUBS")
                       ? "text-white font-bold"
                       : "text-white/80"
                   } py-2 w-full px-2`}
                 >
-                  Web3SOC
+                  WebbinHUBS
                 </Link>
                 <Link
                   onClick={() => setOpen(false)}

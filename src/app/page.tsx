@@ -48,15 +48,16 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen relative text-white flex-col items-center justify-between  bg-black overflow-x-hidden">
-      <div className="flex min-h-[120vh] flex-col relative w-full sca">
+      {/* <div className="flex min-h-[120vh] flex-col relative w-full"> */}
+      <div className="flex flex-col justify-center items-center text-white w-full h-full min-h-screen relative after:content-[''] after:absolute after:w-full after:h-72 md:after:h-24 after:bottom-0 after:bg-gradient-to-t after:from-black after:to-transparent">
         <video
           ref={videoRef}
           autoPlay
           muted
           loop
-          className="hidden md:flex md:absolute top-0 left-0 w-full h-full object-cover"
+          className="absolute top-0 left-0 w-full h-full object-cover opacity-50"
         >
-          <source src="/videos/01_hero banner video.mp4" type="video/mp4" />
+          <source src="/videos/2_hero banner video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="flex flex-col z-10 w-full items-center justify-center pt-48 md:pt-72 gap-12">
@@ -175,7 +176,7 @@ export default function Home() {
           </h1>
           <div className="flex w-full md:items-center lg:px-48">
             <div className="flex px-4 lg:-mt-16 lg:pl-32  flex-col w-full gap-3 md:gap-5 lg:gap-12">
-              <div className="lg:absolute top-[1%] left-[18%] flex ml-4 h-[4.5rem] w-[4.375rem] lg:h-40 lg:w-36 relative">
+              <div className="lg:absolute sm:top-[1%] left-[18%] flex ml-4 h-[4.5rem] w-[4.375rem] lg:h-40 lg:w-36 relative">
                 <Image
                   src={Meteorite}
                   alt="meteor"
@@ -198,23 +199,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex absolute right-0 lg:right-[3rem] xl:right-[-4rem] lg:mt-16 top-[20%] lg:relative h-56 min-w-48 md:h-[25rem] md:min-w-[1x9.8125rem] lg:h-[35rem] lg:min-w-[29.8125rem]">
-              {/* <video
-                ref={videoRef}
-                autoPlay
-                muted
-                loop
-                className="absolute top-0 left-0 w-full h-full object-cover"
-              >
-                <source src="/videos/MsKOI Space.gif" type="video/gif" />
-                Your browser does not support the video tag.
-              </video> */}
-              {/* <Image
-                src="/MsKOI Space_00000 1.png"
-                alt="space"
-                fill={true}
-                className="object-cover"
-              /> */}
+            <div className="flex absolute right-[-10%] sm:right-0 lg:right-[3rem] xl:right-[-4rem] lg:mt-16 top-[10%] sm:top-[20%] lg:relative h-56 min-w-48 md:h-[25rem] md:min-w-[1x9.8125rem] lg:h-[35rem] lg:min-w-[29.8125rem]">
               <div className="video-container">
                 <video loop muted autoPlay>
                   <source src="/videos/MsKOI Space.webm" type="video/webm" />
@@ -261,10 +246,10 @@ export default function Home() {
           <h1 className="text-white text-2xl md:text-3xl mt-20 md:mt-0 font-bold w-full text-left md:text-center">
             WELCOME TO KOI MOBILIZE
           </h1>
-          <div className="grid md:w-[80%] grid-cols-1 md:grid-cols-2  gap-4">
+          <div className="grid md:w-[90%] grid-cols-1 md:grid-cols-2  gap-4">
             <div className="flex w-full h-[18rem] md:h-full relative">
               <Image
-                src="/welcome-to-mobilize-2.png"
+                src="/welcome-to-mobilize-3.png"
                 alt="Space"
                 // fill={true}
                 className="object-cover w-full h-full"
@@ -273,7 +258,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="flex col-span-1 w-80 md:w-full h-full py-8 md:px-8 gap-7 flex-col">
+            <div className="flex col-span-1 w-full h-full py-8 md:px-8 gap-7 flex-col">
               <div className="flex flex-col gap-4">
                 <h3 className="text-xl font-bold">Transitioning to Web 3.0</h3>
                 <p className=" text-white/60">
@@ -291,6 +276,22 @@ export default function Home() {
                   future in the blockchain world with us.
                 </p>
               </div>
+              <div className="flex flex-col gap-4">
+                <h3 className="text-xl font-bold">Our Vision</h3>
+                <p className="text-white/60">
+                  Through the Blockchain Ecosystem, we aim to create passive
+                  income and blockchain assets to help everyone achieve a
+                  “worry-free life” in a highly inflationary environment,
+                  enabling early retirement.
+                </p>
+              </div>
+              <div className="flex flex-col gap-4">
+                <h3 className="text-xl font-bold">Our Mission</h3>
+                <p className="text-white/60">
+                  Our mission is to build a secure and transparent value
+                  exchange network through blockchain reward mechanisms."
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -305,23 +306,23 @@ export default function Home() {
               <Blob className="h-[40rem] w-[40rem]" />
             </div>
             <div className="hidden lg:flex flex-col space-y-3 justify-center items-center w-full">
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-3 lg:flex items-center justify-center relative z-30 items-center">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-3 lg:flex  justify-center relative z-30 items-center">
                 {teamList1.map((team: ITeam, index: number) => (
                   <TeamCard key={index} data={team} />
                 ))}
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-3 lg:flex items-center justify-center items-center relative z-30">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-3 lg:flex justify-center items-center relative z-30">
                 {teamList2.map((team: ITeam, index: number) => (
                   <TeamCard key={index} data={team} />
                 ))}
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-3 lg:flex items-center justify-center items-center relative z-30">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-3 lg:flex justify-center items-center relative z-30">
                 {teamList3.map((team: ITeam, index: number) => (
                   <TeamCard key={index} data={team} />
                 ))}
               </div>
             </div>
-            <div className="lg:hidden grid grid-cols-2 md:grid-cols-3 gap-3 lg:flex items-center justify-center relative z-30 items-center">
+            <div className="lg:hidden grid grid-cols-2 md:grid-cols-3 gap-3 justify-center relative z-30 items-center">
               {teamList.map((team: ITeam, index: number) => (
                 <TeamCard key={index} data={team} />
               ))}
@@ -390,8 +391,8 @@ export default function Home() {
             <div className="flex w-full items-center justify-start md:justify-center">
               <div className="flex relative h-[7.5rem] w-[7.5rem] md:w-72 md:h-72">
                 <Image
-                  src="/logo_Web3SOC color + white 1.png"
-                  alt="Web3soc"
+                  src="/WebbinHUBS.png"
+                  alt="WebbinHUBS"
                   fill={true}
                   className="object-cover"
                 />
@@ -407,7 +408,7 @@ export default function Home() {
                     POWERFUL WEB3 SOCIAL PLATFORM
                   </h2>
                   <p className="text-xl md:text-2xl text-gradient font-molde">
-                    WEB3SOC
+                    WebbinHUBS
                   </p>
                 </div>
                 <ul className="list-disc">
