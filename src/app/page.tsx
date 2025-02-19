@@ -202,7 +202,7 @@ export default function Home() {
             </div>
             <div className="flex absolute right-[-10%] sm:right-0 lg:right-[3rem] xl:right-[-4rem] lg:mt-16 top-[10%] sm:top-[20%] lg:relative h-56 min-w-48 md:h-[25rem] md:min-w-[1x9.8125rem] lg:h-[35rem] lg:min-w-[29.8125rem]">
               <div className="video-container">
-                <video loop muted autoPlay>
+                <video loop muted autoPlay playsInline>
                   <source src="/videos/MsKOI Space.webm" type="video/webm" />
                   Your browser does not support the video tag.
                 </video>
@@ -282,15 +282,15 @@ export default function Home() {
                 <p className="text-white/60">
                   Through the Blockchain Ecosystem, we aim to create passive
                   income and blockchain assets to help everyone achieve a
-                  “worry-free life” in a highly inflationary environment,
-                  enabling early retirement.
+                  &quot;worry-free life&quot; in a highly inflationary
+                  environment, enabling early retirement.
                 </p>
               </div>
               <div className="flex flex-col gap-4">
                 <h3 className="text-xl font-bold">Our Mission</h3>
                 <p className="text-white/60">
                   Our mission is to build a secure and transparent value
-                  exchange network through blockchain reward mechanisms."
+                  exchange network through blockchain reward mechanisms.
                 </p>
               </div>
             </div>
