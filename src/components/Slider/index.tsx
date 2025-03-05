@@ -103,7 +103,7 @@ const Slider = ({ slides, className, imageStyle }: Props) => {
                 src={slide}
                 alt={`Slide ${index + 1}`}
                 fill={true}
-                className="object-contain md:object-cover"
+                className="object-contain md:object-cover 2xl:object-contain"
               />
             </div>
           ))}

@@ -443,7 +443,7 @@ export const slides: string[] = [
   "/slides/WebbinHUBS-11.jpg",
   "/slides/WebbinHUBS-12.jpg",
   "/slides/WebbinHUBS-013.jpg",
-  "/slides/WebbinHUBS-14.jpg",
+  "/slides/WebbinHUBS-014.jpg",
   "/slides/WebbinHUBS-15.jpg",
   "/slides/WebbinHUBS-1.jpg",
 ];

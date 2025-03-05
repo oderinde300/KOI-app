@@ -203,7 +203,8 @@ const RoadMap = () => {
                 </div>
                 <div className="flex pl-16 gap-4 items-center">
                   <p className="text-white/80">
-                    FB / Discord / TikTok / YTube / 小红书 / Insta acc setting
+                    FB / Discord / TikTok / YTube / Xiaohongshu 小红书 / Insta
+                    acc setting
                   </p>
                 </div>
                 <div className="flex gap-4 items-center">
@@ -280,7 +281,7 @@ const RoadMap = () => {
                 <div className="flex flex-col gap-2 pl-16">
                   <div className="flex gap-4 items-center">
                     <p className="text-white/80">
-                      FB / Discord / TikTok / 小红书 /Insta
+                      FB / Discord / TikTok / Xiaohongshu 小红书 / Insta
                     </p>
                   </div>
                   <div className="flex gap-4 items-center">
@@ -378,7 +379,7 @@ const RoadMap = () => {
                 <div className="flex flex-col gap-2 pl-16">
                   <div className="flex gap-4 items-center">
                     <p className="text-white/80">
-                      FB / Discord / TikTok / 小红书 /Insta
+                      FB / Discord / TikTok / Xiaohongshu 小红书 / Insta
                     </p>
                   </div>
                 </div>
@@ -465,7 +466,7 @@ const RoadMap = () => {
                 <div className="flex flex-col gap-2 pl-16">
                   <div className="flex gap-4 items-center">
                     <p className="text-white/80">
-                      Genesis NFT: 1000USD x 1000pcs
+                      Genesis NFT: 1000USD x 500pcs
                     </p>
                   </div>
                 </div>
@@ -489,19 +490,15 @@ const RoadMap = () => {
               <div className="flex flex-col gap-2">
                 <div className="flex gap-4 items-center">
                   <ChevronsRight />
-                  <p className="text-white/80">
-                    MONOKOILY game built on TON Chain
-                  </p>
+                  <p className="text-white/80">Build MONOKOILY game</p>
                 </div>
                 <div className="flex flex-col gap-2 pl-16">
                   <div className="flex gap-4 items-center">
-                    <p className="text-white/80">
-                      Live-To-Earn game– built DAU
-                    </p>
+                    <p className="text-white/80">Live-To-Earn game</p>
                   </div>
-                  <div className="flex gap-4 items-center">
+                  {/* <div className="flex gap-4 items-center">
                     <p className="text-white/80">Game boost: 1USD</p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -519,9 +516,7 @@ const RoadMap = () => {
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-4">
                 <span className="h-4 w-4 rounded-full bg-white"></span>
-                <h3 className="font-bold">
-                  KOI Web3SOC Developing (Monokoily user conversion)
-                </h3>
+                <h3 className="font-bold">KOI WebbinHUBS Developing</h3>
               </div>
               <div className="flex flex-col gap-2">
                 <div className="flex gap-4 items-center">
@@ -550,7 +545,7 @@ const RoadMap = () => {
               </div>
               <div className="flex items-center gap-4">
                 <span className="h-4 w-4 rounded-full bg-white"></span>
-                <h3 className="font-bold">KOI Web3SOC M&A mechanism</h3>
+                <h3 className="font-bold">KOI WebbinHUBS M&A mechanism</h3>
               </div>
               <div className="flex flex-col gap-2">
                 <div className="flex gap-4 items-center">

@@ -11,7 +11,7 @@ const Monokoily = () => {
           fill={true}
           className="object-cover"
         />
-        <div className="flex justify-center items-center gap-12 pt-24 px-6 flex-col-reverse md:flex-row z-10">
+        <div className="flex justify-center items-start gap-12 pt-24 px-6 flex-col-reverse md:flex-row z-10">
           <div className="flex relative flex-col md:w-1/2 gap-6 md:gap-12">
             <div className="flex flex-col">
               <h2 className="text-2xl flex items-center gap-1  md:text-4xl font-molde-bold-italic">
@@ -54,14 +54,14 @@ const Monokoily = () => {
               quality={100}
               className="object-cover"
             /> */}
-          <div className="w-full max-w-[400px] py-12 flex justify-center items-center md:justify-start md:items-start relative">
+          <div className="w-full max-w-[400px] md:pb-12 flex justify-center items-center md:justify-start md:items-start relative">
             {/* Video Container with Clipping */}
-            <div className="relative w-full h-[520px] sm:h-[800px] sm:max-w-[350px] overflow-hidden">
+            <div className="relative w-full h-[475px] sm:h-[740px] sm:max-w-[350px] overflow-hidden">
               {/* Phone Frame */}
               <img
-                src="/phone-frame-3.png"
+                src="/phone-frame-2.png"
                 alt="Phone Frame"
-                className="absolute w-[230px] sm:w-full h-[520px] sm:h-full z-20"
+                className="absolute w-[220px] sm:w-full h-[472px] sm:h-[739px] z-20"
               />
 
               {/* Video inside the frame */}
@@ -71,7 +71,7 @@ const Monokoily = () => {
                 loop
                 muted
                 playsInline
-                className="absolute top-[2rem] left-[1rem] w-[200px] sm:w-[320px] h-[450px] sm:h-[700px] object-cover pointer-events-none"
+                className="absolute top-[0.8rem] sm:top-[1.3rem] left-[0.8rem] sm:left-[1rem] w-[195px] sm:w-[320px] h-[450px] sm:h-[700px] object-cover pointer-events-none"
               />
             </div>
           </div>

@@ -59,7 +59,7 @@ const Web3SOC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button className="py-5 bg-black text-white  hover:bg-white hover:text-black">
+                <Button className="py-5 bg-black text-white border-white hover:bg-white hover:text-black border">
                   Whitepaper
                 </Button>
               </Link>

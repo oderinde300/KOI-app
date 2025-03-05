@@ -2,9 +2,9 @@ import React, { PureComponent } from "react";
 import { PieChart, Pie, Sector, ResponsiveContainer, Cell } from "recharts";
 
 const data = [
+  { name: "WebbinHUBS Rewards", value: 500, color: "#be80ff" },
   { name: "Monokoily Game", value: 150, color: "#bb39ff" },
   { name: "Private Round", value: 80, color: "#cc23bc" },
-  { name: "WebbinHUBS Rewards", value: 500, color: "#be80ff" },
   { name: "Public Round", value: 80, color: "#ce215f" },
   { name: "Marketing", value: 70, color: "#e05314" },
   { name: "Development", value: 50, color: "#f78a11" },

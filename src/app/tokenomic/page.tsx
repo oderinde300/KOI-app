@@ -30,10 +30,10 @@ const Tokenomic = () => {
               </p>
             </div>
             <p className="text-sm md:text-base text-white/80 text-center md:text-start md:w-2/3">
-              Secure Your Spot in the Future of Finance Join Our Telegram for
-              the Latest Launch News
+              Secure Your Spot in the Future of Finance. Check Out Our
+              Whitepaper for More Details.
             </p>
-            <Button className="py-5 w-32 md:w-48">
+            <Button className="py-5 bg-black text-white border-white hover:bg-white hover:text-black border">
               <a
                 // href="https://t.me/+vL6fzqgtXIE2MzBl"
                 href="https://monokoily-kois-organization.gitbook.io/webbinhubs"

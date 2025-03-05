@@ -56,12 +56,12 @@ export default function Home() {
           muted
           loop
           playsInline
-          className="absolute top-0 left-0 w-full h-full object-cover opacity-50"
+          className="absolute top-0 left-0 w-full h-full object-cover opacity-60"
         >
           <source src="/videos/2_hero banner video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="flex flex-col z-10 w-full items-center justify-center pt-48 md:pt-72 gap-12">
+        <div className="flex flex-col z-10 w-full items-center justify-center pt-48 md:pt-48 gap-12">
           <div className="flex flex-col justify-center gap-6 items-center relative md:w-2/3">
             <h2 className="font-molde-bold-italic tracking-widest text-center text-4xl md:text-6xl">
               BLOCKCHAIN REVOLUTION
@@ -86,7 +86,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-2 text-white items-center">
             <h2 className="text-xl md:text-2xl font-bold ">1000+</h2>
-            <p className="text-xs md:text-base">Web3SOC Users</p>
+            <p className="text-xs md:text-base">WebbinHUBS Users</p>
             <div className="flex w-28 md:w-44 h-1 mt-3 bg-button-gradient"></div>
           </div>
         </div>
@@ -280,7 +280,7 @@ export default function Home() {
                   Empowering Your Blockchain Future
                 </h3>
                 <p className="text-white/60">
-                  With KOI Web3SOC and MONOKOILY, we build a vibrant network
+                  With KOI WebbinHUBS and MONOKOILY, we build a vibrant network
                   through social activities and the sharing economy. Shape your
                   future in the blockchain world with us.
                 </p>

@@ -53,14 +53,14 @@ const FAQ = () => {
             answer={
               <div className="text-base">
                 <p>
-                  At first, KOI will develop a mini-game on the Ton-chain.
-                  Through this fun and easy-to-play game, with referral
-                  mechanism we aim to introduce ourselves and let everyone get
-                  to know us better. In addition, we will establish a social
-                  networking platform named Web3SOC to attract a large number of
-                  creators to showcase themselves and spread knowledge. Readers
-                  and viewers can share content from creators according to their
-                  preferences and interests.
+                  At first, KOI will develop a mini-game, Monokoily. Through
+                  this fun and easy-to-play game, with referral mechanism we aim
+                  to introduce ourselves and let everyone get to know us better.
+                  In addition, we will establish a social networking platform
+                  named WebbinHUBS to attract a large number of creators to
+                  showcase themselves and spread knowledge. Readers and viewers
+                  can share content from creators according to their preferences
+                  and interests.
                 </p>
                 <p>
                   While creators build their personal brands by gaining fans and
@@ -308,16 +308,15 @@ const FAQ = () => {
           />
           <AccordionComp
             number={10}
-            question="Blockchain What is the business model of the KOI project?"
+            question="What is the business model of the KOI project?"
             answer={
               <div>
                 <ul className="list-disc pl-6">
                   <li className="">
-                    Telegram Mini Game: MONOKOILY enable players to achieve life
-                    balance and attain higher passive income by effectively
-                    managing time and resources in a virtual world. Increase
-                    user interest in KOI and generate revenue through paid
-                    features.
+                    Mini Game: MONOKOILY enable players to achieve life balance
+                    and attain higher passive income by effectively managing
+                    time and resources in a virtual world. Increase user
+                    interest in KOI and generate revenue through paid features.
                   </li>
                   <li>
                     Blockchain Education: KOI starts with educating people on
@@ -351,7 +350,7 @@ const FAQ = () => {
           />
           <AccordionComp
             number={11}
-            question="What is unique about KOI Web3SOC?"
+            question="What is unique about KOI WebbinHUBS?"
             answer={
               <div>
                 <p>
@@ -368,7 +367,7 @@ const FAQ = () => {
           />
           <AccordionComp
             number={12}
-            question="How to earn income on the KOI Web3SOC platform?"
+            question="How to earn income on the KOI WebbinHUBS platform?"
             answer={
               <div>
                 <p>
@@ -393,7 +392,7 @@ const FAQ = () => {
               <div>
                 <p>
                   KOI claims to assist everyone in transitioning from Web2.0 to
-                  the Web3.0 stage. KOI enables everyone to enter Web3SOC
+                  the Web3.0 stage. KOI enables everyone to enter WebbinHUBS
                   stress-free. Those familiar with Web3.0 can directly use
                   Phantom wallet to enter, while those unfamiliar can use
                   commonly used social platforms. They can still participate in
