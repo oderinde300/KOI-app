@@ -428,7 +428,7 @@ export default function Home() {
                   </li>
                 </ul>
                 <Button variant={"outline"} className="py-5">
-                  <Link href="/web3soc">Read More</Link>
+                  <Link href="/webbinHUBS">Read More</Link>
                 </Button>
               </div>
             </div>
