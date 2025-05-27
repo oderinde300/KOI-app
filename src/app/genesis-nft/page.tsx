@@ -21,7 +21,7 @@ const GenesisNFT = () => {
               The Genesis NFT collection offers only 500 exclusive pieces, each
               priced at $1000, providing holders with not just unique digital
               art but also financial perks such as KOI Token, a Crypto Debit
-              Mastercard, and a share of WebbinHUBS's monthly profits,
+              Mastercard, and a share of WebbinHUBS&apos;s monthly profits,
               highlighting its unique value and potential.
             </p>
             <div className="flex gap-4">
