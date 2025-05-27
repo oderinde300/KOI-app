@@ -32,7 +32,7 @@ const RoadMapScroll = () => {
   }, []);
 
   return (
-    <div className="hidden md:flex gap-4 min-h-[50vh] rounded-xl p-4 fixed right-24 top-[50%] -translate-y-[40%] z-50 bg-white/20 backdrop-blur-sm w-[8.375rem]">
+    <div className="hidden md:flex gap-4 min-h-[50vh] rounded-xl p-4 fixed right-24 top-[50%] -translate-y-[40%] z-50 bg-white/20 backdrop-blur-sm w-[8rem]">
       <div className="flex min-h-[50vh] w-0.5 bg-white/40">
         <div className="flex w-full h-full relative">
           <motion.div
@@ -62,69 +62,30 @@ const RoadMapScroll = () => {
             2020 Oct
           </p>
         </Link> */}
-        <Link href="#2022-dec">
+        <Link href="#2022-q4">
           <p
             onClick={() => setClick(!click)}
             className={`text-sm cursor-pointer 
             ${
-              activeId === "2022-dec"
+              activeId === "2022-q4"
                 ? "text-[#A759FF] font-bold"
                 : "text-white/70"
             }`}
           >
-            2022 Dec
+            2022 Q4
           </p>
         </Link>
-        <Link href="#2023-q1">
+        <Link href="#2023-q1-q4">
           <p
             onClick={() => setClick(!click)}
             className={`text-sm cursor-pointer 
             ${
-              activeId === "2023-q1"
+              activeId === "2023-q1-q4"
                 ? "text-[#A759FF] font-bold"
                 : "text-white/70"
             }`}
           >
-            2023 Q1
-          </p>
-        </Link>
-        <Link href="#2023-q2">
-          <p
-            onClick={() => setClick(!click)}
-            className={`text-sm cursor-pointer 
-            ${
-              activeId === "2023-q2"
-                ? "text-[#A759FF] font-bold"
-                : "text-white/70"
-            }`}
-          >
-            2023 Q2
-          </p>
-        </Link>
-        <Link href="#2023-q3">
-          <p
-            onClick={() => setClick(!click)}
-            className={`text-sm cursor-pointer 
-            ${
-              activeId === "2023-q3"
-                ? "text-[#A759FF] font-bold"
-                : "text-white/70"
-            }`}
-          >
-            2023 Q3
-          </p>
-        </Link>
-        <Link href="#2023-q4">
-          <p
-            onClick={() => setClick(!click)}
-            className={`text-sm cursor-pointer 
-            ${
-              activeId === "2023-q4"
-                ? "text-[#A759FF] font-bold"
-                : "text-white/70"
-            }`}
-          >
-            2023 Q4
+            2023 Q1~Q4
           </p>
         </Link>
         <Link href="#2024-q1-q4">
@@ -137,7 +98,7 @@ const RoadMapScroll = () => {
                 : "text-white/70"
             }`}
           >
-            2024 Q1-Q4
+            2024 Q1~Q4
           </p>
         </Link>
         <Link href="#2025-q1-q4">
@@ -150,7 +111,7 @@ const RoadMapScroll = () => {
                 : "text-white/70"
             }`}
           >
-            2025 Q1-Q4
+            2025 Q1~Q4
           </p>
         </Link>
         <Link href="#2026-q1-q4">
@@ -163,7 +124,7 @@ const RoadMapScroll = () => {
                 : "text-white/70"
             }`}
           >
-            2026 Q1-Q4
+            2026 Q1~Q4
           </p>
         </Link>
         <Link href="#2027-q1-q4">
@@ -176,7 +137,7 @@ const RoadMapScroll = () => {
                 : "text-white/70"
             }`}
           >
-            2027 Q1-Q4
+            2027 Q1~Q4
           </p>
         </Link>
         <Link href="#2028">

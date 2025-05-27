@@ -67,7 +67,9 @@ const Slider = ({ slides, className, imageStyle }: Props) => {
   };
 
   return (
-    <div className={`${className} flex relative w-full`}>
+    <div
+      className={`${className} flex relative w-full max-w-[22rem] md:max-w-[756px]`}
+    >
       <div
         onClick={prevSlide}
         className="flex cursor-pointer left-4 absolute top-[50%] -translate-y-[50%] bg-black/40 shadow-lg p-2 z-20 rounded-full"
@@ -103,7 +105,7 @@ const Slider = ({ slides, className, imageStyle }: Props) => {
                 src={slide}
                 alt={`Slide ${index + 1}`}
                 fill={true}
-                className="object-contain md:object-cover 2xl:object-contain"
+                className="object-contain"
               />
             </div>
           ))}

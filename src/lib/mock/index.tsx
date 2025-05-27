@@ -1,165 +1,11 @@
 import { IChartData, IEvent, ITeam } from "@/interfaces";
 import { FAQ } from "../../components/Accordion/index";
 
-export const teamList: ITeam[] = [
-  {
-    name: "Co Siau",
-    // image_url: "/team/team_co siau 1.png",
-    image_url: "/team-photo/Co Siau.png",
-    position: "FOUNDER/DIRECTOR",
-    social_media: [
-      {
-        icon: "/team/linkedin.svg",
-        link: "https://www.linkedin.com/in/co-siau-cryptodevelopment/",
-      },
-      {
-        icon: "/team/twitter.svg",
-        link: "https://x.com/CoSiau?t= 6AmVDKWle1l44GJHlO qRyQ&s=09",
-      },
-    ],
-  },
-  {
-    name: "Kok Poh Fui",
-    image_url: "/team-photo/Kok Poh Fui.png",
-    position: "CHIEF FINANCIAL OFFICER",
-    social_media: [
-      {
-        icon: "/team/website.svg",
-        link: "https://www.klsescreener.com/v2/announcements/view/3089372",
-      },
-    ],
-  },
-  {
-    name: "Sharon Yong",
-    // image_url: "/team/team_sharon 1.png",
-    image_url: "/team-photo/Sharon Yong.png",
-    position: "CISO",
-    social_media: [
-      {
-        icon: "/team/linkedin.svg",
-        link: "https://www.linkedin.com/in/sharonyong",
-      },
-    ],
-  },
-  {
-    name: "Wilson Wong",
-    // image_url: "/team/team_wilson 1.png",
-    image_url: "/team-photo/Wilson Wong.png",
-    position: "CTO",
-    social_media: [
-      {
-        icon: "/team/linkedin.svg",
-        link: "https://www.linkedin.com/in/wilson-wong-412046184/",
-      },
-    ],
-  },
-  {
-    name: "Bryan Lim",
-    // image_url: "/team/team_bryan 1.png",
-    image_url: "/team-photo/Bryan Lim.jpg",
-    position: "CREATIVE DIRECTOR",
-    social_media: [
-      {
-        icon: "team/facebook.svg",
-        link: "https://www.facebook.com/bryanlim111?mibextid=ZbWKwL",
-      },
-    ],
-  },
-  {
-    name: "Chin Jia Huei",
-    // image_url: "/team/team_jia huei 1.png",
-    image_url: "/team-photo/Chin Jia Huei.png",
-    position: "ADMIN DIRECTOR",
-    social_media: [
-      {
-        icon: "/team/linkedin.svg",
-        link: "https://www.linkedin.com/in/jia-huei-45552a125/",
-      },
-    ],
-  },
-
-  {
-    name: "Tan Yu Ning",
-    // image_url: "/team/team_yuning 1.png",
-    // image_url: "/team-photo/Tan Yu Ning.png",
-    image_url: "/team-photo/Tan Yu Ning.png",
-    position: "DESIGN DIRECTOR",
-    social_media: [
-      {
-        icon: "/team/linkedin.svg",
-        link: "https://www.linkedin.com/in/yu-ning-tan-37297231b/",
-      },
-    ],
-  },
-
-  {
-    name: "Jay Koh",
-    // image_url: "/team/team_jay 1.png",
-    image_url: "/team-photo/Jay Koh.png",
-    position: "WEB3 ADVISOR",
-    social_media: [
-      {
-        icon: "/team/linkedin.svg",
-        link: "https://www.linkedin.com/in/jay-koh/",
-      },
-      {
-        icon: "/team/twitter.svg",
-        link: "https://x.com/Krypto_JayK",
-      },
-    ],
-  },
-  {
-    name: "Gary Wong",
-    // image_url: "/team/team_gary 1.png",
-    image_url: "/team-photo/Gary Wong.png",
-    position: "CHIEF BLOCKCHAIN ADVISOR",
-    social_media: [
-      {
-        icon: "/team/twitter.svg",
-        link: "https://x.com/Garywong8888",
-      },
-    ],
-  },
-  {
-    name: "Ben Kok",
-    // image_url: "/team/team_ben kok 1.png",
-    image_url: "/team-photo/Ben Kok.png",
-    position: "TECH ADVISOR",
-    social_media: [
-      {
-        icon: "/team/linkedin.svg",
-        link: "https://www.linkedin.com/in/benjamin-kok/",
-      },
-    ],
-  },
-  {
-    name: "Sky Wee",
-    // image_url: "/team/team_jia huei 1.png",
-    image_url: "/team-photo/Sky Wee.png",
-    position: "LEAD ADVISOR",
-    social_media: [
-      {
-        icon: "/team/linkedin.svg",
-        link: "https://www.linkedin.com/in/skywee97/",
-      },
-      {
-        icon: "/team/facebook.svg",
-        link: "https://www.facebook.com/skywee97",
-      },
-      {
-        icon: "/team/twitter.svg",
-        link: "https://x.com/OfficialSkyWee1",
-      },
-    ],
-  },
-];
-
 export const teamList1: ITeam[] = [
   {
-    name: "Co Siau",
-    // image_url: "/team/team_co siau 1.png",
+    name: "co siau",
     image_url: "/team-photo/Co Siau.png",
-    position: "FOUNDER/DIRECTOR",
+    position: "founder/director",
     social_media: [
       {
         icon: "/team/linkedin.svg",
@@ -167,14 +13,14 @@ export const teamList1: ITeam[] = [
       },
       {
         icon: "/team/twitter.svg",
-        link: "https://x.com/CoSiau?t= 6AmVDKWle1l44GJHlO qRyQ&s=09",
+        link: "https://x.com/cosiau?t= 6amvdkwle1l44gjhlo qryq&s=09",
       },
     ],
   },
   {
-    name: "Kok Poh Fui",
+    name: "kok poh fui",
     image_url: "/team-photo/Kok Poh Fui.png",
-    position: "CHIEF FINANCIAL OFFICER",
+    position: "chief financial officer",
     social_media: [
       {
         icon: "/team/website.svg",
@@ -183,10 +29,10 @@ export const teamList1: ITeam[] = [
     ],
   },
   {
-    name: "Sharon Yong",
+    name: "sharon yong",
     // image_url: "/team/team_sharon 1.png",
     image_url: "/team-photo/Sharon Yong.png",
-    position: "CISO",
+    position: "Chief Security Officer",
     social_media: [
       {
         icon: "/team/linkedin.svg",
@@ -195,14 +41,13 @@ export const teamList1: ITeam[] = [
     ],
   },
   {
-    name: "Wilson Wong",
-    // image_url: "/team/team_wilson 1.png",
-    image_url: "/team-photo/Wilson Wong.png",
-    position: "CTO",
+    name: "martin eng",
+    image_url: "/team-photo/Martin Eng.png",
+    position: "chief blockchain officer",
     social_media: [
       {
         icon: "/team/linkedin.svg",
-        link: "https://www.linkedin.com/in/wilson-wong-412046184/",
+        link: "https://www.linkedin.com/in/martin-eng",
       },
     ],
   },
@@ -210,22 +55,20 @@ export const teamList1: ITeam[] = [
 
 export const teamList2: ITeam[] = [
   {
-    name: "Bryan Lim",
-    // image_url: "/team/team_bryan 1.png",
+    name: "bryan lim",
     image_url: "/team-photo/Bryan Lim.jpg",
-    position: "CREATIVE DIRECTOR",
+    position: "Chief Creative Officer",
     social_media: [
       {
         icon: "team/facebook.svg",
-        link: "https://www.facebook.com/bryanlim111?mibextid=ZbWKwL",
+        link: "https://www.facebook.com/bryanlim111?mibextid=zbwkwl",
       },
     ],
   },
   {
-    name: "Chin Jia Huei",
-    // image_url: "/team/team_jia huei 1.png",
+    name: "chin jia huei",
     image_url: "/team-photo/Chin Jia Huei.png",
-    position: "ADMIN DIRECTOR",
+    position: "Chief Administrator Officer",
     social_media: [
       {
         icon: "/team/linkedin.svg",
@@ -235,11 +78,9 @@ export const teamList2: ITeam[] = [
   },
 
   {
-    name: "Tan Yu Ning",
-    // image_url: "/team/team_yuning 1.png",
-    // image_url: "/team-photo/Tan Yu Ning.png",
+    name: "tan yu ning",
     image_url: "/team-photo/Tan Yu Ning.png",
-    position: "DESIGN DIRECTOR",
+    position: "Chief Design Officer",
     social_media: [
       {
         icon: "/team/linkedin.svg",
@@ -247,13 +88,24 @@ export const teamList2: ITeam[] = [
       },
     ],
   },
+  {
+    name: "adam lau",
+    image_url: "/team-photo/Adam Lau.png",
+    position: "chief marketing officer",
+    social_media: [
+      {
+        icon: "/team/linkedin.svg",
+        link: "https://www.linkedin.com/in/adam-enablly",
+      },
+    ],
+  },
 ];
+
 export const teamList3: ITeam[] = [
   {
-    name: "Jay Koh",
-    // image_url: "/team/team_jay 1.png",
+    name: "jay koh",
     image_url: "/team-photo/Jay Koh.png",
-    position: "WEB3 ADVISOR",
+    position: "web3 advisor",
     social_media: [
       {
         icon: "/team/linkedin.svg",
@@ -261,27 +113,25 @@ export const teamList3: ITeam[] = [
       },
       {
         icon: "/team/twitter.svg",
-        link: "https://x.com/Krypto_JayK",
+        link: "https://x.com/krypto_jayk",
       },
     ],
   },
   {
-    name: "Gary Wong",
-    // image_url: "/team/team_gary 1.png",
+    name: "gary wong",
     image_url: "/team-photo/Gary Wong.png",
-    position: "CHIEF BLOCKCHAIN ADVISOR",
+    position: "Blockchain Advisor",
     social_media: [
       {
         icon: "/team/twitter.svg",
-        link: "https://x.com/Garywong8888",
+        link: "https://x.com/garywong8888",
       },
     ],
   },
   {
-    name: "Ben Kok",
-    // image_url: "/team/team_ben kok 1.png",
+    name: "ben kok",
     image_url: "/team-photo/Ben Kok.png",
-    position: "TECH ADVISOR",
+    position: "tech advisor",
     social_media: [
       {
         icon: "/team/linkedin.svg",
@@ -290,10 +140,9 @@ export const teamList3: ITeam[] = [
     ],
   },
   {
-    name: "Sky Wee",
-    // image_url: "/team/team_jia huei 1.png",
+    name: "sky wee",
     image_url: "/team-photo/Sky Wee.png",
-    position: "LEAD ADVISOR",
+    position: "lead advisor",
     social_media: [
       {
         icon: "/team/linkedin.svg",
@@ -305,7 +154,33 @@ export const teamList3: ITeam[] = [
       },
       {
         icon: "/team/twitter.svg",
-        link: "https://x.com/OfficialSkyWee1",
+        link: "https://x.com/officialskywee1",
+      },
+    ],
+  },
+];
+
+export const teamList4: ITeam[] = [
+  {
+    name: "abigail jewwl brion",
+    image_url: "/team-photo/Abigail.png",
+    position: "philippines ambassodor",
+    social_media: [
+      {
+        icon: "/team/linkedin.svg",
+        link: "https://www.linkedin.com/in/abigail-jewel-brion",
+      },
+    ],
+  },
+
+  {
+    name: "muneyuki hattori",
+    image_url: "/team-photo/Muneyuki Hattori.png",
+    position: "chief gaming officer",
+    social_media: [
+      {
+        icon: "/team/linkedin.svg",
+        link: "https://www.linkedin.com/in/muneyuki-hattori-3ba205169/",
       },
     ],
   },
@@ -417,11 +292,11 @@ Wallet.)`,
 
 export const partners: string[] = [
   // "/partners/atecl 1.svg",
-  "/partners/creative 1.svg",
+  // "/partners/creative 1.svg",
   "/partners/gtouch 1.svg",
   "/partners/magic eden 1.svg",
   "/partners/phantom 1.svg",
-  "/partners/ryan 1.svg",
+  // "/partners/ryan 1.svg",
   "/partners/Sky ventures.svg",
   "/partners/Sky Venture Labs.svg",
   "/partners/solana 1.svg",
@@ -497,14 +372,6 @@ This assembly marks a significant stride towards integrating Malaysia’s busine
   },
 ];
 
-const color = "#FFA515";
-const color1 = "#9ED441";
-const color2 = "#D44161";
-const color3 = "#D45741";
-const color4 = "#41D499";
-const color5 = "#2255D6";
-const color6 = "#6D41D4";
-
 export const chartData: IChartData[] = [
   {
     name: "WebbinHUBS Rewards",
@@ -513,32 +380,32 @@ export const chartData: IChartData[] = [
     image: "Group 1.svg",
   },
   {
-    name: "Monokoily Game",
-    percentage: 15,
+    name: "VC",
+    percentage: 10,
     color: "#bb39ff",
     image: "Group 2.svg",
   },
   {
-    name: "Private Round",
-    percentage: 8,
+    name: "Future Dev",
+    percentage: 10,
     color: "#cc23bc",
     image: "Group 3.svg",
   },
   {
-    name: "Public Round",
-    percentage: 8,
+    name: "Public Sales",
+    percentage: 10,
     color: "#ce215f",
     image: "Group 4.svg",
   },
   {
-    name: "Marketing",
-    percentage: 7,
+    name: "Private Sales",
+    percentage: 6,
     color: "#e05314",
     image: "Group 5.svg",
   },
   {
-    name: "Development",
-    percentage: 5,
+    name: "Liquidity Pool",
+    percentage: 6,
     color: "#f78a11",
     image: "Group 6.svg",
   },
@@ -549,8 +416,59 @@ export const chartData: IChartData[] = [
     image: "Group 7.svg",
   },
   {
-    name: "Advisors",
+    name: "Advisor",
+    percentage: 3,
+    color: "#ffc89f",
+    image: "Group 8.svg",
+  },
+];
+
+export const MonokoiChartData: IChartData[] = [
+  {
+    name: "Play-To-Earn",
+    percentage: 50,
+    color: "#be80ff",
+    image: "Group 1.svg",
+  },
+  {
+    name: "DEX & CEX",
+    percentage: 15,
+    color: "#bb39ff",
+    image: "Group 2.svg",
+  },
+  {
+    name: "Private Sales",
+    percentage: 10,
+    color: "#cc23bc",
+    image: "Group 3.svg",
+  },
+  {
+    name: "Partner / Marketing",
+    percentage: 10,
+    color: "#ce215f",
+    image: "Group 4.svg",
+  },
+  {
+    name: "Team",
+    percentage: 6,
+    color: "#e05314",
+    image: "Group 5.svg",
+  },
+  {
+    name: "Advisory",
+    percentage: 6,
+    color: "#f78a11",
+    image: "Group 6.svg",
+  },
+  {
+    name: "Pioneer User",
     percentage: 2,
+    color: "#ffbc64",
+    image: "Group 7.svg",
+  },
+  {
+    name: "Pioneer Tester",
+    percentage: 1,
     color: "#ffc89f",
     image: "Group 8.svg",
   },

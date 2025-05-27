@@ -18,9 +18,11 @@ const GenesisNFT = () => {
               </p>
             </div>
             <p className="text-sm md:text-base text-center md:text-left text-white/80 md:w-2/3">
-              Join the KOI community and benefit from our collaboration with
-              SOLANA TAB, utilizing Phantom for seamless NFT purchases and
-              receiving dividends that grow with your investment.
+              The Genesis NFT collection offers only 500 exclusive pieces, each
+              priced at $1000, providing holders with not just unique digital
+              art but also financial perks such as KOI Token, a Crypto Debit
+              Mastercard, and a share of WebbinHUBS's monthly profits,
+              highlighting its unique value and potential.
             </p>
             <div className="flex gap-4">
               <Button className="py-5 w-32 md:w-48">
@@ -144,7 +146,7 @@ const GenesisNFT = () => {
               The Genesis NFT collection offers only 1000 exclusive pieces, each
               priced at $1000, providing holders with not just unique digital
               art but also financial perks such as KOI tokens, a Crypto Debit
-              Mastercard, and a share of Web3SOC&#39;s monthly profits,
+              Mastercard, and a share of WebbinHUBS&#39;s monthly profits,
               highlighting its unique value and potential.
             </p>
           </div>
@@ -167,7 +169,7 @@ const GenesisNFT = () => {
                 The first 100 Genesis NFT holders receive generous benefits
                 including 400,000 KOI Tokens for future gains, a Crypto Debit
                 Mastercard for financial flexibility, and a consistent revenue
-                stream from 5% of Web3SOC&#39;s total monthly top-up amount.
+                stream from 5% of WebbinHUBS&#39;s total monthly top-up amount.
               </p>
             </div>
             <div className="flex flex-col gap-2">
@@ -185,7 +187,7 @@ const GenesisNFT = () => {
                 </li>
                 <li>
                   5% Monthly Profit Share: Boosts ongoing financial growth with
-                  a share from Web3SOC&#39;s revenue.
+                  a share from WebbinHUBS&#39;s revenue.
                 </li>
               </ul>
             </div>

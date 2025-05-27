@@ -155,9 +155,6 @@ const Footer = () => {
               <li>
                 <Link href="/genesis-nft">Genesis NFT</Link>
               </li>
-              <li>
-                <Link href="/tokenomic">Tokenomic</Link>
-              </li>
             </ul>
           </div>
         </div>

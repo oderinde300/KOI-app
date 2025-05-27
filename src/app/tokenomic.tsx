@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import { Button } from "../../components/ui/button";
+import { Button } from "../components/ui/button";
 import { chartData } from "@/lib/mock";
 import { IChartData } from "@/interfaces";
 // import { Pin } from "lucide-react";

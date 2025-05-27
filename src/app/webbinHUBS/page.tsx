@@ -1,11 +1,12 @@
 "use client";
-// import Image from "next/image";
 import React, { useRef } from "react";
 import { Button } from "../../components/ui/button";
-// import { ChevronLeft, ChevronRight } from "lucide-react";
 import Slider from "../../components/Slider";
-import { slides } from "@/lib/mock";
+import { chartData, slides } from "@/lib/mock";
 import Link from "next/link";
+import Chart from "@/components/Chart";
+import { IChartData } from "@/interfaces";
+import Image from "next/image";
 
 const Web3SOC = () => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -13,12 +14,6 @@ const Web3SOC = () => {
   return (
     <div className="min-h-screen relative bg-black text-white">
       <div className="flex justify-center items-center text-white w-full h-full min-h-screen relative after:content-[''] after:absolute after:w-full after:h-72 md:after:h-24 after:bottom-0 after:bg-gradient-to-t after:from-black after:to-transparent">
-        {/* <Image
-          src="/touch screen 1.svg"
-          alt="Space"
-          fill={true}
-          className="object-cover"
-        /> */}
         <video
           ref={videoRef}
           autoPlay
@@ -34,14 +29,14 @@ const Web3SOC = () => {
           <div className="flex relative items-center md:items-start flex-col md:w-2/3 gap-12">
             <div className="flex items-center md:items-start flex-col gap-4">
               <h2 className="font-molde-bold-italic uppercase md:text-nowrap text-center md:text-left text-2xl md:text-4xl md:w-1/2 ">
-                powerful web3 <br></br> SOCIAL PLATFORM
+                Super IP <br></br> Business Network
               </h2>
               <p className="text-lg text-center md:text-left font-molde md:text-2xl text-gradient w-fit">
                 WebbinHUBS
               </p>
             </div>
             <ul className="list-disc text-sm text-center md:text-left md:text-base md:w-2/4 text-white/80">
-              <li>Web3 Version of Classic Meta</li>
+              <li>Blockchain Version of Classic Meta</li>
               <li>
                 Earn Social Income and Acquire More Blockchain Assets through
                 the Solana Ecosystem.
@@ -110,10 +105,56 @@ const Web3SOC = () => {
       </div>
       <div className="flex w-full px-6 py-12 md:px-0 justify-center pt-24 items-center">
         <Slider
-          className=" md:w-[55%] bg-[#121515] p-4 rounded-3xl border-2 border-white/40`"
+          className="bg-[#121515] p-4 rounded-3xl border-2 border-white/40`"
           slides={slides}
           imageStyle="h-[14rem] md:h-[32rem] bg-white/60"
         />
+      </div>
+
+      <div className="mx-auto w-full px-4 md:px-0 xl:w-3/5">
+        <div className="flex flex-col md:flex-row items-center">
+          <div className="w-full md:w-[60%] h-[30rem] gap-4 flex justify-center items-center">
+            <Chart />
+          </div>
+          <div className="mx-auto">
+            <div className="flex items-center gap-4 mb-4">
+              <Image
+                src="/KOI_token_logo.png"
+                alt="logo"
+                width={60}
+                height={60}
+              />
+              <div className="flex flex-col justify-start items-start">
+                <h2 className="font-extrabold md:text-2xl bg-clip-text  text-white text-center">
+                  TOKENOMIC
+                </h2>
+                <h2 className="md:text-2xl bg-clip-text  text-white text-center text-gradient">
+                  KOI TOKEN
+                </h2>
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-2 w-full text-white/80 h-full">
+              <div className="flex flex-col w-full">
+                {chartData.map((item: IChartData, index: number) => (
+                  <div
+                    key={index}
+                    className="flex items-center w-full border-b group border-b-white/40 pb-2 justify-between gap-x-8"
+                  >
+                    <div className="flex items-center gap-1 py-2">
+                      <span
+                        style={{ backgroundColor: item.color }}
+                        className={`rounded-full h-3 w-3`}
+                      ></span>
+                      <p className="">{item.name}</p>
+                    </div>
+                    <p className="">{item.percentage}%</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

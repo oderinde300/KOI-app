@@ -2,14 +2,14 @@ import React, { PureComponent } from "react";
 import { PieChart, Pie, Sector, ResponsiveContainer, Cell } from "recharts";
 
 const data = [
-  { name: "WebbinHUBS Rewards", value: 500, color: "#be80ff" },
-  { name: "Advisor", value: 30, color: "#ffc89f" },
-  { name: "Team", value: 50, color: "#ffbc64" },
-  { name: "Liquidity Pool", value: 60, color: "#f78a11" },
-  { name: "Private Sales", value: 60, color: "#e05314" },
-  { name: "Public Sales", value: 100, color: "#ce215f" },
-  { name: "Future Dev", value: 100, color: "#cc23bc" },
-  { name: "VC", value: 100, color: "#bb39ff" },
+  { name: "Play-To-Earn", value: 500, color: "#be80ff" },
+  { name: "Pioneer Tester", value: 10, color: "#ffc89f" },
+  { name: "Pioneer User", value: 20, color: "#ffbc64" },
+  { name: "Advisory", value: 60, color: "#f78a11" },
+  { name: "Team", value: 60, color: "#e05314" },
+  { name: "Partner / Marketing", value: 100, color: "#ce215f" },
+  { name: "Private Sales", value: 100, color: "#cc23bc" },
+  { name: "DEX & CEX", value: 150, color: "#bb39ff" },
 ];
 
 const COLORS = [
@@ -24,16 +24,29 @@ const COLORS = [
 ];
 
 const renderActiveShape = (props: any) => {
+  const RADIAN = Math.PI / 180;
   const {
     cx,
     cy,
+    midAngle,
     innerRadius,
     outerRadius,
     startAngle,
     endAngle,
+    fill,
     payload,
     percent,
+    value,
   } = props;
+  const sin = Math.sin(-RADIAN * midAngle);
+  const cos = Math.cos(-RADIAN * midAngle);
+  const sx = cx + (outerRadius + 10) * cos;
+  const sy = cy + (outerRadius + 10) * sin;
+  const mx = cx + (outerRadius + 30) * cos;
+  const my = cy + (outerRadius + 30) * sin;
+  const ex = mx + (cos >= 0 ? 1 : -1) * 22;
+  const ey = my;
+  const textAnchor = cos >= 0 ? "start" : "end";
 
   return (
     <g>
@@ -60,11 +73,41 @@ const renderActiveShape = (props: any) => {
         endAngle={endAngle}
         fill={`${payload?.color}`}
       />
+      {/* <Sector
+        cx={cx}
+        cy={cy}
+        startAngle={startAngle}
+        endAngle={endAngle}
+        innerRadius={outerRadius + 6}
+        outerRadius={outerRadius + 10}
+        fill={`${payload?.color}`}
+      /> */}
+      {/* <path
+        d={`M${sx},${sy}L${mx},${my}L${ex},${ey}`}
+        stroke={`${payload?.color}`}
+        fill="none"
+      /> */}
+      {/* <circle cx={ex} cy={ey} r={2} fill={fill} stroke="none" /> */}
+      {/* <text
+        x={ex + (cos >= 0 ? 1 : -1) * 12}
+        y={ey}
+        textAnchor={textAnchor}
+        fill="#333"
+      >{`${props?.name}`}</text> */}
+      {/* <text
+        x={ex + (cos >= 0 ? 1 : -1) * 12}
+        y={ey}
+        dy={18}
+        textAnchor={textAnchor}
+        fill="#999"
+      >
+        {`(${(percent * 100).toFixed(2)}%)`}
+      </text> */}
     </g>
   );
 };
 
-export default class Chart extends PureComponent {
+export default class MonoKoiChart extends PureComponent {
   static demoUrl =
     "https://codesandbox.io/s/pie-chart-with-customized-active-shape-y93si";
 
@@ -92,10 +135,10 @@ export default class Chart extends PureComponent {
                 cy="50%"
                 innerRadius={140}
                 outerRadius={190}
+                stroke="none"
                 fill="#8884d8"
                 dataKey="value"
                 onMouseEnter={this.onPieEnter}
-                stroke="none"
               >
                 {data.map((entry, index) => (
                   <Cell
@@ -118,8 +161,8 @@ export default class Chart extends PureComponent {
                 cy="50%"
                 innerRadius={90}
                 outerRadius={120}
-                fill="#8884d8"
                 stroke="none"
+                fill="#8884d8"
                 dataKey="value"
                 onMouseEnter={this.onPieEnter}
               >

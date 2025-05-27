@@ -5,10 +5,10 @@ import { Button } from "@/components/ui/button";
 import { ITeam } from "@/interfaces";
 import {
   partners,
-  teamList,
   teamList1,
   teamList2,
   teamList3,
+  teamList4,
 } from "@/lib/mock";
 import Image from "next/image";
 import Link from "next/link";
@@ -56,7 +56,7 @@ export default function Home() {
           muted
           loop
           playsInline
-          className="absolute top-0 left-0 w-full h-full object-cover opacity-60"
+          className="absolute top-0 left-0 w-full h-full object-cover opacity-40"
         >
           <source src="/videos/2_hero banner video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -78,7 +78,7 @@ export default function Home() {
             <Link href={"#welcome"}>Explore More</Link>
           </Button>
         </div>
-        <div className="flex mx-auto py-24 z-10 gap-12 md:gap-28">
+        {/* <div className="flex mx-auto py-24 z-10 gap-12 md:gap-28">
           <div className="flex flex-col gap-2 text-white items-center">
             <h2 className="text-xl md:text-2xl font-bold ">1200+</h2>
             <p className="text-xs md:text-base">Monokoily Users</p>
@@ -89,7 +89,7 @@ export default function Home() {
             <p className="text-xs md:text-base">WebbinHUBS Users</p>
             <div className="flex w-28 md:w-44 h-1 mt-3 bg-button-gradient"></div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Our Partners */}
@@ -97,38 +97,6 @@ export default function Home() {
         <h2 className="font-bold text-xl md:text-3xl text-center text-white">
           OUR PARTNERS
         </h2>
-        {/* <div className="flex w-[95%] md:w-[90%] flex-wrap relative">
-          {partners.map((url: string, index: number) => (
-            <div
-              key={index}
-              className="flex h-10 w-24 md:h-14 md:min-w-48  relative"
-            >
-              <Image
-                src={url}
-                alt={`Partners ${index}`}
-                className="object-contain w-full h-full"
-                fill={true}
-              />
-            </div>
-          ))}
-        </div> */}
-        {/* <div className="overflow-hidden w-full">
-          <div className="animate-scroll flex w-max">
-            {partners.map((url: string, index: number) => (
-              <div
-                key={index}
-                className="flex h-10 w-24 md:h-14 md:min-w-48 relative"
-              >
-                <Image
-                  src={url}
-                  alt={`Partners ${index}`}
-                  className="object-contain w-full h-full"
-                  fill={true}
-                />
-              </div>
-            ))}
-          </div>
-        </div> */}
         <div className="overflow-hidden w-full">
           <div className="animate-scroll flex w-max">
             {[...partners, ...partners].map((url: string, index: number) => (
@@ -143,23 +111,6 @@ export default function Home() {
             ))}
           </div>
         </div>
-
-        {/* <div className="hidden md:flex relative min-w-[71.25rem]  min-h-36">
-          <Image
-            src="/partners/partner.svg"
-            alt={`Partners`}
-            className="object-contain w-full h-full"
-            fill={true}
-          />
-        </div>
-        <div className="flex md:hidden relative w-[95%]  min-h-[8.6875rem]">
-          <Image
-            src="/partners/partner_mobile.svg"
-            alt={`Partners`}
-            className="object-contain w-full h-full"
-            fill={true}
-          />
-        </div> */}
       </div>
 
       {/* Miss Koi */}
@@ -200,14 +151,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* <div className="flex absolute right-[-10%] sm:right-0 lg:right-[3rem] xl:right-[-4rem] lg:mt-16 top-[10%] sm:top-[20%] lg:relative h-56 min-w-48 md:h-[25rem] md:min-w-[1x9.8125rem] lg:h-[35rem] lg:min-w-[29.8125rem]">
-              <div className="video-container">
-                <video loop muted autoPlay playsInline>
-                  <source src="/videos/MsKOI Space.webm" type="video/webm" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div> */}
             <video
               src="/videos/MsKOI Space.webm"
               autoPlay
@@ -240,14 +183,6 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col my-24 min-h-[300vh] relative w-full after:content-[''] after:absolute after:w-full after:h-72 after:bottom-0 after:bg-gradient-to-t after:from-black after:to-transparent">
-        {/* <Image
-          src="/pawel-czerwinski-ZkzobNDayXo-unsplash (1) 1.svg"
-          alt="Space"
-          fill={true}
-          className="object-cover"
-        /> */}
-
-        {/* Welcome to koi mobilize */}
         <div
           id="welcome"
           className="flex relative md:py-48 gap-12 px-6 z-10 flex-col items-center overflow-hidden h-full"
@@ -258,10 +193,9 @@ export default function Home() {
           <div className="grid md:w-[90%] grid-cols-1 md:grid-cols-2  gap-4">
             <div className="flex w-full h-[18rem] md:h-full relative">
               <Image
-                src="/welcome-to-mobilize-3.png"
+                src="/live-to-earn.png"
                 alt="Space"
-                // fill={true}
-                className="object-cover w-full h-full"
+                className="object-contain xl:object-cover w-full h-full"
                 width={1500}
                 height={1500}
               />
@@ -330,11 +264,18 @@ export default function Home() {
                   <TeamCard key={index} data={team} />
                 ))}
               </div>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-3 lg:flex justify-center items-center relative z-30">
+                {teamList4.map((team: ITeam, index: number) => (
+                  <TeamCard key={index} data={team} />
+                ))}
+              </div>
             </div>
             <div className="lg:hidden grid grid-cols-2 md:grid-cols-3 gap-3 justify-center relative z-30 items-center">
-              {teamList.map((team: ITeam, index: number) => (
-                <TeamCard key={index} data={team} />
-              ))}
+              {[...teamList1, ...teamList2, ...teamList3, ...teamList4].map(
+                (team: ITeam, index: number) => (
+                  <TeamCard key={index} data={team} />
+                )
+              )}
             </div>
           </div>
         </div>

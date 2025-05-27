@@ -121,17 +121,6 @@ const Header = () => {
                       >
                         Genesis NFT
                       </Link>
-                      <Link
-                        onClick={() => setMenu(false)}
-                        href="/tokenomic"
-                        className={`${
-                          isActive("/tokenomic")
-                            ? "text-white font-bold"
-                            : "text-white/80"
-                        } py-2 w-full px-2`}
-                      >
-                        Tokenomic
-                      </Link>
                     </div>
                   )}
                 </li>
@@ -233,17 +222,6 @@ const Header = () => {
                   } py-2 w-full px-2`}
                 >
                   Genesis NFT
-                </Link>
-                <Link
-                  onClick={() => setOpen(false)}
-                  href="/tokenomic"
-                  className={`${
-                    isActive("/tokenomic")
-                      ? "text-white font-bold"
-                      : "text-white/80"
-                  } py-2 w-full px-2`}
-                >
-                  Tokenomic
                 </Link>
               </div>
             </div>

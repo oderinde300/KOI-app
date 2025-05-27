@@ -19,10 +19,10 @@ const TeamCard = ({ data }: Props) => {
         />
       </div>
       <div className="flex flex-col items-center">
-        <p className="text-white/80 text-center text-sm md:text-base">
+        <p className="text-white/80 text-center text-sm md:text-base uppercase">
           {data.name}
         </p>
-        <h3 className="font-bold text-center text-sm md:text-base text-white">
+        <h3 className="font-bold text-center text-sm md:text-base text-white capitalize">
           {data.position}
         </h3>
       </div>
