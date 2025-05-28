@@ -13,6 +13,9 @@ const GenesisNFT = () => {
               <h2 className="font-molde-bold-italic text-center md:text-left text-2xl md:text-4xl md:w-1/2 ">
                 INVEST SMART EARN BIG
               </h2>
+              {/* <h2 className="font-molde-bold-italic text-center md:text-left text-2xl md:text-4xl md:w-1/2 ">
+                INVEST SMART EARN BIG
+              </h2> */}
               <p className="text-lg font-molde w-fit text-center md:text-left md:text-2xl text-gradient">
                 KOI GENESIS NFT
               </p>
