@@ -151,6 +151,17 @@ const RoadMapScroll = () => {
             2028
           </p>
         </Link>
+        <Link href="#2029">
+          <p
+            onClick={() => setClick(!click)}
+            className={`text-sm cursor-pointer 
+            ${
+              activeId === "2029" ? "text-[#A759FF] font-bold" : "text-white/70"
+            }`}
+          >
+            2029
+          </p>
+        </Link>
       </div>
     </div>
   );

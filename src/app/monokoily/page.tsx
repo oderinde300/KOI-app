@@ -38,14 +38,18 @@ const Monokoily = () => {
                 Your Educational Tool for Self-Management and Financial Planning
               </li>
             </ul>
-            <p className="text-sm md:text-base md:w-2/3 text-white/80">
-              MONOKOILY offers a virtual life simulation where players navigate
-              daily challenges and joys, managing time and resources as a
-              virtual character. The game focuses on achieving life balance and
-              generating passive income. Dive into mastering lifes allocation,
-              learning and exploring without the fear of failure. With
-              MONOKOILY, live fully and earn as you play.
-            </p>
+            <div>
+              <p className="text-sm md:text-base md:w-2/3 text-white/80">
+                Long ago, Monokoily was a world of harmony — until a strange
+                little creature appeared. People called it Pumfy. Cute at first,
+                now known as the Inflation Mutant, feeding on time, dreams, and
+                value. Now, it threatens the balance of life.
+              </p>
+              <p className="text-sm md:text-base md:w-2/3 text-white/80 mt-4">
+                You are the warrior who will help restore what was lost —
+                starting with your own strategy.
+              </p>
+            </div>
 
             <div className="flex gap-4">
               <button className="border border-input bg-transparent shadow-sm h-9 w-48 px-4 py-5 text-sm rounded-full flex items-center justify-center cursor-auto">

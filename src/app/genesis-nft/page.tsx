@@ -146,9 +146,9 @@ const GenesisNFT = () => {
               What Does the Genesis NFT Collection Offer?
             </h2>
             <p className="text-center">
-              The Genesis NFT collection offers only 1000 exclusive pieces, each
+              The Genesis NFT collection offers only 500 exclusive pieces, each
               priced at $1000, providing holders with not just unique digital
-              art but also financial perks such as KOI tokens, a Crypto Debit
+              art but also financial perks such as KOI Token, a Crypto Debit
               Mastercard, and a share of WebbinHUBS&#39;s monthly profits,
               highlighting its unique value and potential.
             </p>

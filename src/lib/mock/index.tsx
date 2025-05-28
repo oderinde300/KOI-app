@@ -40,6 +40,9 @@ export const teamList1: ITeam[] = [
       },
     ],
   },
+];
+
+export const teamList2: ITeam[] = [
   {
     name: "martin eng",
     image_url: "/team-photo/Martin Eng.png",
@@ -51,9 +54,32 @@ export const teamList1: ITeam[] = [
       },
     ],
   },
+
+  {
+    name: "adam lau",
+    image_url: "/team-photo/Adam Lau.png",
+    position: "chief marketing officer",
+    social_media: [
+      {
+        icon: "/team/linkedin.svg",
+        link: "https://www.linkedin.com/in/adam-enablly",
+      },
+    ],
+  },
+  {
+    name: "muneyuki hattori",
+    image_url: "/team-photo/Muneyuki Hattori.png",
+    position: "chief gaming officer",
+    social_media: [
+      {
+        icon: "/team/linkedin.svg",
+        link: "https://www.linkedin.com/in/muneyuki-hattori-3ba205169/",
+      },
+    ],
+  },
 ];
 
-export const teamList2: ITeam[] = [
+export const teamList3: ITeam[] = [
   {
     name: "bryan lim",
     image_url: "/team-photo/Bryan Lim.jpg",
@@ -89,20 +115,6 @@ export const teamList2: ITeam[] = [
     ],
   },
   {
-    name: "adam lau",
-    image_url: "/team-photo/Adam Lau.png",
-    position: "chief marketing officer",
-    social_media: [
-      {
-        icon: "/team/linkedin.svg",
-        link: "https://www.linkedin.com/in/adam-enablly",
-      },
-    ],
-  },
-];
-
-export const teamList3: ITeam[] = [
-  {
     name: "jay koh",
     image_url: "/team-photo/Jay Koh.png",
     position: "web3 advisor",
@@ -117,6 +129,9 @@ export const teamList3: ITeam[] = [
       },
     ],
   },
+];
+
+export const teamList4: ITeam[] = [
   {
     name: "gary wong",
     image_url: "/team-photo/Gary Wong.png",
@@ -158,29 +173,14 @@ export const teamList3: ITeam[] = [
       },
     ],
   },
-];
-
-export const teamList4: ITeam[] = [
   {
-    name: "abigail jewwl brion",
+    name: "abigail jewel brion",
     image_url: "/team-photo/Abigail.png",
     position: "philippines ambassodor",
     social_media: [
       {
         icon: "/team/linkedin.svg",
         link: "https://www.linkedin.com/in/abigail-jewel-brion",
-      },
-    ],
-  },
-
-  {
-    name: "muneyuki hattori",
-    image_url: "/team-photo/Muneyuki Hattori.png",
-    position: "chief gaming officer",
-    social_media: [
-      {
-        icon: "/team/linkedin.svg",
-        link: "https://www.linkedin.com/in/muneyuki-hattori-3ba205169/",
       },
     ],
   },

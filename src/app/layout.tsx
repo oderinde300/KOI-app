@@ -6,7 +6,10 @@ import Footer from "@/components/Footer";
 import Blob from "@/components/Blob";
 
 const inter = Inter({ subsets: ["latin"] });
-const open_sans = Open_Sans({ subsets: ["latin"] });
+const open_sans = Open_Sans({
+  subsets: ["latin"],
+  weight: ["400", "700"], // This is the key fix
+});
 
 export const metadata: Metadata = {
   title: "Koi Mobilize",

@@ -107,7 +107,7 @@ const RoadMap = () => {
           id="2023-q1-q4"
           className="flex w-full md:min-h-[80vh] pt-48 md:justify-end"
         >
-          <div className="w-1/2">
+          <div className="w-[65%]">
             <div className="flex flex-col gap-6 md:min-w-[32.125rem] items-start">
               <h2 className="font-bold w-fit text-3xl text-gradient">
                 2023 Q1~Q4
@@ -310,7 +310,7 @@ const RoadMap = () => {
           id="2025-q1-q4"
           className="flex md:min-h-[80vh] pt-48 md:justify-end w-full"
         >
-          <div className="w-1/2">
+          <div className="w-[75%]">
             <div className="flex flex-col gap-6 md:min-w-[32.125rem] items-start">
               <h2 className="font-bold w-fit text-3xl text-gradient">
                 2025 Q1~Q4
@@ -668,7 +668,7 @@ const RoadMap = () => {
           id="2027-q1-q4"
           className="flex w-full md:min-h-[80vh] pt-48 md:justify-end"
         >
-          <div className="w-1/2">
+          <div className="w-[65%]">
             <div className="flex flex-col gap-6 md:min-w-[32.125rem] items-start">
               <h2 className="font-bold w-fit text-3xl text-gradient">
                 2027 Q1~Q4
@@ -788,6 +788,19 @@ const RoadMap = () => {
                   <span className="h-4 w-4 rounded-full bg-white"></span>
                   <h3 className="font-bold">IB Round</h3>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="2029"
+          className="flex w-full md:min-h-[80vh] pt-48 md:justify-end"
+        >
+          <div className="w-[65%]">
+            <div className="flex flex-col gap-6">
+              <h2 className="font-bold w-fit text-3xl text-gradient">2029</h2>
+              <div className="flex flex-col gap-3">
                 <div className="flex items-center gap-4">
                   <span className="h-4 w-4 rounded-full bg-white"></span>
                   <h3 className="font-bold">KOI IPO</h3>

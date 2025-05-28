@@ -1,8 +1,6 @@
 import { ITeam } from "@/interfaces";
-import { Instagram, Linkedin } from "lucide-react";
 import Image from "next/image";
-import React, { ReactNode } from "react";
-
+import React from "react";
 interface Props {
   data: ITeam;
 }
@@ -19,10 +17,10 @@ const TeamCard = ({ data }: Props) => {
         />
       </div>
       <div className="flex flex-col items-center">
-        <p className="text-white/80 text-center text-sm md:text-base uppercase">
+        <p className="text-white/80 text-center text-sm md:text-base uppercase font-bold">
           {data.name}
         </p>
-        <h3 className="font-bold text-center text-sm md:text-base text-white capitalize">
+        <h3 className="text-center text-sm md:text-base text-white capitalize font-normal">
           {data.position}
         </h3>
       </div>

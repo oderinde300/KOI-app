@@ -354,15 +354,15 @@ export default function Home() {
             <div className="flex w-full items-center justify-center">
               <div className="flex relative flex-col md:w-2/3 gap-12">
                 <div className="flex flex-col">
-                  <h2 className="text-2xl md:text-4xl font-molde-bold-italic ">
-                    POWERFUL WEB3 SOCIAL PLATFORM
+                  <h2 className="text-2xl md:text-4xl font-molde-bold-italic uppercase">
+                    Super IP Business Network
                   </h2>
                   <p className="text-xl md:text-2xl text-gradient font-molde">
                     WebbinHUBS
                   </p>
                 </div>
                 <ul className="list-disc">
-                  <li>Web3 Version of Classic Meta</li>
+                  <li>Blockchain Version of Classic Meta</li>
                   <li className="">
                     Earn Social Income and Acquire More Blockchain Assets
                     through the Solana Ecosystem.
@@ -419,7 +419,7 @@ export default function Home() {
             ></div>
           </div>
         </ScrollAnimationWrapper>
-        <ScrollAnimationWrapper>
+        {/* <ScrollAnimationWrapper>
           <div className="flex flex-col md:flex-row-reverse w-full">
             <div className="flex w-full items-center justify-start md:justify-center">
               <div className="flex relative h-[7.5rem] w-[7.5rem] md:w-72 md:h-72">
@@ -450,7 +450,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </ScrollAnimationWrapper>
+        </ScrollAnimationWrapper> */}
         {/* <div className="hidden md:flex absolute bottom-0 -right-[60%]">
           <Blob />
         </div> */}

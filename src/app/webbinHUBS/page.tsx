@@ -111,7 +111,7 @@ const Web3SOC = () => {
         />
       </div>
 
-      <div className="mx-auto w-full px-4 md:px-0 xl:w-3/5">
+      {/* <div className="mx-auto w-full px-4 md:px-0 xl:w-3/5">
         <div className="flex flex-col md:flex-row items-center">
           <div className="w-full md:w-[60%] h-[30rem] gap-4 flex justify-center items-center">
             <Chart />
@@ -155,7 +155,7 @@ const Web3SOC = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
