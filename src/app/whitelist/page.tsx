@@ -151,7 +151,7 @@ const Monokoily = () => {
           <p className="text-2xl md:text-4xl font-bold text-center text-[#FFA515] py-6">
             Token Reward Entry Form
           </p>
-          <div className="flex flex-col items-center justify-center gap-6 w-full relative z-50">
+          <div className="flex flex-col items-center justify-center gap-6 w-full relative md:z-20">
             <div className="flex flex-col gap-2">
               <label className="text-white/80">Name</label>
               <input
