@@ -1,13 +1,4 @@
 import { InstagramLogoIcon } from "@radix-ui/react-icons";
-import {
-  FacebookIcon,
-  Instagram,
-  InstagramIcon,
-  Linkedin,
-  Twitch,
-  Twitter,
-  YoutubeIcon,
-} from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import Blob from "../Blob";

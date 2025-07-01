@@ -100,6 +100,31 @@
   color: transparent;
 }
 
+.bg-gradient {
+  background: linear-gradient(
+    92.66deg,
+    #a759ff 6.66%,
+    #f05615 21.75%,
+    #ffa515 39.84%
+  );
+  color: white; /* Optional: text color on top of the background */
+}
+
+.border-gradient {
+  border-color: linear-gradient(
+    92.66deg,
+    #a759ff 6.66%,
+    #f05615 21.75%,
+    #ffa515 39.84%
+  );
+  border-radius: 10px;
+  border-width: 4px;
+}
+
+.clipped-banner {
+  clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+}
+
 @font-face {
   font-family: "molde-bold-italic";
   src: url("../../public/fonts/Fontspring-DEMO-molde-expanded-blackitalic.otf");
