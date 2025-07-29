@@ -130,6 +130,9 @@ const Footer = () => {
                 <Link href="/activity">Activity</Link>
               </li>
               <li>
+                <Link href="/airdrop">Airdrop</Link>
+              </li>
+              <li>
                 <Link href="/faq">FAQs</Link>
               </li>
             </ul>

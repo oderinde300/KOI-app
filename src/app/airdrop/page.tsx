@@ -8,18 +8,21 @@ import { FaTelegramPlane } from "react-icons/fa";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 
-const Monokoily = () => {
+const Airdrop = () => {
   const initialState = {
     name: "",
     email: "",
     phone: "",
     message: "",
+    wallet: "",
   };
   const [formData, setFormData] = useState(initialState);
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -185,19 +188,56 @@ const Monokoily = () => {
                 required
               />
             </div>
+
+            <div className="flex flex-col gap-2">
+              <label className="text-white/80">
+                What is your wallet address?
+              </label>
+              <div className="flex flex-col md:w-[350px] w-[250px]">
+                <input
+                  className="py-3 px-4 bg-white text-black"
+                  type="text"
+                  onChange={handleChange}
+                  name="wallet"
+                  value={formData?.wallet || ""}
+                  required
+                />
+                <p className="text-sm text-white/70 mt-1">
+                  Please provide a Solana-based wallet address, e.g., Phantom (
+                  <a
+                    href="https://youtube.com/shorts/5VTqDUV-y5k?feature=shared"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline text-[#FFA515] hover:text-[#ff8715]"
+                  >
+                    I need a tutorial video
+                  </a>
+                  )
+                </p>
+              </div>
+            </div>
+
             <div className="flex flex-col gap-2">
               <label className="text-white/80">
                 How Did You Hear About Us?
               </label>
-              <input
-                className="py-3 px-4 md:w-[350px] w-[250px]"
-                type="text"
+              <select
+                className="py-3 px-4 md:w-[350px] w-[250px] bg-white text-black"
                 onChange={handleChange}
                 name="message"
                 value={formData?.message}
                 required
-              />
+              >
+                <option value="" disabled>
+                  -- Select an option --
+                </option>
+                <option value="Social Media">Social Media</option>
+                <option value="Viral Campaign">Viral Campaign</option>
+                <option value="Friends">Friends</option>
+                <option value="Others">Others</option>
+              </select>
             </div>
+
             <Button
               className="text-white w-[250px] md:w-[350px] py-6 disabled:cursor-wait"
               onClick={handleSubmit}
@@ -216,7 +256,7 @@ const Monokoily = () => {
               <p className="font-semibold pb-2">FOLLOW US ON TELEGRAM FOR</p>
               <p className="fomt-semibold">THE AIRDROP ANNOUNCEMENT!</p>
               <Link
-                href="https://t.me/Monokoily"
+                href="https://t.me/monokoilyofficial"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -238,4 +278,4 @@ const Monokoily = () => {
   );
 };
 
-export default Monokoily;
+export default Airdrop;

@@ -148,6 +148,17 @@ const Header = () => {
                 </li>
                 <li
                   className={`${
+                    isActive("/airdrop")
+                      ? "text-white font-bold"
+                      : "text-white/80"
+                  } py-3`}
+                >
+                  <Link onClick={() => setMenu(false)} href="/airdrop">
+                    AIRDROP
+                  </Link>
+                </li>
+                <li
+                  className={`${
                     isActive("/faq") ? "text-white font-bold" : "text-white/80"
                   } py-3`}
                 >
@@ -243,6 +254,15 @@ const Header = () => {
             }`}
           >
             <Link href="/activity">ACTIVITY</Link>
+          </li>
+          <li
+            className={`${
+              isActive("/airdrop")
+                ? "text-white font-bold underline"
+                : "text-white/80"
+            }`}
+          >
+            <Link href="/airdrop">AIRDROP</Link>
           </li>
           <li
             className={`${

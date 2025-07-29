@@ -6,10 +6,16 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { name, email, phone, message } = body;
+    const { name, email, phone, message, wallet } = body;
 
     // 🔴 Check for missing fields
-    if (!name?.trim() || !email?.trim() || !phone?.trim() || !message?.trim()) {
+    if (
+      !name?.trim() ||
+      !email?.trim() ||
+      !phone?.trim() ||
+      !message?.trim() ||
+      !wallet?.trim()
+    ) {
       return NextResponse.json(
         {
           error: "Missing required fields.",
@@ -30,14 +36,14 @@ export async function POST(request: Request) {
       );
     }
 
-    // 🔴 Check for duplicate email
-    const { data: existing, error: findError } = await supabase
-      .from("waitlist")
-      .select("email")
-      .eq("email", email);
+    // 🔴 Check for duplicate email or wallet
+    const { data: existing, error: checkError } = await supabase
+      .from("whitelist")
+      .select("email, wallet")
+      .or(`email.eq.${email},wallet.eq.${wallet}`);
 
-    if (findError) {
-      console.error("Error checking duplicate:", findError);
+    if (checkError) {
+      console.error("Error checking duplicates:", checkError);
       return NextResponse.json(
         {
           error: "Server/API error.",
@@ -48,22 +54,38 @@ export async function POST(request: Request) {
     }
 
     if (existing && existing.length > 0) {
-      return NextResponse.json(
-        {
-          error: "Duplicate submission.",
-          message: "This email has already been submitted.",
-        },
-        { status: 409 }
-      );
+      const duplicateEmail = existing.find((entry) => entry.email === email);
+      const duplicateWallet = existing.find((entry) => entry.wallet === wallet);
+
+      if (duplicateEmail) {
+        return NextResponse.json(
+          {
+            error: "Duplicate email.",
+            message: "This email has already been submitted.",
+          },
+          { status: 409 }
+        );
+      }
+
+      if (duplicateWallet) {
+        return NextResponse.json(
+          {
+            error: "Duplicate wallet.",
+            message: "This wallet address has already been submitted.",
+          },
+          { status: 409 }
+        );
+      }
     }
 
     // ✅ Insert new entry
-    const { error: insertError } = await supabase.from("waitlist").insert([
+    const { error: insertError } = await supabase.from("whitelist").insert([
       {
         name,
         email,
         phone,
         message,
+        wallet,
         submitted_at: new Date().toISOString(),
       },
     ]);
